@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nash Alino — Graphic Designer &amp; Publishing Project Manager</title>
+  <meta name="description" content="Portfolio of Nash Alino. Book design, brand identity, web design and publishing project management.">
+  <script>
+    document.documentElement.classList.add('js');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('reduced');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <span class="mono">Nash Alino — Portfolio</span>
+    <span class="loader__num">0</span>
+  </div>
+  <!-- Page transition panel -->
+  <div class="wipe" aria-hidden="true"></div>
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"><span>View</span></div>
+
+  <header class="site-header">
+    <div class="wrap header__inner">
+      <a href="#home" class="logo">nash<span class="accent">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home"><span class="mono">01</span>Home</a>
+        <a href="#about"><span class="mono">02</span>About</a>
+        <a href="#works"><span class="mono">03</span>Works</a>
+        <a href="#contact"><span class="mono">04</span>Contact</a>
+      </nav>
+      <div class="socials header__socials">
+        <a href="#LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+        <a href="#BEHANCE_URL" target="_blank" rel="noopener">Behance</a>
+      </div>
+      <button class="pill menu-btn" aria-expanded="false" aria-controls="mnav">Menu</button>
+    </div>
+    <nav id="mnav" class="wrap mnav" aria-label="Mobile">
+      <a href="#home"><span class="mono">01</span>Home</a>
+      <a href="#about"><span class="mono">02</span>About</a>
+      <a href="#works"><span class="mono">03</span>Works</a>
+      <a href="#contact"><span class="mono">04</span>Contact</a>
+      <div class="socials">
+        <a href="#LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+        <a href="#BEHANCE_URL" target="_blank" rel="noopener">Behance</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="wrap hero">
+      <h1 class="hero__name" aria-label="Nash Alino">
+        <span class="line-mask"><span data-line>Nash</span></span>
+        <span class="line-mask indent"><span data-line>Alino<span class="accent">.</span></span></span>
+      </h1>
+      <div class="hero__meta">
+        <div class="line-mask"><p data-line class="hero__tag">Graphic Designer &amp; Publishing Project Manager. Books, brands and websites, from first draft to launch.</p></div>
+        <div class="line-mask hero__avail"><span data-line class="mono">[Location] — Available [Month Year]</span></div>
+      </div>
+      <!-- Replace the label with <img src="assets/images/featured.jpg" alt="..."> or a <video autoplay muted loop playsinline> -->
+      <div class="ph hero__feature" data-reveal>
+        <div class="hero__glow" data-parallax></div>
+        <span class="mono ph__label">[Featured work — video or image, 16:8]</span>
+      </div>
+    </section>
+
+    <!-- CHAPTER I -->
+    <section id="about" class="wrap section">
+      <div class="chapter" data-reveal><span class="mono">Chapter I</span><h2>Introduction</h2></div>
+      <div class="intro">
+        <div class="ph portrait" data-reveal role="img" aria-label="Portrait of Nash Alino">
+          <span class="mono ph__label">[Portrait, 4:5]</span>
+        </div>
+        <div class="intro__text">
+          <blockquote class="quote" data-reveal>“[Pull quote — one sentence on how you work or what you care about.]”</blockquote>
+          <p class="bio" data-reveal>Publishing Project Manager with 3 years of experience coordinating book launches, managing administrative tasks, production workflows, websites, and social media. Strong background in project management, marketing support, and graphic design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER II — cards are rendered from js/projects.js -->
+    <section id="works" class="works">
+      <div class="works__sticky">
+        <div class="wrap works__head">
+          <div class="chapter"><span class="mono">Chapter II</span><h2>Selected work</h2><span class="mono works__count"></span></div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="chip" data-filter="All" aria-pressed="true">All</button>
+            <button class="chip" data-filter="Web" aria-pressed="false">Web</button>
+            <button class="chip" data-filter="Branding" aria-pressed="false">Branding</button>
+            <button class="chip" data-filter="Print" aria-pressed="false">Print</button>
+          </div>
+        </div>
+        <div class="track"></div>
+        <div class="wrap"><div class="progress"><div class="progress__bar"></div></div></div>
+      </div>
+    </section>
+
+    <!-- CHAPTER III -->
+    <section class="wrap section">
+      <div class="chapter" data-reveal><span class="mono">Chapter III</span><h2>Services</h2></div>
+      <div class="services">
+        <article class="service" data-reveal>
+          <div class="ph service__img" style="background:linear-gradient(140deg,#2F2F33,#1D1D1F)"><span class="mono accent service__num">01</span></div>
+          <h3>Book Design</h3>
+          <p>Interior layout, covers and illustration for print and ebook.</p>
+        </article>
+        <article class="service" data-reveal>
+          <div class="ph service__img" style="background:linear-gradient(170deg,#2F2F33,#1D1D1F)"><span class="mono accent service__num">02</span></div>
+          <h3>Brand Identity</h3>
+          <p>Logos, colour, type and the guidelines that hold them together.</p>
+        </article>
+        <article class="service" data-reveal>
+          <div class="ph service__img" style="background:linear-gradient(200deg,#2F2F33,#1D1D1F)"><span class="mono accent service__num">03</span></div>
+          <h3>Web Design</h3>
+          <p>Marketing sites and landing pages, designed and built in WordPress.</p>
+        </article>
+        <article class="service" data-reveal>
+          <div class="ph service__img" style="background:linear-gradient(230deg,#2F2F33,#1D1D1F)"><span class="mono accent service__num">04</span></div>
+          <h3>Publishing Management</h3>
+          <p>Launch planning, production workflow and author coordination.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAPTER IV -->
+    <section class="wrap section section--tight">
+      <div class="chapter" data-reveal><span class="mono">Chapter IV</span><h2>Experience</h2></div>
+      <div class="exp">
+        <div class="exp__row" data-reveal><span class="exp__co">Dean Publishing</span><span class="exp__role">Graphic Designer</span><span class="mono">2026</span></div>
+        <div class="exp__row" data-reveal><span class="exp__co">BLVNP Inc. / Typewriter Pub</span><span class="exp__role">Publishing Project Manager</span><span class="mono">2022 — 2025</span></div>
+        <div class="exp__row" data-reveal><span class="exp__co">NFT Inc.</span><span class="exp__role">Graphic Designer</span><span class="mono">2021</span></div>
+      </div>
+      <p class="tools" data-reveal>Tools — InDesign, Photoshop, Illustrator, Figma, WordPress, Canva, Klaviyo, Mailchimp</p>
+    </section>
+  </main>
+
+  <!-- CASE STUDY (filled from js/projects.js; URL: #/work/project-id) -->
+  <article id="case" class="wrap case" hidden>
+    <a href="#home" class="pill">← All work</a>
+    <div class="case__head">
+      <span class="mono accent" data-cs id="cs-kicker"></span>
+      <h1 class="case__title" data-cs id="cs-title"></h1>
+    </div>
+    <div class="case__meta" data-cs>
+      <div><span class="mono">Year</span><span id="cs-year"></span></div>
+      <div><span class="mono">Discipline</span><span id="cs-cat"></span></div>
+      <div><span class="mono">Role</span><span id="cs-role"></span></div>
+      <div><span class="mono">Client</span><span id="cs-client"></span></div>
+    </div>
+    <div class="ph case__hero" data-cs id="cs-hero"></div>
+    <div class="case__overview">
+      <h2 data-cs>Overview</h2>
+      <p data-cs id="cs-desc"></p>
+    </div>
+    <div class="case__gallery" id="cs-gallery"></div>
+    <a href="#" class="case__next" id="cs-next" data-cursor="view">
+      <span class="mono">Next project</span>
+      <span class="case__next-title" id="cs-next-title"></span>
+    </a>
+  </article>
+
+  <!-- CONTACT + FOOTER -->
+  <section id="contact" class="contact">
+    <div class="wrap contact__inner">
+      <div class="contact__cta">
+        <span class="mono accent" data-reveal>Contact</span>
+        <h2 class="cta-title">
+          <span class="line-mask"><span data-reveal-line>Let’s work</span></span>
+          <span class="line-mask"><span data-reveal-line>together<span class="accent">.</span></span></span>
+        </h2>
+        <a class="cta-btn" data-reveal href="mailto:support@assethealthandperformance.com.au">support@assethealthandperformance.com.au ↗</a>
+      </div>
+      <footer class="footer">
+        <span>© <span id="year">2026</span> Nash Alino</span>
+        <div class="socials">
+          <a href="#LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#INSTAGRAM_URL" target="_blank" rel="noopener">Instagram</a>
+          <a href="#BEHANCE_URL" target="_blank" rel="noopener">Behance</a>
+        </div>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
