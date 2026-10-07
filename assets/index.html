@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#18181A"/><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="34" fill="#D6C7A8">n.</text></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Nash Alino — Brand, Web &amp; AI Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Geist:wght@400;500&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<style>
+html,body{margin:0;background:#18181A}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+[data-lenis-prevent]{overscroll-behavior:contain}
+a{color:var(--text);text-decoration:none}
+a:hover{color:var(--accent)}
+::selection{background:#D6C7A8;color:#18181A}
+:focus-visible{outline:2px solid #D6C7A8;outline-offset:4px;border-radius:2px}
+[data-cursor-on],[data-cursor-on] *{cursor:none!important}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</helmet>
+<div data-folio="" style="--bg:#18181A;--surface:#222225;--surface-2:#2C2C30;--line:#36363A;--text:#EDEDEA;--muted:#9C9CA1;--accent:#D6C7A8;--on-accent:#18181A;--display:'Bricolage Grotesque',sans-serif;--body:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,monospace;--pad:clamp(20px,4vw,48px);position:relative;min-height:100vh;background:var(--bg);color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip">
+
+<a href="#about" data-go="about" style="position:fixed;left:16px;top:-80px;z-index:200;padding:12px 18px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-size:14px;font-weight:500" style-focus="top:16px">Skip to content</a>
+
+<div data-progress="" style="position:fixed;top:0;left:0;right:0;height:2px;z-index:120;background:var(--accent);transform:scaleX(0);transform-origin:0 50%"></div>
+
+<header data-header="" style="position:fixed;top:0;left:0;right:0;z-index:110;mix-blend-mode:difference;color:#fff">
+  <div style="max-width:1440px;margin:0 auto;padding:16px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <button data-magnetic="" onClick="{{ openPalette }}" aria-label="Nash Alino logo — open command palette" style="display:flex;align-items:center;background:none;border:0;padding:4px 0;color:#fff;cursor:pointer;perspective:400px"><span data-logo3d="" data-layers="7" aria-hidden="true" style="position:relative;display:inline-block;width:26px;aspect-ratio:689/900;transform-style:preserve-3d;"></span></button>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Primary" style="display:flex;gap:32px;font-size:14px">
+        <a href="#home" data-go="home" data-roll="" data-magnetic="" style="display:flex;gap:6px;align-items:baseline;color:#fff"><span style="font-family:var(--mono);font-size:11px;opacity:.6">01.</span><span style="display:inline-block;overflow:hidden;height:1.2em;line-height:1.2em"><span data-roll-in="" style="display:flex;flex-direction:column"><span>Home</span><span aria-hidden="true">Home</span></span></span></a>
+        <a href="#about" data-go="about" data-roll="" data-magnetic="" style="display:flex;gap:6px;align-items:baseline;color:#fff"><span style="font-family:var(--mono);font-size:11px;opacity:.6">02.</span><span style="display:inline-block;overflow:hidden;height:1.2em;line-height:1.2em"><span data-roll-in="" style="display:flex;flex-direction:column"><span>About</span><span aria-hidden="true">About</span></span></span></a>
+        <a href="#works" data-go="works" data-roll="" data-magnetic="" style="display:flex;gap:6px;align-items:baseline;color:#fff"><span style="font-family:var(--mono);font-size:11px;opacity:.6">03.</span><span style="display:inline-block;overflow:hidden;height:1.2em;line-height:1.2em"><span data-roll-in="" style="display:flex;flex-direction:column"><span>Works</span><span aria-hidden="true">Works</span></span></span></a>
+        <a href="#contact" data-go="contact" data-roll="" data-magnetic="" style="display:flex;gap:6px;align-items:baseline;color:#fff"><span style="font-family:var(--mono);font-size:11px;opacity:.6">04.</span><span style="display:inline-block;overflow:hidden;height:1.2em;line-height:1.2em"><span data-roll-in="" style="display:flex;flex-direction:column"><span>Contact</span><span aria-hidden="true">Contact</span></span></span></a>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:14px">
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span style="font-family:var(--mono);font-size:12px;opacity:.75">PH <span data-clock="">--:--:--</span></span></sc-if>
+      <button data-magnetic="" onClick="{{ toggleTheme }}" aria-label="Toggle light and dark theme" style="width:36px;height:36px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:none;display:grid;place-items:center;cursor:pointer"><span style="width:14px;height:14px;border-radius:50%;border:1.5px solid #fff;background:linear-gradient(90deg,#fff 50%,transparent 50%)"></span></button>
+      <button data-magnetic="" onClick="{{ openPalette }}" aria-label="Open command palette" style="height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.5);background:none;color:#fff;font-family:var(--mono);font-size:12px;cursor:pointer">{{ menuLabel }}</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+  <section data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(110px,12vw,160px) var(--pad) clamp(48px,6vw,80px)">
+    <div data-hero-fade="" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px">
+      <span>Folio / Edition © 2026</span>
+      <span>Brand, Web &amp; AI Systems</span>
+      <span>12.8797° N, 121.7740° E</span>
+    </div>
+
+    <div style="position:relative;margin-top:clamp(40px,6vw,80px)">
+      <h1 aria-label="Nash Alino" style="position:relative;z-index:1;margin:0;font-family:var(--display);font-weight:500;font-size:clamp(72px,17vw,260px);line-height:.86;letter-spacing:-.055em">
+        <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.05em"><span data-char="" style="display:inline-block">N</span><span data-char="" style="display:inline-block">a</span><span data-char="" style="display:inline-block">s</span><span data-char="" style="display:inline-block">h</span></span>
+        <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.05em;padding-left:clamp(0px,12vw,200px)"><span data-char="" style="display:inline-block">A</span><span data-char="" style="display:inline-block">l</span><span data-char="" style="display:inline-block">i</span><span data-char="" style="display:inline-block">n</span><span data-char="" style="display:inline-block">o</span><span data-char="" style="display:inline-block;color:var(--accent)">.</span></span>
+      </h1>
+
+      <div data-depth="22" style="position:absolute;right:0;top:4%;z-index:3">
+        <div data-float="" style="scale:{{ stickerScale }}">
+          <div data-drag="" data-cursor="drag" aria-label="Pencil, draggable" style="transform:rotate(-18deg);touch-action:none;user-select:none;perspective:900px">
+            <div data-pop="" data-lift="" style="position:relative;transform-style:preserve-3d">
+              <span data-shadow="" aria-hidden="true" style="position:absolute;left:4%;right:2%;top:78%;height:26px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);filter:blur(6px);transform:translateY(10px)"></span>
+              <div data-obj="" style="position:relative;width:clamp(230px,24vw,360px);transform-style:preserve-3d">
+                <img src="assets/pencil.png" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
+                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:soft-light;-webkit-mask:url(assets/pencil.png) center/100% 100%;mask:url(assets/pencil.png) center/100% 100%;pointer-events:none"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-depth="40" style="position:absolute;right:10%;top:52%;z-index:3">
+        <div data-float="" style="scale:{{ stickerScale }}">
+          <div data-drag="" data-cursor="drag" aria-label="Film camera, draggable" style="transform:rotate(6deg);touch-action:none;user-select:none;perspective:900px">
+            <div data-pop="" data-lift="" style="position:relative;transform-style:preserve-3d">
+              <span data-shadow="" aria-hidden="true" style="position:absolute;left:6%;right:6%;top:86%;height:34px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.6),transparent);filter:blur(7px);transform:translateY(10px)"></span>
+              <div data-obj="" data-camera="" style="position:relative;width:clamp(180px,17vw,260px);transform-style:preserve-3d">
+                <img src="assets/camera.png" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
+                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:screen;-webkit-mask:url(assets/camera.png) center/100% 100%;mask:url(assets/camera.png) center/100% 100%;pointer-events:none"></span>
+                <span data-flash="" aria-hidden="true" style="position:absolute;inset:0;background:#fff;opacity:0;-webkit-mask:url(assets/camera.png) center/100% 100%;mask:url(assets/camera.png) center/100% 100%;pointer-events:none"></span>
+                <span data-flash-label="" style="position:absolute;right:-8px;top:-14px;padding:3px 9px;border-radius:999px;background:#D6C7A8;color:#18181A;font-family:var(--mono);font-size:11px;opacity:0;transform:translateZ(30px)">click!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-depth="14" style="position:absolute;left:44%;top:-6%;z-index:3">
+        <div data-float="" style="scale:{{ stickerScale }}">
+          <div data-drag="" data-cursor="drag" aria-label="Folio badge sticker, draggable" style="transform:rotate(-8deg);touch-action:none;user-select:none">
+            <div data-pop="" data-badge="" style="position:relative;width:118px;height:118px;border-radius:50%;display:grid;place-items:center;background:#D6C7A8;color:#18181A;box-shadow:0 0 0 6px #F4F1EA,0 16px 32px rgba(0,0,0,.35)">
+              <svg data-spin="" viewBox="0 0 120 120" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%"><defs><path id="badgeCircle" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"></path></defs><text fill="currentColor" style="font-family:var(--mono);font-size:10px;letter-spacing:2px"><textPath href="#badgeCircle" textLength="282" lengthAdjust="spacingAndGlyphs">FOLIO · © 2026 · PHILIPPINES · </textPath></text></svg>
+              <span style="perspective:300px;display:grid;place-items:center"><span data-logo3d="" data-layers="6" aria-hidden="true" style="position:relative;display:inline-block;width:34px;aspect-ratio:689/900;transform-style:preserve-3d;color:#18181A"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(36px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px;align-items:end">
+      <div data-hero-fade="" style="display:flex;flex-direction:column;gap:28px">
+        <p style="margin:0;max-width:440px;font-size:clamp(17px,1.6vw,21px);line-height:1.45;color:var(--muted);text-wrap:pretty">Designer and AI engineer. I build the brand, the website and the systems that run behind it, from first draft to <span style="position:relative;display:inline-block;color:var(--text)">launch<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:-14%;top:-30%;width:128%;height:160%;overflow:visible;pointer-events:none"><path data-draw="" d="M88 6 C 60 0, 14 4, 6 22 C 0 40, 50 48, 90 42 C 118 37, 122 16, 98 8 C 86 4, 70 5, 62 7" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span>.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="#works" data-go="works" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-weight:500;font-size:15px" style-hover="color:var(--on-accent)">See the work ↓</a>
+          <a href="#contact" data-go="contact" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;border:1px solid var(--line);color:var(--text);font-weight:500;font-size:15px" style-hover="border-color:var(--text);color:var(--text)">Get in touch</a>
+        </div>
+      </div>
+      <div data-hero-fade="" style="display:flex;flex-direction:column;gap:6px;justify-self:end;text-align:right;font-family:var(--mono);font-size:12px;color:var(--muted)">
+        <span>Philippines — Available [Month Year]</span>
+        <span>Local time <span data-clock="" style="color:var(--text)">--:--:--</span> GMT+8</span>
+      </div>
+    </div>
+
+    <div data-zoom-wrap="" style="margin-top:clamp(40px,6vw,80px)">
+    <div data-zoom="" style="position:relative;aspect-ratio:16/8;min-height:320px;border-radius:12px;overflow:hidden;background:#141416">
+      <sc-for list="{{ zoom }}" as="z" hint-placeholder-count="1">
+        <div data-zoom-layer="" onClick="{{ z.open }}" data-cursor="view" style="position:absolute;inset:0;cursor:pointer;overflow:hidden;clip-path:{{ z.clip0 }}">
+          <div data-zoom-img="" style="position:absolute;inset:0;background:{{ z.bg }};transform-origin:50% 50%"></div>
+        </div>
+      </sc-for>
+      <div style="position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 45%)"></div>
+      <div data-zoom-ui="" style="position:absolute;left:clamp(16px,3vw,48px);right:clamp(16px,3vw,48px);bottom:clamp(16px,3vw,44px);z-index:6;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;color:#fff;pointer-events:none">
+        <div style="position:relative;flex:1;min-width:0;height:clamp(64px,7vw,110px)">
+          <sc-for list="{{ zoom }}" as="z" hint-placeholder-count="1">
+            <div data-zoom-cap="" style="position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;gap:8px;opacity:{{ z.op0 }}">
+              <span style="font-family:var(--mono);font-size:12px;opacity:.85">{{ z.num }} — {{ z.category }}</span>
+              <span style="font-family:var(--display);font-weight:500;font-size:clamp(36px,5vw,84px);line-height:.92;letter-spacing:-.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ z.title }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <span style="font-family:var(--mono);font-size:12px;opacity:.8">Scroll ↓</span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:clamp(14px,2vw,24px) 0">
+    <div data-marquee="" style="display:flex;width:max-content;will-change:transform">
+      <div style="display:flex;align-items:center;gap:clamp(24px,3vw,48px);padding-right:clamp(24px,3vw,48px);font-family:var(--display);font-weight:500;font-size:clamp(44px,7vw,112px);letter-spacing:-.04em;line-height:1;white-space:nowrap">
+        <span>Social Media</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">Brand Identity</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span>Web Design</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">AI Engineering</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span>InDesign</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">Figma</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:clamp(24px,3vw,48px);padding-right:clamp(24px,3vw,48px);font-family:var(--display);font-weight:500;font-size:clamp(44px,7vw,112px);letter-spacing:-.04em;line-height:1;white-space:nowrap">
+        <span>Social Media</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">Brand Identity</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span>Web Design</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">AI Engineering</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span>InDesign</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+        <span style="color:var(--muted)">Figma</span><span style="width:.22em;height:.22em;border-radius:50%;background:var(--accent)"></span>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad)">
+    <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(48px,7vw,96px)">
+      <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter I</span>
+      <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Introduction</h2>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(01/04)</span>
+    </div>
+    <blockquote style="margin:0 auto;max-width:1100px;font-family:var(--display);font-weight:400;font-size:clamp(36px,5.6vw,88px);line-height:1.02;letter-spacing:-.035em;text-align:center;text-wrap:balance">
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-line="" style="display:block">“Good design is <span style="position:relative;display:inline-block;font-style:italic">quiet<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:-2%;bottom:-.1em;width:104%;height:.28em;overflow:visible"><path data-draw="" d="M3 13 C 40 5, 90 3, 122 9 S 180 16, 197 6" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span> until you</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-line="" style="display:block">notice how much it’s doing.”</span></span>
+    </blockquote>
+    <div style="margin-top:clamp(64px,9vw,128px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,6vw,96px);align-items:end">
+      <div data-img="" data-tilt="" data-cursor="img" style="position:relative;aspect-ratio:4/5;max-width:440px;border-radius:10px;overflow:hidden;background:#E4E3EA">
+        <div data-img-in="" data-tilt-in="" style="position:absolute;inset:0">
+          <img src="assets/portrait.png" alt="Portrait of Nash Alino" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+        </div>
+        <span style="position:absolute;right:16px;top:14px;perspective:300px"><span data-logo3d="" data-layers="6" aria-hidden="true" style="position:relative;display:inline-block;width:28px;aspect-ratio:689/900;transform-style:preserve-3d;color:#18181A"></span></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:32px;max-width:560px">
+        <p data-reveal="" style="margin:0;font-size:clamp(18px,1.5vw,21px);line-height:1.6;color:var(--muted);text-wrap:pretty">I started in design and spent three years as a publishing project manager, running book launches, production workflows, websites and social media. Now I connect those pieces into one system: a brand people remember, a website that turns visitors into enquiries, GoHighLevel and Xero automations that handle the follow-ups, bookings and invoicing, and custom AI that gives a small team more reach.</p>
+        <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+          <span style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-right:6px">Off the clock —</span>
+          <span style="padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px">Pencil sketches</span>
+          <span style="padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px">35mm film</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(40px,6vw,80px) var(--pad) clamp(80px,11vw,160px)">
+    <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(32px,5vw,64px)">
+      <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter II</span>
+      <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Selected work</h2>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(02/04)</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(24px,4vw,64px);align-items:end">
+      <h3 data-texture="" aria-label="The Work" style="margin:0;font-family:var(--display);font-weight:700;font-size:clamp(84px,14vw,220px);line-height:.84;letter-spacing:-.06em;color:transparent;background-image:radial-gradient(40% 70% at 20% 30%,#EDEDEA,transparent 70%),radial-gradient(45% 80% at 80% 70%,#D6C7A8,transparent 70%),linear-gradient(110deg,#8C7448,#D6C7A8 30%,#6E6A62 55%,#EDEDEA 75%,#8C7448);background-size:220% 220%;background-position:0% 50%;-webkit-background-clip:text;background-clip:text">The<br>Work</h3>
+      <div data-reveal="" style="border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden;font-family:var(--mono);font-size:13px">
+        <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)">
+          <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+          <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+          <span style="margin-left:8px;font-size:12px;color:var(--muted)">nash — zsh</span>
+        </div>
+        <div style="padding:16px 18px 20px;display:flex;flex-direction:column;gap:14px">
+          <div><span style="color:var(--accent)">~/nash/projects</span> <span style="color:var(--muted)">$</span> <span data-type="" data-text="ls --by-folder"></span><span data-caret="" style="display:inline-block;width:8px;height:15px;margin-left:2px;vertical-align:-2px;background:var(--text)"></span></div>
+          <div data-type-after="" style="display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,24px)">
+            <sc-for list="{{ folders }}" as="f" hint-placeholder-count="4">
+              <button onClick="{{ f.pick }}" aria-pressed="{{ f.pressed }}" aria-label="{{ f.aria }}" data-magnetic="" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:4px;background:none;border:0;color:var(--text);font-family:var(--mono);font-size:12px;cursor:pointer">
+                <span style="display:flex;flex-direction:column;align-items:flex-start">
+                  <span style="width:26px;height:8px;border-radius:4px 4px 0 0;background:{{ f.bg }}"></span>
+                  <span style="width:64px;height:46px;border-radius:0 6px 6px 6px;display:grid;place-items:center;background:{{ f.bg }};color:{{ f.fg }}">{{ f.count }}</span>
+                </span>
+                <span>{{ f.label }}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:18px">
+      <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">{{ countLabel }}</span>
+      <div role="group" aria-label="Project view" style="display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px">
+        <sc-for list="{{ views }}" as="v" hint-placeholder-count="3">
+          <button onClick="{{ v.pick }}" aria-pressed="{{ v.pressed }}" style="min-height:36px;padding:0 16px;border:0;border-radius:999px;font:500 13px var(--body);cursor:pointer;background:{{ v.bg }};color:{{ v.fg }}">{{ v.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(28px,3vw,40px)">
+      <sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:clamp(20px,2.4vw,32px) clamp(16px,2vw,28px)">
+          <sc-for list="{{ list }}" as="p" hint-placeholder-count="6">
+            <a href="#" data-flip="{{ p.id }}" data-tilt="" data-cursor="view" onClick="{{ p.open }}" onMouseEnter="{{ p.enter }}" onMouseLeave="{{ p.leave }}" aria-label="{{ p.aria }}" style="display:flex;flex-direction:column;gap:14px;color:var(--text)" style-hover="color:var(--text)">
+              <div data-tilt-in="" style="position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:{{ p.grad }}">
+                <sc-if value="{{ p.site }}" hint-placeholder-val="{{ false }}">
+                  <div style="position:absolute;left:9%;right:9%;top:14%;bottom:-1px;border-radius:8px 8px 0 0;overflow:hidden;background:#fff;box-shadow:0 24px 60px rgba(0,0,0,.4)">
+                    <div style="position:relative;z-index:1;height:20px;display:flex;align-items:center;gap:5px;padding:0 10px;background:#ECECEF"><span style="width:7px;height:7px;border-radius:50%;background:#C9C9CE"></span><span style="width:7px;height:7px;border-radius:50%;background:#C9C9CE"></span><span style="width:7px;height:7px;border-radius:50%;background:#C9C9CE"></span></div>
+                    <div style="position:absolute;left:0;right:0;top:20px;bottom:0;overflow:hidden;background-image:{{ p.siteBg }};background-size:100% auto;background-repeat:no-repeat;background-position:{{ p.shotPos }};transition:background-position 5s cubic-bezier(.45,0,.25,1)"></div>
+                  </div>
+                </sc-if>
+                <span style="position:absolute;left:16px;top:14px;font-family:var(--mono);font-size:12px;color:#9C9CA1;mix-blend-mode:difference">{{ p.num }}</span>
+                <span style="position:absolute;right:16px;top:14px;font-family:var(--mono);font-size:12px;color:#9C9CA1;mix-blend-mode:difference">{{ p.tag }}</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+                <span style="font-family:var(--display);font-size:24px;font-weight:500;letter-spacing:-.02em">{{ p.title }}</span>
+                <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">{{ p.year }}</span>
+              </div>
+              <span style="margin-top:-8px;font-size:14px;color:var(--muted)">{{ p.category }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isList }}" hint-placeholder-val="{{ false }}">
+        <div style="border-top:1px solid var(--line)">
+          <sc-for list="{{ list }}" as="p" hint-placeholder-count="6">
+            <a href="#" data-flip="{{ p.id }}" data-row="" data-grad="{{ p.thumb }}" data-label="{{ p.title }}" data-cursor="view" onClick="{{ p.open }}" aria-label="{{ p.aria }}" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 24px;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text);transition:padding .6s cubic-bezier(.2,.7,.2,1)" style-hover="padding-left:18px;color:var(--text)">
+              <span style="width:32px;font-family:var(--mono);font-size:12px;color:var(--muted)">{{ p.num }}</span>
+              <span style="flex:1 1 280px;font-family:var(--display);font-size:clamp(28px,3.4vw,48px);font-weight:500;letter-spacing:-.03em;line-height:1">{{ p.title }}</span>
+              <span style="flex:0 0 64px;font-family:var(--mono);font-size:12px;color:var(--muted)">{{ p.year }}</span>
+              <span style="flex:1 1 180px;font-size:14px;color:var(--muted)">{{ p.role }}</span>
+              <span style="flex:1 1 240px;display:flex;flex-wrap:wrap;gap:6px">
+                <sc-for list="{{ p.stack }}" as="t" hint-placeholder-count="3"><span style="padding:4px 10px;border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:11px;color:var(--muted)">{{ t }}</span></sc-for>
+              </span>
+            </a>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isBoard }}" hint-placeholder-val="{{ false }}">
+        <div data-board="" style="position:relative;height:clamp(560px,58vw,720px);border:1px solid var(--line);border-radius:14px;overflow:hidden;background-color:var(--surface);background-image:radial-gradient(var(--line) 1px,transparent 1.6px);background-size:22px 22px">
+          <span style="position:absolute;right:16px;bottom:14px;font-family:var(--mono);font-size:12px;color:var(--muted)">Drag the cards · click to open</span>
+          <sc-for list="{{ list }}" as="p" hint-placeholder-count="6">
+            <div data-drag="" data-board-card="" data-flip="{{ p.id }}" data-cursor="drag" role="button" tabindex="0" aria-label="{{ p.aria }}" onClick="{{ p.open }}" onKeyDown="{{ p.key }}" style="position:absolute;left:{{ p.bx }};top:{{ p.by }};transform:{{ p.rot }};width:clamp(150px,17vw,230px);padding:10px 10px 14px;border-radius:6px;background:var(--bg);box-shadow:0 18px 40px rgba(0,0,0,.28);touch-action:none;user-select:none;display:flex;flex-direction:column;gap:10px">
+              <span style="position:absolute;top:-6px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--accent);box-shadow:0 2px 4px rgba(0,0,0,.4)"></span>
+              <div style="aspect-ratio:4/3;border-radius:4px;background:{{ p.thumb }}"></div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px">
+                <span style="font-family:var(--display);font-size:18px;font-weight:500;letter-spacing:-.02em">{{ p.title }}</span>
+                <span style="font-family:var(--mono);font-size:11px;color:var(--muted)">{{ p.num }}</span>
+              </div>
+              <span style="font-size:12px;color:var(--muted)">{{ p.category }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <div id="services" data-tone="inv">
+    <section data-svc="" style="min-height:100vh;box-sizing:border-box;max-width:1440px;margin:0 auto;padding:clamp(80px,9vw,110px) var(--pad) clamp(40px,4vw,56px);display:flex;flex-direction:column">
+      <div style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(24px,3vw,44px)">
+        <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter III</span>
+        <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">What I do</h2>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(03/04)</span>
+      </div>
+      <div style="flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,6vw,96px);align-items:center">
+        <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column;gap:clamp(20px,2.6vw,36px)">
+            <div style="display:flex;align-items:baseline;gap:12px;font-family:var(--display);font-weight:500;letter-spacing:-.05em;line-height:.85">
+              <span style="display:inline-block;overflow:hidden"><span data-svc-count="" style="display:inline-block;font-size:clamp(96px,12vw,180px)">01</span></span>
+              <span style="font-family:var(--mono);font-size:14px;letter-spacing:0;color:var(--muted)">/ 06</span>
+            </div>
+            <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-family:var(--display);font-weight:500;font-size:clamp(24px,2.3vw,36px);letter-spacing:-.03em">
+              <li data-svc-name="">Brand Identity</li>
+              <li data-svc-name="" style="opacity:.28">Web Design</li>
+              <li data-svc-name="" style="opacity:.28">Social Media Management</li>
+              <li data-svc-name="" style="opacity:.28">GoHighLevel Automations</li>
+              <li data-svc-name="" style="opacity:.28">AI Engineering</li>
+              <li data-svc-name="" style="opacity:.28">Books &amp; Publishing</li>
+            </ol>
+            <p style="margin:0;max-width:40ch;font-size:15px;line-height:1.5;color:var(--muted)">The brand gets you noticed, the website turns attention into enquiries, and the systems behind it do the follow-up.</p>
+          </div>
+        </sc-if>
+        <div style="display:grid;gap:clamp(32px,4vw,56px)">
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#111"><div style="background:url(assets/regen-logo-1.png) center/50% no-repeat, #1B3242"></div><div style="background:url(assets/loadboard-logo-1.png) center/82% no-repeat, #2B3C99"></div><div style="background:url(assets/mags-logo-2.png) center/70% no-repeat, #F4ECDD"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">01</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Brand Identity</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Be recognised</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">A clear mark and a consistent look, so every touchpoint reads as the same business.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Logo &amp; brand marks</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Colour &amp; typography</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Brand guidelines</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Print &amp; social templates</li></ul>
+          </article>
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#6FB6C2"><div style="position:absolute;left:10%;right:10%;top:12%;bottom:-1px;border-radius:8px 8px 0 0;overflow:hidden;background:url(assets/meta-full.jpg) top center/100% auto no-repeat, #fff;border-top:18px solid #ECECEF;box-shadow:0 20px 50px rgba(0,0,0,.35)"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">02</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Web Design</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Be found</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Websites designed around the brand and built to turn visitors into enquiries.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">UX &amp; wireframes</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">WordPress builds</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Landing pages &amp; funnels</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">E-commerce</li></ul>
+          </article>
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#24252A;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-content:center;gap:8px;padding:0 clamp(14px,2vw,28px);box-sizing:border-box"><div style="aspect-ratio:1;border-radius:6px;background:url(assets/dough-cover.jpg) center/cover, #1F4A4F"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/mags-logo-2.png) center/70% no-repeat, #A81010"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/air-5.jpg) center/cover, #333"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/regen-logo-1.png) center/55% no-repeat, #1B3242"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">03</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Social Media Management</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Stay visible</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Posts that look like the brand and go out on schedule, so your channels stay active without taking over your week.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Content calendars</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Post &amp; story design</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Captions &amp; scheduling</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Monthly reporting</li></ul>
+          </article>
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#1F2024;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:44px 14px 14px;box-sizing:border-box;font-family:var(--mono);font-size:10px;color:#BDBDC2"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">New lead</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Followed up</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Booked</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Invoiced</span><span style="height:18px;border-radius:5px;background:var(--accent)"></span></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">04</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">GoHighLevel Automations</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Follow up on time</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Your CRM set up properly, so every lead is captured, followed up and booked without anyone chasing it.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">CRM &amp; pipelines</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Workflows &amp; triggers</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">SMS &amp; email sequences</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Xero invoicing sync</li></ul>
+          </article>
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:radial-gradient(90% 120% at 80% 0%, #3A3530, #1D1D1F 70%);display:flex;flex-direction:column;justify-content:center;gap:8px;padding:0 clamp(16px,3vw,40px);font-size:13px;line-height:1.35"><span style="align-self:flex-end;max-width:70%;padding:8px 12px;border-radius:12px 12px 2px 12px;background:#E9E6E0;color:#1D1D1F">Can I book in for Thursday?</span><span style="align-self:flex-start;max-width:78%;padding:8px 12px;border-radius:12px 12px 12px 2px;background:#2E2E33;color:#E9E6E0">Thursday 10am is free. You’re booked and a confirmation is on its way.</span><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">05</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">AI Engineering</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Do more with the same team</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Custom AI built into the way you already work: agents that answer, draft, sort and report.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Chat &amp; voice agents</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Knowledge bases</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">LLM integrations</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Internal tools</li></ul>
+          </article>
+          <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:linear-gradient(230deg,#2F2F33,#1D1D1F)"><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">06</span></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Books &amp; Publishing</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Where it started</span></div>
+              <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Interior layout, covers and launch management for print and ebook.</p>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Interior &amp; covers</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Production workflow</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Launch planning</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Author coordination</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad)">
+    <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(40px,6vw,72px)">
+      <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter IV</span>
+      <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Experience</h2>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(04/04)</span>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline"><span style="font-family:var(--display);font-size:clamp(22px,2.4vw,32px);font-weight:500;letter-spacing:-.02em">Dean Publishing</span><span style="font-size:15px;color:var(--muted)">Graphic Designer</span><span style="font-family:var(--mono);font-size:12px;color:var(--muted);justify-self:end">2026</span></div>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline"><span style="font-family:var(--display);font-size:clamp(22px,2.4vw,32px);font-weight:500;letter-spacing:-.02em">BLVNP Inc. / Typewriter Pub</span><span style="font-size:15px;color:var(--muted)">Publishing Project Manager</span><span style="font-family:var(--mono);font-size:12px;color:var(--muted);justify-self:end">2022 — 2025</span></div>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline"><span style="font-family:var(--display);font-size:clamp(22px,2.4vw,32px);font-weight:500;letter-spacing:-.02em">NFT Inc.</span><span style="font-size:15px;color:var(--muted)">Graphic Designer</span><span style="font-family:var(--mono);font-size:12px;color:var(--muted);justify-self:end">2021</span></div>
+    </div>
+    <div style="margin-top:clamp(56px,7vw,96px)">
+      <span data-reveal="" style="display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:18px">Selected experiences</span>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)">
+        <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.03em;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">Dean Publishing</div>
+        <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:22px;font-weight:400;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">BLVNP Inc.</div>
+        <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:17px;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">Typewriter_Pub</div>
+        <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:-.05em;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">NFT Inc.</div>
+      </div>
+      <p data-reveal="" style="margin:32px 0 0;font-size:15px;line-height:1.6;color:var(--muted)">Tools — InDesign, Photoshop, Illustrator, Figma, WordPress, GoHighLevel, Xero, Canva, Klaviyo, Mailchimp</p>
+    </div>
+  </section>
+
+  <section id="contact" data-tone="accent" data-contact="" style="border-top:1px solid var(--line)">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad) clamp(32px,4vw,48px);display:flex;flex-direction:column;gap:clamp(56px,7vw,112px)">
+      <div style="display:flex;flex-direction:column;gap:32px">
+        <span data-reveal="" style="font-family:var(--mono);font-size:12px;color:var(--muted)">Contact — open for projects</span>
+        <h2 aria-label="Let’s build." style="margin:0;font-family:var(--display);font-weight:500;font-size:clamp(84px,19vw,300px);line-height:.84;letter-spacing:-.06em">
+          <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.04em"><span data-line="" style="display:flex"><span data-prox="" style="display:inline-block">L</span><span data-prox="" style="display:inline-block">e</span><span data-prox="" style="display:inline-block">t</span><span data-prox="" style="display:inline-block">’</span><span data-prox="" style="display:inline-block">s</span></span></span>
+          <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.04em;padding-left:clamp(0px,10vw,180px)"><span data-line="" style="display:flex"><span data-prox="" style="display:inline-block">b</span><span data-prox="" style="display:inline-block">u</span><span data-prox="" style="display:inline-block">i</span><span data-prox="" style="display:inline-block">l</span><span data-prox="" style="display:inline-block">d</span><span data-prox="" style="display:inline-block">.</span></span></span>
+        </h2>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px">
+          <button data-magnetic="" onClick="{{ copyEmail }}" aria-label="Copy email address to clipboard" style="display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 26px;border:0;border-radius:999px;background:var(--text);color:var(--bg);font:500 clamp(14px,1.4vw,17px) var(--body);cursor:pointer;word-break:break-all;text-align:left">alain.nash@gmail.com<span style="font-family:var(--mono);font-size:11px;opacity:.6">copy</span></button>
+          <div style="display:flex;flex-wrap:wrap;gap:22px;font-size:15px">
+            <a href="https://www.linkedin.com/in/alain-nash-ali%C3%B1o-b02832152/" target="_blank" rel="noopener" data-roll="" data-magnetic="" style="display:inline-block;overflow:hidden;height:1.25em;line-height:1.25em;color:var(--text)"><span data-roll-in="" style="display:flex;flex-direction:column"><span>LinkedIn ↗</span><span aria-hidden="true">LinkedIn ↗</span></span></a>
+          </div>
+        </div>
+      </div>
+      <footer style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 24px;border-top:1px solid var(--line);padding-top:22px;font-family:var(--mono);font-size:12px;color:var(--muted)">
+        <span style="display:inline-flex;align-items:center;gap:10px;perspective:300px"><span data-logo3d="" data-layers="5" aria-hidden="true" style="position:relative;display:inline-block;width:16px;aspect-ratio:689/900;transform-style:preserve-3d;color:var(--text)"></span>© 2026 Nash Alino</span>
+        <span>Folio / Edition © 2026</span>
+        <span>Philippines — <span data-clock="">--:--:--</span> GMT+8</span>
+        <span>Press <span style="color:var(--text)">/</span> for commands</span>
+        <a href="#home" data-go="home" style="color:var(--muted)" style-hover="color:var(--text)">Back to top ↑</a>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<div data-preview="" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:125;width:280px;height:350px;pointer-events:none">
+  <div data-preview-in="" style="position:absolute;inset:0;border-radius:10px;opacity:0;transform:scale(.85);box-shadow:0 30px 60px rgba(0,0,0,.35)"><span data-preview-label="" style="position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:11px;color:#9C9CA1"></span></div>
+</div>
+
+<div data-cur-dot="" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:161;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;display:none"></div>
+<div data-cur-ring="" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:160;pointer-events:none;mix-blend-mode:difference;display:none">
+  <div data-cur-shape="" style="position:absolute;left:0;top:0;width:34px;height:34px;border-radius:999px;border:1px solid #fff;display:grid;place-items:center;transform:translate(-50%,-50%)"><span data-cur-label="" style="font-family:var(--mono);font-size:11px;color:var(--on-accent);opacity:0"></span></div>
+</div>
+
+<div data-loader="" aria-hidden="true" style="position:fixed;inset:0;z-index:150;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,3vw,32px);background:var(--surface);color:var(--text);clip-path:inset(0% 0% 0% 0%)">
+  <div style="display:flex;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Nash Alino — Portfolio</span><span>Folio / Edition © 2026</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+    <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Loading chapters I — IV</span>
+    <span data-loader-num="" style="font-family:var(--display);font-weight:500;font-size:clamp(96px,22vw,320px);line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums">000</span>
+  </div>
+</div>
+
+<span data-logo-src="" aria-hidden="true" style="display:none;background-image:url(assets/logo.png)"></span>
+
+<div data-screen-flash="" aria-hidden="true" style="position:fixed;inset:0;z-index:158;pointer-events:none;display:none;opacity:0;background:#fff"></div>
+
+<div data-wipe="" aria-hidden="true" style="position:fixed;inset:0;z-index:140;background:var(--accent);transform:scaleY(0);display:none"></div>
+
+<sc-if value="{{ caseOpen }}" hint-placeholder-val="{{ false }}">
+  <article data-case="" data-lenis-prevent="" aria-label="{{ cs.title }} case study" style="position:fixed;inset:0;z-index:135;overflow-y:auto;background:var(--bg);color:var(--text)">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(24px,4vw,48px) var(--pad) clamp(64px,10vw,140px)">
+      <button data-magnetic="" onClick="{{ closeCase }}" style="display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--text);font:500 14px var(--body);cursor:pointer">← All work</button>
+      <div style="margin-top:clamp(40px,6vw,80px);display:flex;flex-direction:column;gap:24px">
+        <span data-cs="" style="font-family:var(--mono);font-size:12px;color:var(--accent)">{{ cs.kicker }}</span>
+        <h1 data-cs="" style="margin:0;font-family:var(--display);font-weight:500;font-size:clamp(56px,10vw,160px);line-height:.9;letter-spacing:-.05em">{{ cs.title }}</h1>
+      </div>
+      <div data-cs="" style="margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:24px;border-top:1px solid var(--line);padding-top:20px;font-size:14px">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">Year</span><span>{{ cs.year }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">Discipline</span><span>{{ cs.category }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">Role</span><span>{{ cs.role }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">Client</span><span>{{ cs.client }}</span></div>
+      </div>
+      <div data-cs="" onMouseEnter="{{ cs.pause }}" onMouseLeave="{{ cs.resume }}" style="position:relative;margin-top:clamp(40px,5vw,72px);aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#141416;isolation:isolate">
+        <sc-for list="{{ cs.reel }}" as="r" hint-placeholder-count="1">
+          <div onClick="{{ cs.next }}" data-cursor="view" style="position:absolute;inset:0;cursor:pointer;z-index:{{ r.z }};clip-path:{{ r.clip }};transition:{{ r.clipT }}">
+            <div style="position:absolute;inset:0;background:{{ r.bg }};transform:{{ r.scale }};transition:{{ r.scaleT }}"></div>
+          </div>
+        </sc-for>
+        <div style="position:absolute;left:0;right:0;bottom:0;z-index:5;height:40%;background:linear-gradient(to top,rgba(0,0,0,.6),transparent);pointer-events:none"></div>
+        <div style="position:absolute;left:clamp(14px,2vw,24px);right:clamp(14px,2vw,24px);top:clamp(14px,2vw,22px);z-index:6;display:flex;gap:6px;pointer-events:none">
+          <sc-for list="{{ cs.reel }}" as="r" hint-placeholder-count="1">
+            <span style="position:relative;flex:1;height:3px;border-radius:2px;overflow:hidden;background:rgba(255,255,255,.28)"><span style="position:absolute;left:0;top:0;bottom:0;border-radius:2px;background:#fff;width:{{ r.fill }};transition:{{ r.fillT }}"></span></span>
+          </sc-for>
+        </div>
+        <div style="position:absolute;left:clamp(14px,2vw,24px);right:clamp(14px,2vw,24px);bottom:clamp(14px,2vw,22px);z-index:6;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;color:#fff">
+          <div style="display:flex;flex-direction:column;gap:4px;min-width:0;pointer-events:none">
+            <span style="font-family:var(--mono);font-size:12px;opacity:.8">{{ cs.reelCount }}</span>
+            <span style="font-size:clamp(14px,1.3vw,17px);font-weight:500">{{ cs.reelCap }}</span>
+          </div>
+          <div style="display:flex;gap:8px">
+            <button onClick="{{ cs.prev }}" aria-label="Previous image" data-magnetic="" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.25);color:#fff;font-size:16px;cursor:pointer;backdrop-filter:blur(6px)">←</button>
+            <button onClick="{{ cs.next }}" aria-label="Next image" data-magnetic="" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.25);color:#fff;font-size:16px;cursor:pointer;backdrop-filter:blur(6px)">→</button>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:clamp(48px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,5vw,80px)">
+        <h2 data-cs="" style="margin:0;font-family:var(--display);font-size:clamp(26px,2.6vw,36px);font-weight:500;letter-spacing:-.02em">Overview</h2>
+        <p data-cs="" style="margin:0;font-size:18px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ cs.desc }}</p>
+      </div>
+      <sc-if value="{{ cs.hasSections }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:clamp(40px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(24px,3vw,40px)">
+          <sc-for list="{{ cs.sections }}" as="sec" hint-placeholder-count="0">
+            <div data-cs="" style="display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px">
+              <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">{{ sec.h }}</span>
+              <p style="margin:0;font-size:15px;line-height:1.6;color:var(--text);text-wrap:pretty">{{ sec.p }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+      <div style="margin-top:clamp(48px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(16px,2vw,28px)">
+        <div data-cs="" style="position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:{{ cs.d1 }}"><span style="position:absolute;left:18px;bottom:16px;font-family:var(--mono);font-size:12px;color:#9C9CA1">{{ cs.dLabel }}</span></div>
+        <div data-cs="" style="position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:{{ cs.d2 }}"><span style="position:absolute;left:18px;bottom:16px;font-family:var(--mono);font-size:12px;color:#9C9CA1">{{ cs.dLabel }}</span></div>
+      </div>
+      <sc-if value="{{ cs.site }}" hint-placeholder-val="{{ false }}">
+        <div data-cs="" style="margin-top:clamp(48px,6vw,96px);display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><h2 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.6vw,36px);font-weight:500;letter-spacing:-.02em">Full page</h2><span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Scroll inside the frame</span></div>
+          <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff">
+            <div style="height:30px;display:flex;align-items:center;gap:6px;padding:0 14px;background:#ECECEF"><span style="width:9px;height:9px;border-radius:50%;background:#C9C9CE"></span><span style="width:9px;height:9px;border-radius:50%;background:#C9C9CE"></span><span style="width:9px;height:9px;border-radius:50%;background:#C9C9CE"></span></div>
+            <div data-lenis-prevent="" style="height:min(78vh,860px);overflow-y:auto;overscroll-behavior:contain"><div role="img" aria-label="Full page design" style="width:100%;aspect-ratio:{{ cs.siteAR }};background:{{ cs.siteBg }}"></div></div>
+          </div>
+        </div>
+      </sc-if>
+      <div style="margin-top:clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:clamp(16px,2vw,28px)">
+        <sc-if value="{{ cs.hasGallery }}" hint-placeholder-val="{{ false }}">
+          <sc-for list="{{ cs.gallery }}" as="g" hint-placeholder-count="0">
+            <figure data-cs="" style="margin:0;display:flex;flex-direction:column;gap:10px">
+              <div role="img" aria-label="{{ g.cap }}" style="width:100%;border-radius:10px;aspect-ratio:{{ g.ar }};background:{{ g.bg }}"></div>
+              <sc-if value="{{ g.hasCap }}" hint-placeholder-val="{{ false }}"><figcaption style="font-family:var(--mono);font-size:12px;color:var(--muted)">{{ g.cap }}</figcaption></sc-if>
+            </figure>
+          </sc-for>
+        </sc-if>
+      </div>
+      <button onClick="{{ cs.openNext }}" data-cursor="view" style="margin-top:clamp(64px,8vw,120px);width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:12px;border:0;border-top:1px solid var(--line);padding:24px 0 0;background:none;color:var(--text);text-align:left;cursor:pointer">
+        <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Next project</span>
+        <span style="font-family:var(--display);font-size:clamp(40px,7vw,104px);font-weight:500;line-height:.95;letter-spacing:-.04em">{{ cs.nextTitle }}</span>
+      </button>
+    </div>
+  </article>
+</sc-if>
+
+<sc-if value="{{ palette }}" hint-placeholder-val="{{ false }}">
+  <div data-lenis-prevent="" onClick="{{ closePalette }}" style="position:fixed;inset:0;z-index:145;display:flex;justify-content:center;align-items:flex-start;padding:14vh 16px 16px;background:rgba(12,12,13,.55);backdrop-filter:blur(6px)">
+    <div data-palette-win="" role="dialog" aria-modal="true" aria-label="Command palette" onClick="{{ stop }}" style="width:min(620px,100%);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);color:var(--text);font-family:var(--mono);box-shadow:0 40px 80px rgba(0,0,0,.45)">
+      <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)">
+        <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:var(--line)"></span>
+        <span style="margin-left:8px;font-size:12px;color:var(--muted)">~/nash — commands</span>
+      </div>
+      <label style="display:flex;align-items:center;gap:10px;padding:16px 18px;border-bottom:1px solid var(--line);font-size:15px">
+        <span style="color:var(--accent)">$</span>
+        <input data-palette-input="" value="{{ q }}" onChange="{{ onQ }}" placeholder="type a command…" aria-label="Command" style="flex:1;min-width:0;border:0;outline:none;background:none;color:var(--text);font:400 15px var(--mono)">
+      </label>
+      <div role="listbox" style="max-height:46vh;overflow-y:auto;padding:6px">
+        <sc-for list="{{ cmds }}" as="c" hint-placeholder-count="6">
+          <button role="option" aria-selected="{{ c.selected }}" onClick="{{ c.run }}" onMouseEnter="{{ c.hover }}" style="width:100%;display:flex;justify-content:space-between;gap:16px;padding:11px 12px;border:0;border-radius:8px;background:{{ c.bg }};color:var(--text);font:400 14px var(--mono);text-align:left;cursor:pointer"><span>{{ c.label }}</span><span style="color:var(--muted);font-size:12px">{{ c.hint }}</span></button>
+        </sc-for>
+        <sc-if value="{{ noCmds }}" hint-placeholder-val="{{ false }}"><div style="padding:14px 12px;font-size:13px;color:var(--muted)">command not found. try “work” or “theme”.</div></sc-if>
+      </div>
+      <div style="display:flex;gap:18px;padding:10px 16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)"><span>↑↓ navigate</span><span>↵ run</span><span>esc close</span></div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+  <div data-toast="" role="status" style="position:fixed;left:50%;bottom:28px;z-index:170;transform:translateX(-50%);padding:12px 18px;border-radius:999px;background:var(--text);color:var(--bg);font-family:var(--mono);font-size:12px;box-shadow:0 14px 30px rgba(0,0,0,.3)">{{ toast }}</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLoader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;customCursor&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;intensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.3,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  // ---- Tuning: change these to adjust speed / intensity (all multiplied by the `intensity` prop) ----
+  TUNE = {
+    cursorLerp: 0.16,       // ring follow speed (0–1, higher = tighter)
+    magnet: 0.35,           // magnetic pull strength on [data-magnetic]
+    tilt: 10,               // max 3D tilt (deg) on project cards
+    stickerParallax: 1,     // cursor parallax on hero stickers (multiplies data-depth)
+    previewLerp: 0.12,      // list-view floating preview follow speed
+    previewTilt: 0.6,       // preview rotation per px of cursor velocity
+    marqueeBase: 0.7,       // marquee idle speed (px/frame)
+    marqueeVelocity: 0.35,  // extra marquee speed per px of scroll velocity
+    proxRadius: 280,        // "Let's build." letter reaction radius (px)
+    proxWeight: 300,        // extra font weight at closest point
+    proxLift: 22            // letter lift (px) at closest point
+  };
+
+  EMAIL = 'alain.nash@gmail.com';
+
+  PAL = {
+    dark: { '--bg': '#18181A', '--surface': '#222225', '--surface-2': '#2C2C30', '--line': '#36363A', '--text': '#EDEDEA', '--muted': '#9C9CA1', '--accent': '#D6C7A8', '--on-accent': '#18181A' },
+    light: { '--bg': '#F4F1EA', '--surface': '#EAE5DA', '--surface-2': '#DDD6C7', '--line': '#D6CFC0', '--text': '#18181A', '--muted': '#625F58', '--accent': '#7A6440', '--on-accent': '#F4F1EA' },
+    accent: { '--bg': '#D6C7A8', '--surface': '#CDBD9B', '--surface-2': '#C3B28F', '--line': '#B4A27F', '--text': '#18181A', '--muted': '#4A4336', '--accent': '#18181A', '--on-accent': '#D6C7A8' }
+  };
+
+  AR = {"assets/meta-g4.jpg":"7.2000","assets/maximus-g3.jpg":"5.1429","assets/air-g2.jpg":"1.5759","assets/maximus-g4.jpg":"1.6941","assets/meta-g3.jpg":"2.6667","assets/air-g1.jpg":"2.6699","assets/meta-full.jpg":"0.4403","assets/maximus-g1.jpg":"2.5714","assets/air-g3.jpg":"1.4031","assets/maximus-g2.jpg":"0.9632","assets/dough-dessert.jpg":"0.7250","assets/dough-g1.jpg":"1.3483","assets/maximus-full.jpg":"0.2166","assets/air-full.jpg":"0.3427","assets/meta-g1.jpg":"2.8346","assets/dough-g2.jpg":"1.3483","assets/meta-g2.jpg":"2.5760"};
+  PROJECTS = [
+    { id: 'maximus', title: 'Maximus', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Maximus Industrial Franchise', stack: ['Website', 'Franchise', 'Australia'], desc: 'A website for Maximus Industrial Franchise, an Australian franchise selling hoses, valves, pumps and fittings. The site walks prospective franchisees through the opportunity across Home, Let’s Talk About Us, Let’s Talk About You, Ask Us Anything and Hit Go!, in the brand’s black and orange.', grad: '#E8510E', site: 'assets/maximus-full.jpg', gallery: ['assets/maximus-g1.jpg','assets/maximus-g2.jpg','assets/maximus-g3.jpg','assets/maximus-g4.jpg'], hero: 'url(assets/maximus-hero.jpg) top center/cover no-repeat, #1A1A1A', d1: 'url(assets/maximus-d1.jpg) center/cover no-repeat, #1A1A1A', d2: 'url(assets/maximus-d2.jpg) right center/cover no-repeat, #1A1A1A', bx: '52%', by: '6%', br: '-2deg' },
+    { id: 'regen', title: 'Regen', category: 'Branding & Web Design', tag: 'Branding', year: '2023', role: 'Identity & website', client: 'ReGen', stack: ['Logo', 'Guidelines', 'Web'], desc: 'Branding and web design for an NFT platform. A fluid, organic mark built from the letters R and G. The mark joins an R and a G into one fluid, node-like form that suggests technology without the usual hard-edged crypto clichés. A heavy geometric wordmark in navy, finished with a teal full stop, keeps it grounded.', grad: 'url(assets/regen-logo-1.png) center/46% no-repeat, #1B3242', hero: 'url(assets/regen-logo-2.png) center/56% no-repeat, #1B3242', d1: 'url(assets/regen-logo-3.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/regen-logo-1.png) center/50% no-repeat, #F3F4F2', bx: '70%', by: '34%', br: '6deg' },
+    { id: 'meta-furnitures', title: 'Meta Furnitures', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Meta Furnitures', stack: ['E-commerce', 'Figma', 'UX'], desc: 'An online storefront for a furniture brand, focused on product photography and a short path to checkout. A full-width room scene with shoppable hotspots leads into featured pieces, a sale spotlight and a Best Sellers carousel, with delivery, finance, assembly and returns answered before the footer.', grad: '#6FB6C2', site: 'assets/meta-full.jpg', hero: 'url(assets/meta-hero.jpg) center/cover no-repeat, #E3E3E3', d1: 'url(assets/meta-d1.jpg) center/cover no-repeat, #E3E3E3', d2: 'url(assets/meta-d2.jpg) center/cover no-repeat, #E3E3E3', gallery: ['assets/meta-g1.jpg','assets/meta-g2.jpg','assets/meta-g3.jpg','assets/meta-g4.jpg'], bx: '8%', by: '58%', br: '4deg' },
+    { id: 'loadboard', title: 'Loadboard', category: 'Branding', tag: 'Branding', year: '2021', role: 'Brand identity', client: 'Loadboard Transport Services', stack: ['Logo', 'Guidelines', 'Australia'], desc: 'A single-colour identity for an Australian carrier. The wordmark rides inside the truck, so the name and the service are read in one glance. Speed lines run through the wordmark into a prime-mover silhouette. One blue, condensed italic type and no gradients mean the logo reproduces the same on a trailer, a fuel card or a phone screen.', grad: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', hero: 'url(assets/loadboard-logo-1.png) center/60% no-repeat, #2B3C99', d1: 'url(assets/loadboard-logo-2.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', bx: '52%', by: '60%', br: '-4deg' },
+    { id: 'mags', title: 'Mag’s Lechon Belly', category: 'Logo Design', tag: 'Branding', year: '2025', role: 'Logo & guidelines', client: 'Mag’s Lechon Belly, Dumaguete', stack: ['Logo', 'Guidelines', 'Print'], desc: 'A hand-drawn pig mark for a lechon belly stall in Dumaguete. Built to read from across the street and to sit happily on a grease-stained takeaway box. The answer is a winking, grinning pig inside a classic round badge. Thick black outlines and a single saturated red keep it cheap to print in one or two colours, and the curved Cooper-style lettering gives it the feel of an old roadside eatery.', grad: 'url(assets/mags-logo-2.png) center/72% no-repeat, #F4ECDD', hero: 'url(assets/mags-logo-2.png) center/auto 72% no-repeat, #F4ECDD', d1: 'url(assets/mags-logo-3.png) center/72% no-repeat, #A81010', d2: 'url(assets/mags-logo-2.png) center/72% no-repeat, #1C1816', bx: '28%', by: '4%', br: '-3deg' },
+    { id: 'air-scooter', title: 'Air Scooter', category: 'Web Design', tag: 'Web', year: '2025', role: 'Web design', client: 'Air Electric Scooter', stack: ['Product page', 'E-commerce', 'Figma'], desc: 'A product landing page for the Air Electric Scooter. The page leads with price, instalments and free next-day shipping, then sells the ride through lifestyle photography and close-up product detail before a single Buy Now action.', grad: '#EE7433', site: 'assets/air-full.jpg', gallery: ['assets/air-g1.jpg','assets/air-g2.jpg','assets/air-g3.jpg'], hero: 'url(assets/air-hero.jpg) top center/cover no-repeat, #FFFFFF', d1: 'url(assets/air-2.jpg) center/cover no-repeat, #2A2A2A', d2: 'url(assets/air-3.jpg) center/cover no-repeat, #2A2A2A', bx: '74%', by: '66%', br: '3deg' },
+    { id: 'doughballs', title: 'Doughballs', category: 'Menu Design', tag: 'Print', year: '2026', role: 'Menu design', client: 'Doughballs, The Pizza Place', stack: ['Menu', 'Print', 'Hospitality'], desc: 'A one-fold menu for Doughballs, a South Australian pizza place. The swirling D on the cover carries through deep teal panels and hand-lettered headings across drinks, starters, pizzas and a separate dessert insert, with prices set in clean columns and dietary icons on every dish.', grad: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', hero: 'url(assets/dough-flatlay.jpg) center/cover no-repeat, #163A3E', d1: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', d2: 'url(assets/dough-3.jpg) top center/cover no-repeat, #1F4A4F', gallery: [{ src: 'assets/dough-g1.jpg', cap: 'Outside — drinks, cocktails and the cover' }, { src: 'assets/dough-g2.jpg', cap: 'Inside — to start, not pizza and the pizza list' }, { src: 'assets/dough-dessert.jpg', cap: 'Dessert insert — front and back' }], sections: [{ h: 'Brief', p: 'One folded sheet that holds the full food and drinks offer, reads quickly at the table and feels unmistakably Doughballs.' }, { h: 'Approach', p: 'The swirling D on the cover sets the pattern. Deep teal panels group each section, script headings mark the signature items, and every pizza runs in three sizes so prices sit in aligned columns.' }, { h: 'Details', p: 'Dietary icons on every dish, a dipping-sauce panel, a Special House badge, a happy hour block and a panel supporting local South Australian businesses. A slim insert carries the dessert list.' }, { h: 'Format', p: 'A3 one-fold menu, printed both sides, with a 99 × 297 mm dessert insert.' }], bx: '8%', by: '30%', br: '-4deg' }
+  ];
+
+  state = { view: 'cards', filter: 'All', caseId: null, palette: false, q: '', sel: 0, toast: '', narrow: typeof window !== 'undefined' && window.innerWidth < 900, theme: 'dark' };
+
+  // ---------- Lifecycle ----------
+  componentDidMount() {
+    this._off = []; this._theme = 'dark'; this._tone = 'base';
+    this.root = document.querySelector('[data-folio]');
+    this.on(window, 'resize', () => { const n = innerWidth < 900; if (n !== this.state.narrow) this.setState({ narrow: n }); this._mqW = 0; });
+    this.on(document, 'keydown', e => this.onKey(e));
+    this.on(document, 'click', e => { const a = e.target.closest && e.target.closest('[data-go]'); if (a) { e.preventDefault(); this.go(a.dataset.go); } });
+    this.initClock();
+    let tries = 0;
+    const wait = () => { if ((window.gsap && window.ScrollTrigger && window.Lenis) || ++tries > 80) return this.init(); this._wt = setTimeout(wait, 50); };
+    wait();
+  }
+  componentWillUnmount() {
+    clearTimeout(this._wt); clearInterval(this._clock); clearTimeout(this._tt);
+    (this._off || []).forEach(f => f());
+    if (this._tick && window.gsap) gsap.ticker.remove(this._tick);
+    if (this._ctx) this._ctx.revert();
+    if (this._mm) this._mm.revert();
+    clearTimeout(this._featT); clearTimeout(this._reelT);
+    if (this.lenis) this.lenis.destroy();
+  }
+  on(t, ev, f, o) { t.addEventListener(ev, f, o); this._off.push(() => t.removeEventListener(ev, f, o)); }
+
+  init() {
+    const root = this.root; if (!root) return;
+    const g = this.g = window.gsap || null;
+    this.reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.fine = matchMedia('(pointer: fine)').matches;
+    const loader = root.querySelector('[data-loader]');
+    if (!g || !window.ScrollTrigger) { loader.style.display = 'none'; return; }
+    g.registerPlugin(ScrollTrigger);
+    this._ctx = g.context(() => {
+      this.initLenis();
+      this.initHeader();
+      this.initPointer();
+      this.initCursor();
+      this.initStickers();
+      this.initLogos();
+      this.initZoom();
+      this.initServices();
+      this.initScrollReveals();
+      this.initTones();
+      this.initTerminal();
+      this.initTexture();
+      this.initContact();
+      this.initPreloader(() => this.heroIn());
+    }, root);
+    ScrollTrigger.sort && ScrollTrigger.sort();
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+    window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
+    this._tick = () => this.tick();
+    g.ticker.add(this._tick);
+  }
+
+  // ---------- Smooth scroll ----------
+  initLenis() {
+    if (this.reduce || !window.Lenis) return;
+    this.lenis = new Lenis({ lerp: 0.1 });
+    this.lenis.on('scroll', ScrollTrigger.update);
+    this._lraf = t => this.lenis && this.lenis.raf(t * 1000);
+    gsap.ticker.add(this._lraf); gsap.ticker.lagSmoothing(0);
+    this._off.push(() => gsap.ticker.remove(this._lraf));
+  }
+  scrollTo(id) {
+    const el = id === 'home' ? 0 : document.getElementById(id);
+    if (el === null) return;
+    if (this.lenis) this.lenis.scrollTo(el, { duration: 1.4 });
+    else window.scrollTo({ top: el === 0 ? 0 : el.getBoundingClientRect().top + scrollY, behavior: this.reduce ? 'auto' : 'smooth' });
+  }
+
+  // ---------- Preloader: counter 000 → 100, then clip-path wipe up ----------
+  // ---------- 3D logo: stacked masked layers = extrusion; follows cursor ----------
+  initLogos() {
+    const srcEl = this.root.querySelector('[data-logo-src]');
+    const url = (srcEl && getComputedStyle(srcEl).backgroundImage !== 'none') ? getComputedStyle(srcEl).backgroundImage : 'url(assets/logo.png)';
+    this._logos = [...this.root.querySelectorAll('[data-logo3d]')].map(el => {
+      const n = +el.dataset.layers || 6;
+      if (!el.childElementCount) for (let i = 0; i < n; i++) {
+        const s = document.createElement('span'), front = i === n - 1;
+        s.style.cssText = 'position:absolute;inset:0;-webkit-mask:' + url + ' center/100% 100% no-repeat;mask:' + url + ' center/100% 100% no-repeat;transform:translateZ(' + ((i - n + 1) * 0.9) + 'px);background:' + (front ? 'currentColor' : 'color-mix(in srgb, currentColor ' + (35 + i / n * 35) + '%, #000)');
+        el.appendChild(s);
+      }
+      const big = n > 10;
+      return { el, big, qx: this.g.quickTo(el, 'rotationX', { duration: 0.8, ease: 'power3.out' }), qy: this.g.quickTo(el, 'rotationY', { duration: 0.8, ease: 'power3.out' }) };
+    });
+  }
+
+  initPreloader(done) {
+    const g = this.g, L = this.root.querySelector('[data-loader]'), num = L.querySelector('[data-loader-num]');
+    if (this.reduce || this.props.showLoader === false) { L.style.display = 'none'; done(); return; }
+    this.lenis && this.lenis.stop();
+    const o = { v: 0 };
+    g.timeline()
+      .to(o, { v: 100, duration: 1.6, ease: 'power2.inOut', onUpdate: () => (num.textContent = String(Math.round(o.v)).padStart(3, '0')) })
+      .to(L, { clipPath: 'inset(0% 0% 100% 0%)', duration: 1, ease: 'expo.inOut' })
+      .add(done, '-=0.45')
+      .add(() => { L.style.display = 'none'; this.lenis && this.lenis.start(); });
+  }
+
+  // ---------- Hero: letters rise from mask, stickers pop with overshoot then float ----------
+  heroIn() {
+    const g = this.g, r = this.root;
+    const chars = r.querySelectorAll('[data-char]'), fades = r.querySelectorAll('[data-hero-fade]'), pops = r.querySelectorAll('[data-pop]');
+    if (this.reduce) { g.fromTo([...fades, ...chars, ...pops], { opacity: 0 }, { opacity: 1, duration: 0.8 }); return; }
+    g.fromTo(chars, { yPercent: 110 }, { yPercent: 0, duration: 1.2, stagger: 0.045, ease: 'expo.out' });
+    g.fromTo(fades, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 1, stagger: 0.08, ease: 'power3.out', delay: 0.3 });
+    g.fromTo(pops, { scale: 0, rotation: -25 }, { scale: 1, rotation: 0, duration: 0.9, stagger: 0.12, ease: 'back.out(2.2)', delay: 0.55 });
+    r.querySelectorAll('[data-float]').forEach((el, i) => g.to(el, { y: -12, duration: 2.2 + i * 0.4, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1 + i * 0.3 }));
+    r.querySelectorAll('[data-lift]').forEach((el, i) => g.fromTo(el, { rotationY: -10, rotationX: 4 }, { rotationY: 10, rotationX: -4, duration: 3.4 + i, repeat: -1, yoyo: true, ease: 'sine.inOut', delay: 1.2 }));
+    const spin = r.querySelector('[data-spin]');
+    if (spin) this._spin = g.to(spin, { rotation: 360, transformOrigin: '50% 50%', duration: 14, ease: 'none', repeat: -1 });
+  }
+
+  // ---------- Header: hide on scroll down, show on up; progress line; scroll velocity ----------
+  initHeader() {
+    const g = this.g, header = this.root.querySelector('[data-header]'), bar = this.root.querySelector('[data-progress]');
+    this._ly = scrollY; this._vel = 0; this._dir = 1; let hid = false;
+    if (!this.reduce) {
+      const chars = this.root.querySelectorAll('[data-char]');
+      g.set(chars, { yPercent: 110 });
+      g.set(this.root.querySelectorAll('[data-hero-fade]'), { opacity: 0 });
+      g.set(this.root.querySelectorAll('[data-pop]'), { scale: 0 });
+    }
+    this.on(window, 'scroll', () => {
+      const y = scrollY, d = y - this._ly; this._ly = y;
+      this._vel = d; if (d) this._dir = d > 0 ? 1 : -1;
+      if (y > 140 && d > 2 && !hid) { hid = true; g.to(header, { yPercent: -130, duration: 0.6, ease: 'power3.out' }); }
+      else if ((d < -2 || y < 140) && hid) { hid = false; g.to(header, { yPercent: 0, duration: 0.6, ease: 'power3.out' }); }
+      bar.style.transform = `scaleX(${y / Math.max(1, document.documentElement.scrollHeight - innerHeight)})`;
+    }, { passive: true });
+  }
+
+  // ---------- Live clock (Asia/Manila) ----------
+  initClock() {
+    const f = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Manila', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+    const up = () => { const t = f.format(new Date()); this.root && this.root.querySelectorAll('[data-clock]').forEach(el => (el.textContent = t)); };
+    up(); this._clock = setInterval(up, 1000);
+  }
+
+  // ---------- Pointer: store position; heavy work happens once per frame in tick() ----------
+  initPointer() {
+    this.mx = innerWidth / 2; this.my = innerHeight / 2;
+    this.rx = this.mx; this.ry = this.my; this.pvx = this.mx; this.pvy = this.my; this._pvVel = 0; this._lmx = this.mx;
+    this.on(window, 'mousemove', e => { this.mx = e.clientX; this.my = e.clientY; this._mt = e.target; this._dirty = true; }, { passive: true });
+    this.on(window, 'pointerdown', e => this.dragStart(e));
+  }
+
+  // ---------- Custom cursor: dot + lerped ring with states ----------
+  initCursor() {
+    if (!this.fine || this.reduce) return;
+    const r = this.root;
+    this.cur = { dot: r.querySelector('[data-cur-dot]'), ring: r.querySelector('[data-cur-ring]'), shape: r.querySelector('[data-cur-shape]'), label: r.querySelector('[data-cur-label]') };
+    this._curType = 'default';
+    this.on(window, 'mousedown', () => this.g.to(this.cur.shape, { scaleX: 1.18, scaleY: 0.82, duration: 0.18, ease: 'power2.out' }));
+    this.on(window, 'mouseup', () => this.g.to(this.cur.shape, { scaleX: 1, scaleY: 1, duration: 0.6, ease: 'expo.out' }));
+    this.on(document, 'mouseleave', () => { this.cur.ring.style.opacity = 0; this.cur.dot.style.opacity = 0; });
+    this.on(document, 'mouseenter', () => { this.cur.ring.style.opacity = 1; this.cur.dot.style.opacity = 1; });
+  }
+  setCursor(type) {
+    if (type === this._curType || !this.cur) return;
+    this._curType = type;
+    const S = {
+      default: { w: 34, h: 34, bg: 'transparent', bd: '1px solid #fff', bl: 'difference', r: '999px', dot: 1, l: '' },
+      link: { w: 64, h: 64, bg: 'transparent', bd: '1px solid #fff', bl: 'difference', r: '999px', dot: 0, l: '' },
+      view: { w: 92, h: 92, bg: 'var(--accent)', bd: '0px solid transparent', bl: 'normal', r: '999px', dot: 0, l: 'View' },
+      drag: { w: 84, h: 84, bg: 'var(--accent)', bd: '0px solid transparent', bl: 'normal', r: '999px', dot: 0, l: 'Drag' },
+      img: { w: 110, h: 110, bg: '#fff', bd: '0px solid transparent', bl: 'difference', r: '999px', dot: 0, l: '' },
+      text: { w: 2, h: 30, bg: '#fff', bd: '0px solid transparent', bl: 'difference', r: '1px', dot: 0, l: '' }
+    }[type];
+    const c = this.cur, g = this.g;
+    c.shape.style.background = S.bg; c.shape.style.border = S.bd; c.shape.style.borderRadius = S.r;
+    c.ring.style.mixBlendMode = S.bl;
+    g.to(c.shape, { width: S.w, height: S.h, duration: 0.45, ease: 'expo.out' });
+    g.to(c.dot, { opacity: S.dot, duration: 0.2 });
+    if (S.l) c.label.textContent = S.l;
+    g.to(c.label, { opacity: S.l ? 1 : 0, duration: 0.25 });
+  }
+  cursorTypeFor(t) {
+    const c = t.closest('[data-cursor]');
+    if (c) return c.dataset.cursor;
+    if (t.closest('input,textarea,[contenteditable]')) return 'text';
+    if (t.closest('a,button,[role=button]')) return 'link';
+    if (t.closest('p,blockquote')) return 'text';
+    return 'default';
+  }
+
+  // ---------- Per-frame loop (all mousemove work is rAF-throttled here) ----------
+  tick() {
+    const g = this.g, k = this.props.intensity ?? 1, T = this.TUNE, r = this.root;
+    // cursor on/off (live tweak)
+    const wantCur = !!this.cur && this.props.customCursor !== false;
+    if (wantCur !== this._curShown) {
+      this._curShown = wantCur;
+      if (this.cur) { this.cur.ring.style.display = wantCur ? 'block' : 'none'; this.cur.dot.style.display = wantCur ? 'block' : 'none'; }
+      wantCur ? r.setAttribute('data-cursor-on', '') : r.removeAttribute('data-cursor-on');
+    }
+    if (this._curShown) {
+      this.rx += (this.mx - this.rx) * T.cursorLerp; this.ry += (this.my - this.ry) * T.cursorLerp;
+      this.cur.ring.style.transform = `translate3d(${this.rx}px,${this.ry}px,0)`;
+      this.cur.dot.style.transform = `translate3d(${this.mx}px,${this.my}px,0)`;
+    }
+    if (this._dirty && this._mt && this._mt.closest) { this._dirty = false; this.onPointerFrame(this._mt, k); }
+
+    // sticker parallax
+    if (this._depth && this.fine && !this.reduce) {
+      const nx = this.mx / innerWidth - 0.5, ny = this.my / innerHeight - 0.5;
+      this._depth.forEach(d => { d.qx(nx * d.depth * T.stickerParallax * k); d.qy(ny * d.depth * T.stickerParallax * k); });
+    }
+
+    // 3D logos follow cursor
+    if (this._logos && this.fine && !this.reduce) {
+      const nx = this.mx / innerWidth - 0.5, ny = this.my / innerHeight - 0.5;
+      this._logos.forEach(l => { l.qy(nx * 50 * k); l.qx(-ny * 40 * k); });
+    }
+
+    // floating list preview (eased follow + velocity rotation)
+    if (this.fine && !this.reduce) {
+      if (!this._pv) this._pv = r.querySelector('[data-preview]');
+      this.pvx += (this.mx - this.pvx) * T.previewLerp; this.pvy += (this.my - this.pvy) * T.previewLerp;
+      this._pvVel += ((this.mx - this._lmx) - this._pvVel) * 0.2; this._lmx = this.mx;
+      const rot = Math.max(-15, Math.min(15, this._pvVel * T.previewTilt * k));
+      this._pv.style.transform = `translate3d(${this.pvx - 140}px,${this.pvy - 175}px,0) rotate(${rot}deg)`;
+    }
+
+    // marquee tied to scroll velocity + direction
+    if (!this.reduce) {
+      if (!this._mq) this._mq = r.querySelector('[data-marquee]');
+      if (this._mq) {
+        if (!this._mqW) this._mqW = this._mq.children[0].offsetWidth;
+        this._mqX = (this._mqX || 0) - (T.marqueeBase + Math.abs(this._vel || 0) * T.marqueeVelocity) * k * (this._dir || 1);
+        if (this._mqX <= -this._mqW) this._mqX += this._mqW;
+        if (this._mqX > 0) this._mqX -= this._mqW;
+        this._mq.style.transform = `translate3d(${this._mqX}px,0,0)`;
+      }
+      this._vel = (this._vel || 0) * 0.9;
+    }
+
+    // "Let's build." proximity
+    if (this._proxOn && this._prox) {
+      this._prox.forEach(el => {
+        const b = el.getBoundingClientRect();
+        const d = Math.hypot(this.mx - (b.left + b.width / 2), this.my - (b.top + b.height / 2));
+        const t = Math.max(0, 1 - d / T.proxRadius);
+        el._t = (el._t || 0) + (t - (el._t || 0)) * 0.15;
+        el.style.fontWeight = Math.min(800, Math.round(500 + el._t * T.proxWeight * k));
+        el.style.transform = `translateY(${-el._t * T.proxLift * k}px)`;
+      });
+    }
+  }
+
+  onPointerFrame(t, k) {
+    const g = this.g, T = this.TUNE;
+    if (this.cur) this.setCursor(this.cursorTypeFor(t));
+    if (!this.fine || this.reduce) return;
+    // magnetic
+    const m = t.closest('[data-magnetic]');
+    if (m !== this._mag) { if (this._mag) g.to(this._mag, { x: 0, y: 0, duration: 0.7, ease: 'expo.out' }); this._mag = m; }
+    if (m) { const b = m.getBoundingClientRect(); g.to(m, { x: (this.mx - b.left - b.width / 2) * T.magnet * k, y: (this.my - b.top - b.height / 2) * T.magnet * k, duration: 0.5, ease: 'power3.out' }); }
+    // rolling text
+    const rl = t.closest('[data-roll]');
+    if (rl !== this._roll) {
+      if (this._roll) g.to(this._roll.querySelector('[data-roll-in]'), { yPercent: 0, duration: 0.5, ease: 'power3.out' });
+      this._roll = rl;
+      if (rl) g.to(rl.querySelector('[data-roll-in]'), { yPercent: -50, duration: 0.5, ease: 'power3.out' });
+    }
+    // card tilt
+    const tl = t.closest('[data-tilt]');
+    if (tl !== this._tiltEl) { if (this._tiltEl) g.to(this._tiltEl.querySelector('[data-tilt-in]'), { rotateX: 0, rotateY: 0, scale: 1, duration: 0.8, ease: 'expo.out' }); this._tiltEl = tl; }
+    if (tl) {
+      const b = tl.getBoundingClientRect(), px = (this.mx - b.left) / b.width - 0.5, py = (this.my - b.top) / b.height - 0.5;
+      g.to(tl.querySelector('[data-tilt-in]'), { rotateY: px * T.tilt * k, rotateX: -py * T.tilt * k, scale: 1.02, transformPerspective: 900, duration: 0.6, ease: 'power3.out' });
+    }
+    // 3D object hover tilt + sheen
+    const ob = this._dragging ? null : t.closest('[data-obj]');
+    if (ob !== this._hob && this._hob && !this._dragging) { g.to(this._hob, { rotationX: 0, rotationY: 0, scale: 1, duration: 0.9, ease: 'expo.out' }); const sn = this._hob.querySelector('[data-sheen]'); sn && g.to(sn, { backgroundPosition: '100% 0', duration: 0.9 }); }
+    this._hob = ob;
+    if (ob) {
+      const b = ob.getBoundingClientRect(), px = (this.mx - b.left) / b.width - 0.5, py = (this.my - b.top) / b.height - 0.5;
+      g.to(ob, { rotationY: px * 30 * k, rotationX: -py * 30 * k, scale: 1.05, duration: 0.6, ease: 'power3.out' });
+      const sn = ob.querySelector('[data-sheen]'); sn && g.to(sn, { backgroundPosition: (50 - px * 100) + '% 0', duration: 0.6 });
+    }
+    // list preview
+    const row = t.closest('[data-row]');
+    if (row !== this._row) {
+      this._row = row;
+      const pin = this.root.querySelector('[data-preview-in]');
+      if (row) { pin.style.background = row.dataset.grad; this.root.querySelector('[data-preview-label]').textContent = row.dataset.label; g.to(pin, { opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }); }
+      else g.to(pin, { opacity: 0, scale: 0.85, duration: 0.4, ease: 'power3.out' });
+    }
+    // camera flash hover-swap
+    const cam = t.closest('[data-camera]');
+    if (cam && cam !== this._cam) {
+      g.timeline().to(cam.querySelector('[data-flash-label]'), { opacity: 1, y: -6, duration: 0.3, ease: 'power3.out' }).to(cam.querySelector('[data-flash-label]'), { opacity: 0, y: 0, duration: 0.4, delay: 0.9 });
+    }
+    this._cam = cam;
+    // badge spins faster on hover
+    const bd = !!t.closest('[data-badge]');
+    if (bd !== this._bd && this._spin) { this._bd = bd; g.to(this._spin, { timeScale: bd ? 5 : 1, duration: 0.6 }); }
+  }
+
+  // ---------- Stickers: cursor parallax wrappers ----------
+  initStickers() {
+    if (this.reduce) return;
+    this._depth = [...this.root.querySelectorAll('[data-depth]')].map(el => ({
+      depth: parseFloat(el.dataset.depth), qx: this.g.quickTo(el, 'x', { duration: 0.8, ease: 'power3.out' }), qy: this.g.quickTo(el, 'y', { duration: 0.8, ease: 'power3.out' })
+    }));
+  }
+
+  // ---------- Drag with inertia + rotation (stickers + board cards) ----------
+  dragStart(e) {
+    const el = e.target.closest && e.target.closest('[data-drag]');
+    if (!el || !this.g || e.button > 0) return;
+    const g = this.g;
+    const st = { x: g.getProperty(el, 'x'), y: g.getProperty(el, 'y'), rot: g.getProperty(el, 'rotation'), px: e.clientX, py: e.clientY, lx: e.clientX, ly: e.clientY, vx: 0, vy: 0, moved: false };
+    this._z = (this._z || 10) + 1; el.style.zIndex = this._z;
+    const obj = el.querySelector('[data-obj]'), sh = el.querySelector('[data-shadow]'), sheen = el.querySelector('[data-sheen]');
+    const host = el.closest('[data-depth]'); if (host) host.style.zIndex = this._z;
+    this._dragging = true;
+    const camEl = el.querySelector('[data-camera]');
+    if (camEl) this.cameraFlash(camEl);
+    if (obj) {
+      g.to(obj, { scale: 1.16, y: -22, z: 80, duration: 0.45, ease: 'back.out(2.4)', overwrite: 'auto' });
+      g.to(sh, { scale: 0.72, y: 40, opacity: 0.4, filter: 'blur(16px)', duration: 0.45, ease: 'power3.out', overwrite: 'auto' });
+    }
+    const move = ev => {
+      const dx = ev.clientX - st.px, dy = ev.clientY - st.py;
+      if (Math.abs(dx) + Math.abs(dy) > 4) st.moved = true;
+      st.vx = ev.clientX - st.lx; st.vy = ev.clientY - st.ly; st.lx = ev.clientX; st.ly = ev.clientY;
+      g.set(el, { x: st.x + dx, y: st.y + dy, rotation: st.rot + Math.max(-18, Math.min(18, st.vx * 1.5)) });
+      if (obj) {
+        const cl = v => Math.max(-40, Math.min(40, v));
+        g.to(obj, { rotationY: cl(st.vx * 2.4), rotationX: cl(-st.vy * 2.4), duration: 0.35, ease: 'power2.out', overwrite: 'auto' });
+        if (sheen) g.to(sheen, { backgroundPosition: (50 - cl(st.vx * 2)) + '% 0', duration: 0.35, overwrite: 'auto' });
+        g.to(sh, { x: -st.vx * 1.5, duration: 0.35, overwrite: 'auto' });
+      }
+    };
+    const up = () => {
+      window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up);
+      let fx = st.vx * 10, fy = st.vy * 10;
+      const board = el.closest('[data-board]');
+      if (board) {
+        const pb = board.getBoundingClientRect(), eb = el.getBoundingClientRect();
+        fx = Math.max(pb.left - eb.left, Math.min(pb.right - eb.right, fx));
+        fy = Math.max(pb.top - eb.top, Math.min(pb.bottom - eb.bottom, fy));
+      }
+      g.to(el, { x: '+=' + fx, y: '+=' + fy, rotation: st.rot, duration: 1, ease: 'expo.out' });
+      this._dragging = false;
+      if (obj) {
+        g.timeline()
+          .to(obj, { scale: 1, y: 0, z: 0, rotationX: 0, rotationY: 0, duration: 0.5, ease: 'power3.in', overwrite: 'auto' })
+          .to(obj, { scaleY: 0.9, scaleX: 1.06, duration: 0.09, ease: 'power2.out' })
+          .to(obj, { scaleY: 1, scaleX: 1, duration: 0.8, ease: 'elastic.out(1,0.4)' });
+        g.timeline()
+          .to(sh, { scale: 1, x: 0, y: 0, opacity: 1, filter: 'blur(6px)', duration: 0.5, ease: 'power3.in', overwrite: 'auto' })
+          .to(sh, { scaleX: 1.12, duration: 0.09 })
+          .to(sh, { scaleX: 1, duration: 0.6, ease: 'power3.out' });
+        if (sheen) g.to(sheen, { backgroundPosition: '100% 0', duration: 1, ease: 'power3.out' });
+      }
+      if (st.moved) { this._dragMoved = true; setTimeout(() => (this._dragMoved = false), 60); }
+    };
+    window.addEventListener('pointermove', move); window.addEventListener('pointerup', up);
+  }
+
+  // ---------- Camera click: full-screen flash bursting from the lens ----------
+  cameraFlash(cam) {
+    const g = this.g, f = this.root.querySelector('[data-screen-flash]'), own = cam.querySelector('[data-flash]');
+    if (!f) return;
+    const b = cam.getBoundingClientRect(), x = b.left + b.width * 0.5, y = b.top + b.height * 0.55;
+    f.style.background = `radial-gradient(circle at ${x}px ${y}px, #fff 0%, #fff 18%, rgba(255,250,240,.92) 40%, rgba(255,248,235,.75) 100%)`;
+    if (this.reduce) { g.timeline().set(f, { display: 'block', opacity: 0.5 }).to(f, { opacity: 0, duration: 0.4 }).set(f, { display: 'none' }); return; }
+    g.timeline()
+      .set(f, { display: 'block', opacity: 0 })
+      .to(f, { opacity: 1, duration: 0.04, ease: 'none' })
+      .to(f, { opacity: 0, duration: 1.1, ease: 'power2.out', delay: 0.07 })
+      .set(f, { display: 'none' });
+    if (own) g.timeline().to(own, { opacity: 1, duration: 0.04 }).to(own, { opacity: 0, duration: 0.8, ease: 'power2.out', delay: 0.1 });
+    g.fromTo(cam, { scale: 0.94 }, { scale: 1, duration: 0.6, ease: 'elastic.out(1,0.4)' });
+  }
+
+  // ---------- Pinned "What I do": services switch 01 → 04 while scrolling ----------
+  initServices() {
+    const g = this.g, root = this.root;
+    if (!this._mm) this._mm = g.matchMedia();
+    this._mm.add('(min-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
+      const sec = root.querySelector('[data-svc]'), panels = [...root.querySelectorAll('[data-svc-panel]')];
+      const names = () => [...root.querySelectorAll('[data-svc-name]')], count = () => root.querySelector('[data-svc-count]');
+      panels.forEach((p, i) => g.set(p, { gridArea: '1 / 1', autoAlpha: i ? 0 : 1 }));
+      let cur = 0;
+      const show = i => {
+        if (i === cur) return;
+        const down = i > cur;
+        g.to(panels[cur], { autoAlpha: 0, y: down ? -40 : 40, duration: 0.6, ease: 'power3.out' });
+        g.fromTo(panels[i], { autoAlpha: 0, y: down ? 50 : -50 }, { autoAlpha: 1, y: 0, duration: 0.9, ease: 'expo.out' });
+        names().forEach((n, j) => g.to(n, { opacity: j === i ? 1 : 0.28, x: j === i ? 14 : 0, duration: 0.6, ease: 'power3.out' }));
+        const c = count();
+        if (c) g.timeline().to(c, { yPercent: down ? -100 : 100, duration: 0.25, ease: 'power2.in' }).add(() => (c.textContent = '0' + (i + 1))).fromTo(c, { yPercent: down ? 100 : -100 }, { yPercent: 0, duration: 0.5, ease: 'expo.out' });
+        cur = i;
+      };
+      ScrollTrigger.create({ trigger: sec, pin: true, start: 'top top', end: '+=360%', onUpdate: s => show(Math.min(5, Math.floor(s.progress * 6))) });
+    });
+  }
+
+  // ---------- Featured slideshow: pinned, scroll-scrubbed ----------
+  initSlides() {
+    const g = this.g, root = this.root;
+    if (!this._mm) this._mm = g.matchMedia();
+    this._mm.add('(min-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
+      const wrap = root.querySelector('[data-slides]'), stage = root.querySelector('[data-slide-stage]');
+      const slides = [...root.querySelectorAll('[data-slide]')], ui = root.querySelector('[data-slide-ui]');
+      const bar = root.querySelector('[data-slide-bar]'), count = root.querySelector('[data-slide-count]');
+      const N = slides.length; if (!N) return;
+      g.set(wrap, { height: '100vh', marginTop: '-4vh' });
+      g.set(stage, { position: 'absolute', inset: '0 0 64px 0', display: 'block' });
+      g.set(ui, { display: 'flex' });
+      slides.forEach((s, i) => g.set(s, { position: 'absolute', inset: 0, zIndex: i + 1, pointerEvents: i ? 'none' : 'auto' }));
+      const st = s => s.querySelectorAll('[data-st]'), media = s => s.querySelector('[data-slide-media]'), inn = s => s.querySelector('[data-slide-in]'), shot = s => s.querySelector('[data-slide-shot]');
+      slides.slice(1).forEach(s => { g.set(st(s), { yPercent: 115 }); g.set(media(s), { clipPath: 'inset(100% 0% 0% 0%)' }); g.set(inn(s), { scale: 1.25 }); });
+      const tl = g.timeline({ defaults: { ease: 'none' } });
+      slides.forEach((s, i) => {
+        const sh = shot(s);
+        if (sh) tl.fromTo(sh, { top: '0%', yPercent: 0 }, { top: '100%', yPercent: -100, duration: 0.55, ease: 'power1.inOut' }, i === 0 ? 0 : i);
+        else tl.fromTo(inn(s), { yPercent: 0 }, { yPercent: -4, duration: 0.55 }, i === 0 ? 0 : i);
+        if (i === N - 1) return;
+        const nx = slides[i + 1], t = i + 0.55;
+        tl.to(st(s), { yPercent: -115, duration: 0.3, stagger: 0.03, ease: 'power2.in' }, t)
+          .to(media(s), { scale: 0.9, opacity: 0.4, duration: 0.45, ease: 'power2.inOut' }, t)
+          .to(media(nx), { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.45, ease: 'power3.inOut' }, t)
+          .to(inn(nx), { scale: 1, duration: 0.45, ease: 'power3.out' }, t)
+          .to(st(nx), { yPercent: 0, duration: 0.35, stagger: 0.04, ease: 'power3.out' }, t + 0.15);
+      });
+      let last = -1;
+      ScrollTrigger.create({
+        trigger: wrap, pin: true, start: 'top top', end: () => '+=' + window.innerHeight * N * 0.9, scrub: 0.8, animation: tl,
+        onUpdate: self => {
+          if (bar) bar.style.transform = 'scaleX(' + self.progress + ')';
+          const idx = Math.min(N - 1, Math.floor(self.progress * (N - 0.45) + 0.2));
+          if (idx !== last) { last = idx; if (count) count.textContent = String(idx + 1).padStart(2, '0'); slides.forEach((s, j) => (s.style.pointerEvents = j === idx ? 'auto' : 'none')); }
+        }
+      });
+      return () => { g.set([wrap, stage, ui, ...slides], { clearProps: 'all' }); };
+    });
+  }
+
+  // ---------- Scroll reveals: fade-up, masked lines, image unmask, parallax, SVG draw ----------
+  initScrollReveals() {
+    const g = this.g, root = this.root, q = s => [...root.querySelectorAll(s)];
+    if (this.reduce) {
+      q('[data-reveal],[data-line],[data-img]').forEach(el => g.from(el, { opacity: 0, duration: 0.8, scrollTrigger: { trigger: el, start: 'top 92%', once: true } }));
+      return;
+    }
+    q('[data-reveal]').forEach(el => g.from(el, { y: 44, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+    q('[data-line]').forEach((el, i) => g.from(el, { yPercent: 110, duration: 1.1, ease: 'expo.out', delay: (i % 2) * 0.08, scrollTrigger: { trigger: el.parentElement, start: 'top 92%', once: true } }));
+    q('[data-img]').forEach(el => {
+      const tl = g.timeline({ scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+      tl.fromTo(el, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'expo.out' });
+      const inn = el.querySelector('[data-img-in]'); if (inn) tl.from(inn, { scale: 1.2, duration: 1.2, ease: 'expo.out' }, 0);
+    });
+    q('[data-speed]').forEach(el => g.to(el, { yPercent: -10 * parseFloat(el.dataset.speed), ease: 'none', scrollTrigger: { trigger: el.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } }));
+    q('[data-draw]').forEach(p => {
+      const len = p.getTotalLength();
+      g.fromTo(p, { strokeDasharray: len, strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.2, ease: 'power3.out', delay: 0.4, scrollTrigger: { trigger: p.closest('p,blockquote') || p, start: 'top 85%', once: true } });
+    });
+  }
+
+  // ---------- Section tones: background shifts base ↔ inverted ↔ accent ----------
+  initTones() {
+    [...this.root.querySelectorAll('[data-tone]')].forEach(sec => ScrollTrigger.create({ trigger: sec, start: 'top 50%', end: 'bottom 50%', onToggle: s => s.isActive && this.applyTone(sec.dataset.tone) }));
+  }
+  applyTone(t) {
+    this._tone = t;
+    const other = this._theme === 'dark' ? 'light' : 'dark';
+    const pal = t === 'inv' ? this.PAL[other] : t === 'accent' ? this.PAL.accent : this.PAL[this._theme];
+    document.body.style.background = pal['--bg'];
+    if (this.g && !this.reduce) this.g.to(this.root, { ...pal, duration: 0.9, ease: 'power2.out', overwrite: 'auto' });
+    else Object.entries(pal).forEach(([k2, v]) => this.root.style.setProperty(k2, v));
+  }
+
+  // ---------- Terminal: typed command line ----------
+  initTerminal() {
+    const g = this.g, el = this.root.querySelector('[data-type]'), caret = this.root.querySelector('[data-caret]');
+    if (!el) return;
+    const text = el.dataset.text;
+    if (this.reduce) { el.textContent = text; return; }
+    g.to(caret, { opacity: 0, duration: 0.5, repeat: -1, yoyo: true, ease: 'steps(1)' });
+    g.set(this.root.querySelector('[data-type-after]'), { opacity: 0, y: 10 });
+    const o = { n: 0 };
+    g.timeline({ scrollTrigger: { trigger: el, start: 'top 85%', once: true } })
+      .to(o, { n: text.length, duration: text.length * 0.06, ease: 'none', onUpdate: () => (el.textContent = text.slice(0, Math.round(o.n))) })
+      .to(this.root.querySelector('[data-type-after]'), { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '+=0.15');
+  }
+
+  // ---------- "The Work" texture fill loop (swap for a video later) ----------
+  initTexture() {
+    if (this.reduce) return;
+    const el = this.root.querySelector('[data-texture]');
+    if (el) this.g.to(el, { backgroundPosition: '100% 50%', duration: 9, ease: 'sine.inOut', repeat: -1, yoyo: true });
+  }
+
+  // ---------- Contact: letters react to cursor proximity ----------
+  initContact() {
+    if (!this.fine || this.reduce) return;
+    this._prox = [...this.root.querySelectorAll('[data-prox]')];
+    ScrollTrigger.create({ trigger: this.root.querySelector('[data-contact]'), start: 'top bottom', end: 'bottom top', onToggle: s => (this._proxOn = s.isActive) });
+  }
+  copyEmail() {
+    try { navigator.clipboard && navigator.clipboard.writeText(this.EMAIL).catch(() => {}); } catch (e) {}
+    clearTimeout(this._tt);
+    this.setState({ toast: 'Copied — ' + this.EMAIL });
+    this._tt = setTimeout(() => this.setState({ toast: '' }), 2000);
+  }
+
+  // ---------- Theme ----------
+  toggleTheme() {
+    this._theme = this._theme === 'dark' ? 'light' : 'dark';
+    this.setState({ theme: this._theme });
+    if (this.root) this.applyTone(this._tone || 'base');
+  }
+
+  // ---------- Page transition: wipe → case study overlay ----------
+  wipe(swap) {
+    const g = this.g, w = this.root.querySelector('[data-wipe]');
+    if (!g || this.reduce) { swap(); return; }
+    g.timeline()
+      .set(w, { display: 'block', transformOrigin: '50% 100%', scaleY: 0 })
+      .to(w, { scaleY: 1, duration: 0.6, ease: 'power4.inOut' })
+      .add(swap)
+      .set(w, { transformOrigin: '50% 0%' })
+      .to(w, { scaleY: 0, duration: 0.6, ease: 'power4.inOut', delay: 0.15 })
+      .set(w, { display: 'none' });
+  }
+  openCase(id) {
+    if (this._dragMoved) return;
+    this.lenis && this.lenis.stop();
+    this.wipe(() => this.setState({ caseId: id, palette: false, reel: 0, reelPrev: null, reelDir: 1, reelHold: false }, () => this.armReel()));
+  }
+  closeCase() { clearTimeout(this._reelT); this.wipe(() => { this.setState({ caseId: null }); this.lenis && this.lenis.start(); }); }
+
+  // ---------- Navigation / command palette ----------
+  go(id) {
+    if (this.state.palette) this.setState({ palette: false });
+    if (this.state.caseId) { this.wipe(() => { this.setState({ caseId: null }); this.lenis && this.lenis.start(); requestAnimationFrame(() => this.scrollTo(id)); }); return; }
+    this.lenis && this.lenis.start();
+    this.scrollTo(id);
+  }
+  openPalette() { this.setState({ palette: true, q: '', sel: 0 }); this.lenis && this.lenis.stop(); }
+  closePalette() { this.setState({ palette: false }); if (!this.state.caseId) this.lenis && this.lenis.start(); }
+  getCommands() {
+    const all = [
+      { label: 'cd ~/home', hint: '01', run: () => this.go('home') },
+      { label: 'cd ~/about', hint: '02', run: () => this.go('about') },
+      { label: 'cd ~/works', hint: '03', run: () => this.go('works') },
+      { label: 'cd ~/services', hint: 'III', run: () => this.go('services') },
+      { label: 'cd ~/contact', hint: '04', run: () => this.go('contact') },
+      { label: 'theme --toggle', hint: 'dark/light', run: () => { this.closePalette(); this.toggleTheme(); } },
+      { label: 'copy email', hint: '@', run: () => { this.closePalette(); this.copyEmail(); } },
+      { label: 'ls --view list', hint: 'works', run: () => { this.go('works'); this.setView('list'); } },
+      { label: 'ls --view board', hint: 'works', run: () => { this.go('works'); this.setView('board'); } },
+      ...this.PROJECTS.map(p => ({ label: 'open ' + p.id, hint: p.year, run: () => { this.setState({ palette: false }); this.openCase(p.id); } }))
+    ];
+    const q = this.state.q.trim().toLowerCase();
+    return q ? all.filter(c => c.label.includes(q) || c.hint.toLowerCase().includes(q)) : all;
+  }
+  onKey(e) {
+    const tag = e.target && e.target.tagName;
+    if (e.key === '/' && !this.state.palette && tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); this.openPalette(); return; }
+    if (e.key === 'Escape') { if (this.state.palette) this.closePalette(); else if (this.state.caseId) this.closeCase(); return; }
+    if (!this.state.palette) return;
+    const cmds = this.getCommands(), n = cmds.length;
+    if (!n) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); this.setState({ sel: (this.state.sel + 1) % n }); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); this.setState({ sel: (this.state.sel - 1 + n) % n }); }
+    else if (e.key === 'Enter') { e.preventDefault(); cmds[Math.min(this.state.sel, n - 1)].run(); }
+  }
+
+  // ---------- Homepage zoom reel: random projects, scroll-driven ----------
+  zoomPick() {
+    if (!this._zoom) {
+      const P = this.PROJECTS.filter(p => p.hero || p.site), sh = [...P].sort(() => Math.random() - 0.5).slice(0, 3);
+      this._zoom = sh.map((p, i) => ({ title: p.title, category: p.category, num: String(this.PROJECTS.indexOf(p) + 1).padStart(2, '0'),
+        bg: p.hero || `url(${p.site}) top center/cover no-repeat, ${p.grad}`, clip0: i ? 'inset(100% 0% 0% 0%)' : 'inset(0% 0% 0% 0%)', op0: i ? '0' : '1',
+        open: () => this.openCase(p.id) }));
+    }
+    return this._zoom;
+  }
+  initZoom() {
+    const g = this.g, root = this.root;
+    if (!this._mm) this._mm = g.matchMedia();
+    this._mm.add('(min-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
+      const box = root.querySelector('[data-zoom]'); if (!box) return;
+      const layers = [...box.querySelectorAll('[data-zoom-layer]')], imgs = [...box.querySelectorAll('[data-zoom-img]')], caps = [...box.querySelectorAll('[data-zoom-cap]')];
+      const wrap = root.querySelector('[data-zoom-wrap]');
+      // start: card-sized via clip on a full-bleed stage
+      const insetX = () => { const r = wrap.getBoundingClientRect(); return Math.max(0, r.left); };
+      g.set(box, { aspectRatio: 'auto', height: '100vh', width: '100vw', marginLeft: () => -wrap.getBoundingClientRect().left, borderRadius: 0 });
+      const startClip = () => { const vw = window.innerWidth, vh = window.innerHeight, x = insetX(), w = vw - x * 2, hh = Math.min(vh - 40, w / 2), y = Math.max(0, (vh - hh) / 2); return `inset(${y}px ${x}px ${y}px ${x}px round 12px)`; };
+      g.set(box, { clipPath: startClip });
+      imgs.forEach((im, i) => g.set(im, { scale: i ? 1.25 : 1.35 }));
+      const ui = box.querySelector('[data-zoom-ui]');
+      const startY = () => { const vw = window.innerWidth, vh = window.innerHeight, x = insetX(), hh = Math.min(vh - 40, (vw - x * 2) / 2); return -Math.max(0, (vh - hh) / 2); };
+      const startX = () => insetX();
+      const tl = g.timeline({ defaults: { ease: 'none' } });
+      if (ui) tl.fromTo(ui, { y: startY, paddingLeft: startX, paddingRight: startX }, { y: 0, paddingLeft: 0, paddingRight: 0, duration: 1, ease: 'power2.inOut' }, 0);
+      tl.fromTo(box, { clipPath: startClip }, { clipPath: 'inset(0px 0px 0px 0px round 0px)', duration: 1, ease: 'power2.inOut' }, 0)
+        .to(imgs[0], { scale: 1, duration: 1.4, ease: 'power2.out' }, 0);
+      layers.slice(1).forEach((l, k) => {
+        const i = k + 1, t = 1.2 + k * 1.1;
+        tl.fromTo(l, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.7, ease: 'power3.inOut' }, t)
+          .to(imgs[i], { scale: 1, duration: 1.1, ease: 'power2.out' }, t)
+          .to(imgs[i - 1], { scale: 0.92, yPercent: -6, duration: 0.7, ease: 'power3.inOut' }, t)
+          .to(caps[i - 1], { opacity: 0, y: -30, duration: 0.3 }, t)
+          .fromTo(caps[i], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t + 0.3);
+      });
+      tl.to({}, { duration: 0.4 });
+      ScrollTrigger.create({ trigger: wrap, pin: true, start: () => 'top top', end: () => '+=' + window.innerHeight * (1 + layers.length * 0.9), scrub: 0.8, animation: tl, invalidateOnRefresh: true, refreshPriority: 10 });
+      return () => { g.set([box, ...imgs, ui].filter(Boolean), { clearProps: 'all' }); };
+    });
+  }
+
+  // ---------- Homepage featured reel ----------
+  stepFeat(d) {
+    if (!d) return;
+    const cur = this.state.feat || 0;
+    this.setState({ feat: (cur + d + 7) % 7, featPrev: cur, featDir: d > 0 ? 1 : -1 });
+    this.armFeat();
+  }
+  holdFeat(on) { this.setState({ featHold: on }); if (on) clearTimeout(this._featT); else this.armFeat(); }
+  armFeat() {
+    clearTimeout(this._featT);
+    if (this.state.featHold || this.reduce) return;
+    this._featT = setTimeout(() => { if (this.state.caseId) this.armFeat(); else this.stepFeat(1); }, 5500);
+  }
+
+  // ---------- Case study reel ----------
+  buildReel(c) {
+    const r = [], add = (bg, cap) => bg && r.push({ bg, cap });
+    add(c.hero || (c.site ? `url(${c.site}) top center/cover no-repeat, ${c.grad}` : c.grad), c.title);
+    (c.gallery || []).forEach(g => { const src = typeof g === 'string' ? g : g.src; add(`url(${src}) center/contain no-repeat, #141416`, (typeof g === 'object' && g.cap) || 'Detail'); });
+    if (c.d1) add(c.d1, 'Detail');
+    if (c.d2) add(c.d2, 'Detail');
+    return r;
+  }
+  stepReel(d) {
+    const c = this.PROJECTS.find(p => p.id === this.state.caseId); if (!c) return;
+    const n = this.buildReel(c).length, cur = this.state.reel || 0;
+    this.setState({ reel: (cur + d + n) % n, reelPrev: cur, reelDir: d });
+    this.armReel();
+  }
+  holdReel(on) { this.setState({ reelHold: on }); if (on) clearTimeout(this._reelT); else this.armReel(); }
+  armReel() {
+    clearTimeout(this._reelT);
+    if (!this.state.caseId || this.state.reelHold || this.reduce) return;
+    this._reelT = setTimeout(() => this.stepReel(1), 5000);
+  }
+
+  // ---------- Work views: FLIP between Cards / List / Board ----------
+  captureFlip() {
+    const m = {};
+    this.root && this.root.querySelectorAll('[data-flip]').forEach(el => (m[el.dataset.flip] = el.getBoundingClientRect()));
+    this._flip = m;
+  }
+  setView(v) { if (v === this.state.view) return; this.captureFlip(); this.setState({ view: v }); }
+  setFilter(f) { if (f === this.state.filter) return; this.captureFlip(); this.setState({ filter: f }); }
+
+  componentDidUpdate(pp, ps) {
+    const g = this.g, root = this.root; if (!root) return;
+    if (this.state.palette && !ps.palette) {
+      const inp = root.querySelector('[data-palette-input]'); inp && inp.focus();
+      if (g) g.from(root.querySelector('[data-palette-win]'), { y: 20, opacity: 0, scale: 0.98, duration: 0.5, ease: 'expo.out' });
+    }
+    if (this.state.caseId !== ps.caseId) { clearTimeout(this._reelT); }
+    if (this.state.caseId && this.state.caseId !== ps.caseId) {
+      const ov = root.querySelector('[data-case]'); if (ov) ov.scrollTop = 0;
+      if (g && !this.reduce) g.from(root.querySelectorAll('[data-cs]'), { y: 40, opacity: 0, duration: 1, stagger: 0.07, ease: 'power3.out', delay: 0.3 });
+    }
+    if (this.state.toast && !ps.toast && g) g.from(root.querySelector('[data-toast]'), { y: 20, opacity: 0, duration: 0.5, ease: 'expo.out' });
+    if (this._flip) {
+      const m = this._flip; this._flip = null;
+      if (g && !this.reduce) root.querySelectorAll('[data-flip]').forEach((el, i) => {
+        const o = m[el.dataset.flip], b = el.getBoundingClientRect();
+        if (o) g.fromTo(el, { x: o.left - b.left, y: o.top - b.top, opacity: 0.4 }, { x: 0, y: 0, opacity: 1, duration: 0.9, ease: 'expo.out' });
+        else g.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, delay: i * 0.04, ease: 'power3.out' });
+      });
+      window.ScrollTrigger && ScrollTrigger.refresh();
+    }
+    if (ps.narrow !== this.state.narrow && window.ScrollTrigger) requestAnimationFrame(() => ScrollTrigger.refresh());
+  }
+
+  renderVals() {
+    const s = this.state, P = this.PROJECTS, pad = n => String(n).padStart(2, '0');
+    const list = P.filter(p => s.filter === 'All' || p.tag === s.filter).map(p => ({
+      ...p, thumb: p.site ? `url(${p.site}) top center/cover no-repeat, ${p.grad}` : p.grad, siteBg: p.site ? `url(${p.site})` : 'none', shotPos: s.hov === p.id ? '50% 100%' : '50% 0%', enter: () => this.setState({ hov: p.id }), leave: () => this.setState({ hov: null }), num: pad(P.indexOf(p) + 1), rot: `rotate(${p.br})`, aria: `${p.title}, ${p.category}. Open case study`,
+      open: e => { e && e.preventDefault && e.preventDefault(); this.openCase(p.id); },
+      key: e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.openCase(p.id); } }
+    }));
+    const folders = ['All', 'Web', 'Branding', 'Print'].map(f => {
+      const n = f === 'All' ? P.length : P.filter(p => p.tag === f).length, on = s.filter === f;
+      return { label: f, count: pad(n), pressed: String(on), aria: `${f} folder, ${n} projects`, bg: on ? 'var(--accent)' : 'var(--surface-2)', fg: on ? 'var(--on-accent)' : 'var(--muted)', pick: () => this.setFilter(f) };
+    });
+    const views = [['cards', 'Cards'], ['list', 'List'], ['board', 'Board']].map(([id, label]) => {
+      const on = s.view === id;
+      return { label, pressed: String(on), bg: on ? 'var(--text)' : 'transparent', fg: on ? 'var(--bg)' : 'var(--text)', pick: () => this.setView(id) };
+    });
+    const c = P.find(p => p.id === s.caseId), ci = c ? P.indexOf(c) : 0, next = P[(ci + 1) % P.length];
+    const FO = ['doughballs', 'maximus', 'air-scooter', 'meta-furnitures', 'regen', 'mags', 'loadboard'].map(id => P.find(p => p.id === id)).filter(Boolean);
+    const fi = ((s.feat || 0) % FO.length + FO.length) % FO.length, fp = s.featPrev;
+    const feat = FO.map((p, i) => { const on = i === fi, was = i === fp && !on; return { title: p.title, category: p.category, num: pad(i + 1), short: p.title, aria: 'Show ' + p.title,
+      bg: p.hero || (p.site ? `url(${p.site}) top center/cover no-repeat, ${p.grad}` : p.grad), z: on ? 3 : was ? 2 : 1,
+      clip: on || was ? 'inset(0% 0% 0% 0%)' : (s.featDir < 0 ? 'inset(0% 0% 100% 0%)' : 'inset(100% 0% 0% 0%)'), ...Object.fromEntries([0, 1, 2, 3, 4].map(k => ['clipT' + k, on ? `clip-path 1s cubic-bezier(.77,0,.18,1) ${(s.featDir < 0 ? 4 - k : k) * 0.07}s` : 'none'])), year: p.year, op: on ? '1' : '0', opT: on ? 'opacity .5s ease .35s' : 'opacity .3s ease', fs: p.title.length > 12 ? 'clamp(34px,4.4vw,72px)' : 'clamp(44px,6.6vw,108px)', glowO: on ? '1' : '0', pos: on ? 'relative' : 'absolute', nextO: i === (fi + 1) % FO.length ? '1' : '0', nextS: i === (fi + 1) % FO.length ? 'scale(1)' : 'scale(1.15)', chars: [...p.title].map((ch, k) => ({ ch: ch === ' ' ? '\u00a0' : ch, t: on ? 'translateY(0%)' : (i < fi ? 'translateY(-110%)' : 'translateY(110%)'), tr: on ? `transform .9s cubic-bezier(.16,1,.3,1) ${0.4 + k * 0.025}s` : `transform .5s cubic-bezier(.7,0,.84,0) ${k * 0.012}s` })),
+      scale: on ? 'scale(1.06)' : 'scale(1.2)', scaleT: on ? 'transform 7s cubic-bezier(.2,.6,.3,1)' : 'transform 1.2s cubic-bezier(.77,0,.18,1)',
+      ty: on ? 'translateY(0%)' : (i < fi ? 'translateY(-110%)' : 'translateY(110%)'), tyT1: on ? 'transform .9s cubic-bezier(.16,1,.3,1) .35s' : 'transform .6s cubic-bezier(.7,0,.84,0)', tyT2: on ? 'transform 1s cubic-bezier(.16,1,.3,1) .45s' : 'transform .6s cubic-bezier(.7,0,.84,0) .05s',
+      fill: i < fi || on ? '100%' : '0%', fillT: on && !s.featHold ? 'width 5.5s linear' : 'none', labelO: on ? '1' : '.55',
+      pick: e => { e && e.stopPropagation && e.stopPropagation(); this.stepFeat(i - fi); }, open: () => this.openCase(p.id) }; });
+    const reel = c ? this.buildReel(c) : [], ri = reel.length ? ((s.reel || 0) % reel.length + reel.length) % reel.length : 0, rp = s.reelPrev;
+    const cs = c ? { reel: reel.map((r, i) => { const on = i === ri, was = i === rp && !on; return { bg: r.bg, z: on ? 3 : was ? 2 : 1, clip: on || was ? 'inset(0% 0% 0% 0%)' : (s.reelDir < 0 ? 'inset(0% 100% 0% 0%)' : 'inset(0% 0% 0% 100%)'), clipT: on ? 'clip-path 1.1s cubic-bezier(.77,0,.18,1)' : 'none', scale: on ? 'scale(1.08)' : 'scale(1.18)', scaleT: on ? 'transform 7s cubic-bezier(.2,.6,.3,1)' : 'transform 1.1s cubic-bezier(.77,0,.18,1)', fill: i < ri || on ? '100%' : '0%', fillT: on && !s.reelHold ? 'width 5s linear' : 'none' }; }), reelCount: reel.length ? String(ri + 1).padStart(2, '0') + ' / ' + String(reel.length).padStart(2, '0') : '', reelCap: reel[ri] ? reel[ri].cap : '', next: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(1); }, prev: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(-1); }, pause: () => this.holdReel(true), resume: () => this.holdReel(false), kicker: `${pad(ci + 1)} — ${c.category}`, title: c.title, year: c.year, category: c.category, role: c.role, client: c.client, desc: c.desc, grad: c.hero || (c.site ? `url(${c.site}) top center/cover no-repeat, ${c.grad}` : c.grad), site: c.site || '', siteAR: c.site ? (this.AR[c.site] || '0.3') : '1', siteBg: c.site ? `url(${c.site}) top center/100% auto no-repeat, #fff` : 'none', gallery: (c.gallery || []).map(g => (typeof g === 'string' ? { src: g, cap: '' } : g)).map(g => ({ ...g, hasCap: !!g.cap, ar: this.AR[g.src] || '1.6', bg: `url(${g.src}) center/100% 100% no-repeat` })), sections: c.sections || [], hasSections: !!(c.sections && c.sections.length), hasGallery: !!(c.gallery && c.gallery.length), heroLabel: c.hero ? '' : '[Hero image or video, 16:9]', d1: c.d1 || 'linear-gradient(160deg,#323236,#1E1E21)', d2: c.d2 || 'linear-gradient(200deg,#323236,#1E1E21)', dLabel: c.d1 ? '' : '[Detail image]', nextTitle: next.title + ' →', openNext: () => this.openCase(next.id) } : { title: '', openNext: () => {} };
+    const cmdsRaw = s.palette ? this.getCommands() : [];
+    const sel = Math.min(s.sel, Math.max(0, cmdsRaw.length - 1));
+    const cmds = cmdsRaw.map((cmd, i) => ({ ...cmd, selected: String(i === sel), bg: i === sel ? 'var(--surface-2)' : 'transparent', hover: () => this.setState({ sel: i }) }));
+    return {
+      wide: !s.narrow, menuLabel: s.narrow ? 'Menu' : '/ cmd', stickerScale: s.narrow ? 0.55 : 1,
+      list, folders, views, countLabel: `${pad(list.length)} projects — ${s.filter}`,
+      slides: this._slides || (this._slides = P.map((p, i) => ({ ...p, num: pad(i + 1), total: pad(P.length), short: p.desc.split('. ')[0].replace(/\.$/, '') + '.', media: p.site ? 'none' : (p.hero || p.grad), open: e => { e && e.preventDefault && e.preventDefault(); this.openCase(p.id); } }))), slidesTotal: pad(P.length), isCards: s.view === 'cards', isList: s.view === 'list', isBoard: s.view === 'board',
+      caseOpen: !!c, cs, zoom: this.zoomPick(), feat, featNext: e => { e && e.stopPropagation && e.stopPropagation(); this.stepFeat(1); }, featNextTitle: FO[(fi + 1) % FO.length] ? FO[(fi + 1) % FO.length].title : '', featMove: e => { const el = e.currentTarget, r = el.getBoundingClientRect(), mx = (e.clientX - r.left) / r.width - 0.5, my = (e.clientY - r.top) / r.height - 0.5, par = el.querySelector('[data-feat-par]'); if (par) par.style.transform = `translate(${mx * -22}px, ${my * -14}px)`; }, featOpen: () => FO[fi] && this.openCase(FO[fi].id), featPause: () => this.holdFeat(true), featResume: () => this.holdFeat(false), closeCase: () => this.closeCase(),
+      palette: s.palette, q: s.q, cmds, noCmds: s.palette && !cmds.length,
+      onQ: e => this.setState({ q: e.target.value, sel: 0 }),
+      openPalette: () => this.openPalette(), closePalette: () => this.closePalette(), stop: e => e.stopPropagation(),
+      toggleTheme: () => this.toggleTheme(), copyEmail: () => this.copyEmail(),
+      toast: s.toast, hasToast: !!s.toast
+    };
+  }
+}
+</script>
+</body>
+</html>
