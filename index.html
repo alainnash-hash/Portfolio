@@ -484,6 +484,16 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
           </div>
         </div>
       </div>
+      <sc-if value="{{ cs.hasStats }}" hint-placeholder-val="{{ false }}">
+        <div data-cs="" style="margin-top:clamp(40px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+          <sc-for list="{{ cs.stats }}" as="st" hint-placeholder-count="4">
+            <div style="display:flex;flex-direction:column;gap:10px;padding:clamp(18px,2vw,28px);background:var(--bg)">
+              <span style="font-family:var(--display);font-weight:500;font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:-.04em;color:var(--accent)">{{ st.n }}</span>
+              <span style="font-size:14px;line-height:1.45;color:var(--muted);text-wrap:pretty">{{ st.l }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
       <div style="margin-top:clamp(48px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,5vw,80px)">
         <h2 data-cs="" style="margin:0;font-family:var(--display);font-size:clamp(26px,2.6vw,36px);font-weight:500;letter-spacing:-.02em">Overview</h2>
         <p data-cs="" style="margin:0;font-size:18px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ cs.desc }}</p>
@@ -498,10 +508,37 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
           </sc-for>
         </div>
       </sc-if>
+      <sc-if value="{{ cs.hasFeatures }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:clamp(72px,9vw,140px);display:flex;flex-direction:column;gap:clamp(72px,10vw,160px)">
+          <sc-for list="{{ cs.features }}" as="ft" hint-placeholder-count="0">
+            <section data-feat="" style="display:flex;flex-direction:column;gap:clamp(20px,2.6vw,36px)">
+              <div data-feat-text="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(12px,3vw,48px);align-items:end">
+                <div style="display:flex;flex-direction:column;gap:12px">
+                  <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">{{ ft.num }}</span>
+                  <h3 style="margin:0;font-family:var(--display);font-weight:500;font-size:clamp(30px,3.6vw,54px);line-height:1;letter-spacing:-.035em;text-wrap:balance">{{ ft.h }}</h3>
+                </div>
+                <p style="margin:0;font-size:17px;line-height:1.6;color:var(--muted);text-wrap:pretty;max-width:520px">{{ ft.p }}</p>
+              </div>
+              <div style="perspective:1600px">
+                <div data-feat-frame="" style="border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1);background:#141416;box-shadow:0 40px 120px -30px rgba(0,0,0,.8),0 0 0 1px rgba(0,0,0,.4);transform-origin:50% 0%">
+                  <div style="height:38px;display:flex;align-items:center;gap:7px;padding:0 16px;background:#1E1F22;border-bottom:1px solid rgba(255,255,255,.06)">
+                    <span style="width:10px;height:10px;border-radius:50%;background:#4A4B50"></span><span style="width:10px;height:10px;border-radius:50%;background:#4A4B50"></span><span style="width:10px;height:10px;border-radius:50%;background:#4A4B50"></span>
+                    <span style="margin:0 auto;display:flex;align-items:center;gap:8px;padding:5px 14px;border-radius:7px;background:#141416;font-family:var(--mono);font-size:11px;color:#9C9CA1"><span style="width:6px;height:6px;border-radius:50%;background:#22C55E"></span>dashboard / {{ ft.url }}</span>
+                    <span style="width:44px"></span>
+                  </div>
+                  <div style="overflow:hidden"><div data-feat-img="" role="img" aria-label="{{ ft.h }}" style="width:100%;aspect-ratio:{{ ft.ar }};background:{{ ft.bg }}"></div></div>
+                </div>
+              </div>
+            </section>
+          </sc-for>
+        </div>
+      </sc-if>
+      <sc-if value="{{ cs.hasD }}" hint-placeholder-val="{{ true }}">
       <div style="margin-top:clamp(48px,6vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(16px,2vw,28px)">
         <div data-cs="" style="position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:{{ cs.d1 }}"><span style="position:absolute;left:18px;bottom:16px;font-family:var(--mono);font-size:12px;color:#9C9CA1">{{ cs.dLabel }}</span></div>
         <div data-cs="" style="position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:{{ cs.d2 }}"><span style="position:absolute;left:18px;bottom:16px;font-family:var(--mono);font-size:12px;color:#9C9CA1">{{ cs.dLabel }}</span></div>
       </div>
+      </sc-if>
       <sc-if value="{{ cs.site }}" hint-placeholder-val="{{ false }}">
         <div data-cs="" style="margin-top:clamp(48px,6vw,96px);display:flex;flex-direction:column;gap:16px">
           <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><h2 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.6vw,36px);font-weight:500;letter-spacing:-.02em">Full page</h2><span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Scroll inside the frame</span></div>
@@ -584,7 +621,7 @@ class Component extends DCLogic {
     accent: { '--bg': '#D6C7A8', '--surface': '#CDBD9B', '--surface-2': '#C3B28F', '--line': '#B4A27F', '--text': '#18181A', '--muted': '#4A4336', '--accent': '#18181A', '--on-accent': '#D6C7A8' }
   };
 
-  AR = {"assets/meta-g4.jpg":"7.2000","assets/maximus-g3.jpg":"5.1429","assets/air-g2.jpg":"1.5759","assets/maximus-g4.jpg":"1.6941","assets/meta-g3.jpg":"2.6667","assets/air-g1.jpg":"2.6699","assets/meta-full.jpg":"0.4403","assets/maximus-g1.jpg":"2.5714","assets/air-g3.jpg":"1.4031","assets/maximus-g2.jpg":"0.9632","assets/dough-dessert.jpg":"0.7250","assets/dough-g1.jpg":"1.3483","assets/maximus-full.jpg":"0.2166","assets/air-full.jpg":"0.3427","assets/meta-g1.jpg":"2.8346","assets/dough-g2.jpg":"1.3483","assets/meta-g2.jpg":"2.5760"};
+  AR = {"assets/dash-overview.jpg":"1.7586","assets/dash-onboarding.jpg":"1.7520","assets/dash-onboard-2.jpg":"2.0155","assets/dash-kpis.jpg":"1.9561","assets/dash-revenue.jpg":"3.0788","assets/dash-payments.jpg":"2.8170","assets/dash-forecast.jpg":"2.6751","assets/dash-october.jpg":"2.3421","assets/dash-members.jpg":"2.8668","assets/meta-g4.jpg":"7.2000","assets/maximus-g3.jpg":"5.1429","assets/air-g2.jpg":"1.5759","assets/maximus-g4.jpg":"1.6941","assets/meta-g3.jpg":"2.6667","assets/air-g1.jpg":"2.6699","assets/meta-full.jpg":"0.4403","assets/maximus-g1.jpg":"2.5714","assets/air-g3.jpg":"1.4031","assets/maximus-g2.jpg":"0.9632","assets/dough-dessert.jpg":"0.7250","assets/dough-g1.jpg":"1.3483","assets/maximus-full.jpg":"0.2166","assets/air-full.jpg":"0.3427","assets/meta-g1.jpg":"2.8346","assets/dough-g2.jpg":"1.3483","assets/meta-g2.jpg":"2.5760"};
   PROJECTS = [
     { id: 'maximus', title: 'Maximus', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Maximus Industrial Franchise', stack: ['Website', 'Franchise', 'Australia'], desc: 'A website for Maximus Industrial Franchise, an Australian franchise selling hoses, valves, pumps and fittings. The site walks prospective franchisees through the opportunity across Home, Let’s Talk About Us, Let’s Talk About You, Ask Us Anything and Hit Go!, in the brand’s black and orange.', grad: '#E8510E', site: 'assets/maximus-full.jpg', gallery: ['assets/maximus-g1.jpg','assets/maximus-g2.jpg','assets/maximus-g3.jpg','assets/maximus-g4.jpg'], hero: 'url(assets/maximus-hero.jpg) top center/cover no-repeat, #1A1A1A', d1: 'url(assets/maximus-d1.jpg) center/cover no-repeat, #1A1A1A', d2: 'url(assets/maximus-d2.jpg) right center/cover no-repeat, #1A1A1A', bx: '52%', by: '6%', br: '-2deg' },
     { id: 'regen', title: 'Regen', category: 'Branding & Web Design', tag: 'Branding', year: '2023', role: 'Identity & website', client: 'ReGen', stack: ['Logo', 'Guidelines', 'Web'], desc: 'Branding and web design for an NFT platform. A fluid, organic mark built from the letters R and G. The mark joins an R and a G into one fluid, node-like form that suggests technology without the usual hard-edged crypto clichés. A heavy geometric wordmark in navy, finished with a teal full stop, keeps it grounded.', grad: 'url(assets/regen-logo-1.png) center/46% no-repeat, #1B3242', hero: 'url(assets/regen-logo-2.png) center/56% no-repeat, #1B3242', d1: 'url(assets/regen-logo-3.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/regen-logo-1.png) center/50% no-repeat, #F3F4F2', bx: '70%', by: '34%', br: '6deg' },
@@ -592,7 +629,12 @@ class Component extends DCLogic {
     { id: 'loadboard', title: 'Loadboard', category: 'Branding', tag: 'Branding', year: '2021', role: 'Brand identity', client: 'Loadboard Transport Services', stack: ['Logo', 'Guidelines', 'Australia'], desc: 'A single-colour identity for an Australian carrier. The wordmark rides inside the truck, so the name and the service are read in one glance. Speed lines run through the wordmark into a prime-mover silhouette. One blue, condensed italic type and no gradients mean the logo reproduces the same on a trailer, a fuel card or a phone screen.', grad: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', hero: 'url(assets/loadboard-logo-1.png) center/60% no-repeat, #2B3C99', d1: 'url(assets/loadboard-logo-2.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', bx: '52%', by: '60%', br: '-4deg' },
     { id: 'mags', title: 'Mag’s Lechon Belly', category: 'Logo Design', tag: 'Branding', year: '2025', role: 'Logo & guidelines', client: 'Mag’s Lechon Belly, Dumaguete', stack: ['Logo', 'Guidelines', 'Print'], desc: 'A hand-drawn pig mark for a lechon belly stall in Dumaguete. Built to read from across the street and to sit happily on a grease-stained takeaway box. The answer is a winking, grinning pig inside a classic round badge. Thick black outlines and a single saturated red keep it cheap to print in one or two colours, and the curved Cooper-style lettering gives it the feel of an old roadside eatery.', grad: 'url(assets/mags-logo-2.png) center/72% no-repeat, #F4ECDD', hero: 'url(assets/mags-logo-2.png) center/auto 72% no-repeat, #F4ECDD', d1: 'url(assets/mags-logo-3.png) center/72% no-repeat, #A81010', d2: 'url(assets/mags-logo-2.png) center/72% no-repeat, #1C1816', bx: '28%', by: '4%', br: '-3deg' },
     { id: 'air-scooter', title: 'Air Scooter', category: 'Web Design', tag: 'Web', year: '2025', role: 'Web design', client: 'Air Electric Scooter', stack: ['Product page', 'E-commerce', 'Figma'], desc: 'A product landing page for the Air Electric Scooter. The page leads with price, instalments and free next-day shipping, then sells the ride through lifestyle photography and close-up product detail before a single Buy Now action.', grad: '#EE7433', site: 'assets/air-full.jpg', gallery: ['assets/air-g1.jpg','assets/air-g2.jpg','assets/air-g3.jpg'], hero: 'url(assets/air-hero.jpg) top center/cover no-repeat, #FFFFFF', d1: 'url(assets/air-2.jpg) center/cover no-repeat, #2A2A2A', d2: 'url(assets/air-3.jpg) center/cover no-repeat, #2A2A2A', bx: '74%', by: '66%', br: '3deg' },
-    { id: 'doughballs', title: 'Doughballs', category: 'Menu Design', tag: 'Print', year: '2026', role: 'Menu design', client: 'Doughballs, The Pizza Place', stack: ['Menu', 'Print', 'Hospitality'], desc: 'A one-fold menu for Doughballs, a South Australian pizza place. The swirling D on the cover carries through deep teal panels and hand-lettered headings across drinks, starters, pizzas and a separate dessert insert, with prices set in clean columns and dietary icons on every dish.', grad: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', hero: 'url(assets/dough-flatlay.jpg) center/cover no-repeat, #163A3E', d1: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', d2: 'url(assets/dough-3.jpg) top center/cover no-repeat, #1F4A4F', gallery: [{ src: 'assets/dough-g1.jpg', cap: 'Outside — drinks, cocktails and the cover' }, { src: 'assets/dough-g2.jpg', cap: 'Inside — to start, not pizza and the pizza list' }, { src: 'assets/dough-dessert.jpg', cap: 'Dessert insert — front and back' }], sections: [{ h: 'Brief', p: 'One folded sheet that holds the full food and drinks offer, reads quickly at the table and feels unmistakably Doughballs.' }, { h: 'Approach', p: 'The swirling D on the cover sets the pattern. Deep teal panels group each section, script headings mark the signature items, and every pizza runs in three sizes so prices sit in aligned columns.' }, { h: 'Details', p: 'Dietary icons on every dish, a dipping-sauce panel, a Special House badge, a happy hour block and a panel supporting local South Australian businesses. A slim insert carries the dessert list.' }, { h: 'Format', p: 'A3 one-fold menu, printed both sides, with a 99 × 297 mm dessert insert.' }], bx: '8%', by: '30%', br: '-4deg' }
+    { id: 'doughballs', title: 'Doughballs', category: 'Menu Design', tag: 'Print', year: '2026', role: 'Menu design', client: 'Doughballs, The Pizza Place', stack: ['Menu', 'Print', 'Hospitality'], desc: 'A one-fold menu for Doughballs, a South Australian pizza place. The swirling D on the cover carries through deep teal panels and hand-lettered headings across drinks, starters, pizzas and a separate dessert insert, with prices set in clean columns and dietary icons on every dish.', grad: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', hero: 'url(assets/dough-flatlay.jpg) center/cover no-repeat, #163A3E', d1: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', d2: 'url(assets/dough-3.jpg) top center/cover no-repeat, #1F4A4F', gallery: [{ src: 'assets/dough-g1.jpg', cap: 'Outside — drinks, cocktails and the cover' }, { src: 'assets/dough-g2.jpg', cap: 'Inside — to start, not pizza and the pizza list' }, { src: 'assets/dough-dessert.jpg', cap: 'Dessert insert — front and back' }], sections: [{ h: 'Brief', p: 'One folded sheet that holds the full food and drinks offer, reads quickly at the table and feels unmistakably Doughballs.' }, { h: 'Approach', p: 'The swirling D on the cover sets the pattern. Deep teal panels group each section, script headings mark the signature items, and every pizza runs in three sizes so prices sit in aligned columns.' }, { h: 'Details', p: 'Dietary icons on every dish, a dipping-sauce panel, a Special House badge, a happy hour block and a panel supporting local South Australian businesses. A slim insert carries the dessert list.' }, { h: 'Format', p: 'A3 one-fold menu, printed both sides, with a 99 × 297 mm dessert insert.' }], bx: '8%', by: '30%', br: '-4deg' },
+    { id: 'asset-dashboard', title: 'Gym Dashboard', category: 'CRM Dashboard & AI', tag: 'Systems', year: '2026', role: 'Design, build & automation', client: 'ASSET Health and Performance', stack: ['GHL', 'ClubFit API', 'Claude', 'ChatGPT', 'GitHub'], desc: 'One dashboard for a gym owner who was running the business across three CRMs. It pulls the numbers from each system into one place, so revenue, attendance, joins, cancellations and failed payments can be checked on a single screen. A member health score flags who needs attention, so staff can step in before someone cancels. Member names and dollar figures are blurred to protect the business.', grad: 'url(assets/dash-cover.jpg) center/cover no-repeat, #0C0D0D', hero: 'url(assets/dash-cover.jpg) center/cover no-repeat, #0C0D0D',
+      stats: [{ n: '3 → 1', l: 'CRMs brought into one dashboard' }, { n: '6', l: 'Views: overview, members, onboarding, retention, financial, pipeline' }, { n: '28', l: 'Day onboarding board with a weekly checklist' }, { n: '204', l: 'Members scored for cancellation risk' }],
+      sections: [{ h: 'The problem', p: 'The owner had three CRMs to work with, so seeing how the gym was performing meant logging into each one and piecing the numbers together by hand.' }, { h: 'What I built', p: 'A single dashboard connected to the ClubFit API and the other systems, plus code that scores how each member is tracking based on their visits and payments.' }, { h: 'The result', p: 'The owner checks every number in one place and can see which members need more attention, so staff can reach out before they cancel.' }, { h: 'Built with', p: 'GoHighLevel, ClubFit API, Claude, ChatGPT and GitHub.' }],
+      features: [{ src: 'assets/dash-overview.jpg', url: 'overview', h: 'The whole club at a glance', p: 'Revenue and attendance for the last 30 days, each compared with the period before and the same time last year.' }, { src: 'assets/dash-kpis.jpg', url: 'overview', h: 'Every number that matters', p: 'Pipeline, payment issues, debt collection, suspensions, cancellations and pack sales sit in one row, with new joins and cancellations charted day by day.' }, { src: 'assets/dash-onboarding.jpg', url: 'onboarding', h: 'A 28-day onboarding board', p: 'New members move week by week through a checklist of calls, texts and sessions. Staff tick each task off, and the board records who did it.' }, { src: 'assets/dash-members.jpg', url: 'retention', h: 'Spotting who might leave', p: 'Each active member gets a risk score from their visit pattern. Ghosts, sharp drops and gradual slides are flagged so the team knows who to contact first.' }, { src: 'assets/dash-revenue.jpg', url: 'financial', h: 'Where the money comes from', p: 'Twelve months of revenue against the year before, broken down by category for any month.' }, { src: 'assets/dash-forecast.jpg', url: 'financial', h: 'Forecast and what to act on', p: 'The next three months are forecast from the current run rate and last year’s season. The dashboard then lists the actions worth taking, worked out from the numbers each time it loads.' }],
+      bx: '60%', by: '20%', br: '3deg' },
   ];
 
   state = { view: 'cards', filter: 'All', caseId: null, palette: false, q: '', sel: 0, toast: '', narrow: typeof window !== 'undefined' && window.innerWidth < 900, theme: 'dark' };
@@ -1174,7 +1216,7 @@ class Component extends DCLogic {
   // ---------- Homepage zoom reel: random projects, scroll-driven ----------
   zoomPick() {
     if (!this._zoom) {
-      const P = this.PROJECTS.filter(p => p.hero || p.site), sh = [...P].sort(() => Math.random() - 0.5).slice(0, 3);
+      const P = this.PROJECTS.filter(p => p.hero || p.site), dash = P.find(p => p.id === 'asset-dashboard'), rest = [...P].filter(p => p !== dash).sort(() => Math.random() - 0.5), sh = (dash ? [dash, ...rest.slice(0, 2)] : rest.slice(0, 3)).sort(() => Math.random() - 0.5);
       this._zoom = sh.map((p, i) => ({ title: p.title, category: p.category, num: String(this.PROJECTS.indexOf(p) + 1).padStart(2, '0'),
         bg: p.hero || `url(${p.site}) top center/cover no-repeat, ${p.grad}`, clip0: i ? 'inset(100% 0% 0% 0%)' : 'inset(0% 0% 0% 0%)', op0: i ? '0' : '1',
         open: () => this.openCase(p.id) }));
@@ -1230,10 +1272,25 @@ class Component extends DCLogic {
   }
 
   // ---------- Case study reel ----------
+  initFeatures() {
+    (this._featST || []).forEach(t => t.kill()); this._featST = [];
+    const g = this.g, root = this.root; if (!g || !window.ScrollTrigger || this.reduce || !this.state.caseId) return;
+    const ov = root.querySelector('[data-case]'); if (!ov) return;
+    root.querySelectorAll('[data-feat]').forEach(sec => {
+      const fr = sec.querySelector('[data-feat-frame]'), im = sec.querySelector('[data-feat-img]'), tx = sec.querySelector('[data-feat-text]');
+      const tl = g.timeline({ scrollTrigger: { trigger: sec, scroller: ov, start: 'top 95%', end: 'top 25%', scrub: 0.6 } });
+      tl.fromTo(fr, { rotateX: 22, scale: 0.84, y: 120, opacity: 0.25 }, { rotateX: 0, scale: 1, y: 0, opacity: 1, ease: 'power2.out' }, 0)
+        .fromTo(im, { scale: 1.12 }, { scale: 1, ease: 'power2.out' }, 0)
+        .fromTo(tx, { y: 50, opacity: 0 }, { y: 0, opacity: 1, ease: 'power2.out', duration: 0.6 }, 0);
+      this._featST.push(tl.scrollTrigger);
+    });
+    ScrollTrigger.refresh();
+  }
   buildReel(c) {
     const r = [], add = (bg, cap) => bg && r.push({ bg, cap });
     add(c.hero || (c.site ? `url(${c.site}) top center/cover no-repeat, ${c.grad}` : c.grad), c.title);
     (c.gallery || []).forEach(g => { const src = typeof g === 'string' ? g : g.src; add(`url(${src}) center/contain no-repeat, #141416`, (typeof g === 'object' && g.cap) || 'Detail'); });
+    (c.features || []).forEach(f => add(`url(${f.src}) center/contain no-repeat, #0C0D0D`, f.h));
     if (c.d1) add(c.d1, 'Detail');
     if (c.d2) add(c.d2, 'Detail');
     return r;
@@ -1271,6 +1328,11 @@ class Component extends DCLogic {
       const ov = root.querySelector('[data-case]'); if (ov) ov.scrollTop = 0;
       if (g && !this.reduce) g.from(root.querySelectorAll('[data-cs]'), { y: 40, opacity: 0, duration: 1, stagger: 0.07, ease: 'power3.out', delay: 0.3 });
     }
+    if (this.state.caseId !== ps.caseId) {
+      (this._featST || []).forEach(t => t.kill()); this._featST = [];
+      clearTimeout(this._featT);
+      if (this.state.caseId) { let n = 0; const go = () => { const r = this.root; if (r && r.querySelector('[data-case] [data-feat]')) this.initFeatures(); else if (++n < 30) this._featT = setTimeout(go, 60); }; requestAnimationFrame(() => { this._featT = setTimeout(go, 60); }); }
+    }
     if (this.state.toast && !ps.toast && g) g.from(root.querySelector('[data-toast]'), { y: 20, opacity: 0, duration: 0.5, ease: 'expo.out' });
     if (this._flip) {
       const m = this._flip; this._flip = null;
@@ -1291,7 +1353,7 @@ class Component extends DCLogic {
       open: e => { e && e.preventDefault && e.preventDefault(); this.openCase(p.id); },
       key: e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.openCase(p.id); } }
     }));
-    const folders = ['All', 'Web', 'Branding', 'Print'].map(f => {
+    const folders = ['All', 'Web', 'Branding', 'Print', 'Systems'].map(f => {
       const n = f === 'All' ? P.length : P.filter(p => p.tag === f).length, on = s.filter === f;
       return { label: f, count: pad(n), pressed: String(on), aria: `${f} folder, ${n} projects`, bg: on ? 'var(--accent)' : 'var(--surface-2)', fg: on ? 'var(--on-accent)' : 'var(--muted)', pick: () => this.setFilter(f) };
     });
@@ -1310,7 +1372,7 @@ class Component extends DCLogic {
       fill: i < fi || on ? '100%' : '0%', fillT: on && !s.featHold ? 'width 5.5s linear' : 'none', labelO: on ? '1' : '.55',
       pick: e => { e && e.stopPropagation && e.stopPropagation(); this.stepFeat(i - fi); }, open: () => this.openCase(p.id) }; });
     const reel = c ? this.buildReel(c) : [], ri = reel.length ? ((s.reel || 0) % reel.length + reel.length) % reel.length : 0, rp = s.reelPrev;
-    const cs = c ? { reel: reel.map((r, i) => { const on = i === ri, was = i === rp && !on; return { bg: r.bg, z: on ? 3 : was ? 2 : 1, clip: on || was ? 'inset(0% 0% 0% 0%)' : (s.reelDir < 0 ? 'inset(0% 100% 0% 0%)' : 'inset(0% 0% 0% 100%)'), clipT: on ? 'clip-path 1.1s cubic-bezier(.77,0,.18,1)' : 'none', scale: on ? 'scale(1.08)' : 'scale(1.18)', scaleT: on ? 'transform 7s cubic-bezier(.2,.6,.3,1)' : 'transform 1.1s cubic-bezier(.77,0,.18,1)', fill: i < ri || on ? '100%' : '0%', fillT: on && !s.reelHold ? 'width 5s linear' : 'none' }; }), reelCount: reel.length ? String(ri + 1).padStart(2, '0') + ' / ' + String(reel.length).padStart(2, '0') : '', reelCap: reel[ri] ? reel[ri].cap : '', next: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(1); }, prev: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(-1); }, pause: () => this.holdReel(true), resume: () => this.holdReel(false), kicker: `${pad(ci + 1)} — ${c.category}`, title: c.title, year: c.year, category: c.category, role: c.role, client: c.client, desc: c.desc, grad: c.hero || (c.site ? `url(${c.site}) top center/cover no-repeat, ${c.grad}` : c.grad), site: c.site || '', siteAR: c.site ? (this.AR[c.site] || '0.3') : '1', siteBg: c.site ? `url(${c.site}) top center/100% auto no-repeat, #fff` : 'none', gallery: (c.gallery || []).map(g => (typeof g === 'string' ? { src: g, cap: '' } : g)).map(g => ({ ...g, hasCap: !!g.cap, ar: this.AR[g.src] || '1.6', bg: `url(${g.src}) center/100% 100% no-repeat` })), sections: c.sections || [], hasSections: !!(c.sections && c.sections.length), hasGallery: !!(c.gallery && c.gallery.length), heroLabel: c.hero ? '' : '[Hero image or video, 16:9]', d1: c.d1 || 'linear-gradient(160deg,#323236,#1E1E21)', d2: c.d2 || 'linear-gradient(200deg,#323236,#1E1E21)', dLabel: c.d1 ? '' : '[Detail image]', nextTitle: next.title + ' →', openNext: () => this.openCase(next.id) } : { title: '', openNext: () => {} };
+    const cs = c ? { reel: reel.map((r, i) => { const on = i === ri, was = i === rp && !on; return { bg: r.bg, z: on ? 3 : was ? 2 : 1, clip: on || was ? 'inset(0% 0% 0% 0%)' : (s.reelDir < 0 ? 'inset(0% 100% 0% 0%)' : 'inset(0% 0% 0% 100%)'), clipT: on ? 'clip-path 1.1s cubic-bezier(.77,0,.18,1)' : 'none', scale: on ? 'scale(1.08)' : 'scale(1.18)', scaleT: on ? 'transform 7s cubic-bezier(.2,.6,.3,1)' : 'transform 1.1s cubic-bezier(.77,0,.18,1)', fill: i < ri || on ? '100%' : '0%', fillT: on && !s.reelHold ? 'width 5s linear' : 'none' }; }), reelCount: reel.length ? String(ri + 1).padStart(2, '0') + ' / ' + String(reel.length).padStart(2, '0') : '', reelCap: reel[ri] ? reel[ri].cap : '', next: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(1); }, prev: e => { e && e.stopPropagation && e.stopPropagation(); this.stepReel(-1); }, pause: () => this.holdReel(true), resume: () => this.holdReel(false), kicker: `${pad(ci + 1)} — ${c.category}`, title: c.title, year: c.year, category: c.category, role: c.role, client: c.client, desc: c.desc, grad: c.hero || (c.site ? `url(${c.site}) top center/cover no-repeat, ${c.grad}` : c.grad), site: c.site || '', siteAR: c.site ? (this.AR[c.site] || '0.3') : '1', siteBg: c.site ? `url(${c.site}) top center/100% auto no-repeat, #fff` : 'none', gallery: (c.gallery || []).map(g => (typeof g === 'string' ? { src: g, cap: '' } : g)).map(g => ({ ...g, hasCap: !!g.cap, ar: this.AR[g.src] || '1.6', bg: `url(${g.src}) center/100% 100% no-repeat` })), sections: c.sections || [], stats: c.stats || [], hasStats: !!(c.stats && c.stats.length), features: (c.features || []).map((f, i) => ({ ...f, num: String(i + 1).padStart(2, '0') + ' / ' + String(c.features.length).padStart(2, '0'), ar: this.AR[f.src] || '1.7', bg: `url(${f.src}) top center/100% auto no-repeat, #141416` })), hasFeatures: !!(c.features && c.features.length), hasD: !c.features, hasSections: !!(c.sections && c.sections.length), hasGallery: !!(c.gallery && c.gallery.length), heroLabel: c.hero ? '' : '[Hero image or video, 16:9]', d1: c.d1 || 'linear-gradient(160deg,#323236,#1E1E21)', d2: c.d2 || 'linear-gradient(200deg,#323236,#1E1E21)', dLabel: c.d1 ? '' : '[Detail image]', nextTitle: next.title + ' →', openNext: () => this.openCase(next.id) } : { title: '', openNext: () => {} };
     const cmdsRaw = s.palette ? this.getCommands() : [];
     const sel = Math.min(s.sel, Math.max(0, cmdsRaw.length - 1));
     const cmds = cmdsRaw.map((cmd, i) => ({ ...cmd, selected: String(i === sel), bg: i === sel ? 'var(--surface-2)' : 'transparent', hover: () => this.setState({ sel: i }) }));
