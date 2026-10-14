@@ -290,6 +290,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
               </div>
               <span style="margin-top:-8px;font-size:14px;color:var(--muted)">{{ p.category }}</span>
               <sc-if value="{{ p.result }}" hint-placeholder-val="{{ false }}"><span style="margin-top:-6px;font-family:var(--mono);font-size:12px;color:var(--accent)">{{ p.result }}</span></sc-if>
+              <span style="margin-top:-4px;font-size:13px;line-height:1.4;color:var(--muted);opacity:.75">{{ p.snippet }}</span>
             </a>
           </sc-for>
         </div>
@@ -1463,6 +1464,7 @@ class Component extends DCLogic {
     const s = this.state, P = this.PROJECTS, pad = n => String(n).padStart(2, '0');
     const list = P.filter(p => s.filter === 'All' || p.tag === s.filter).map(p => ({
       ...p, thumb: p.site ? `url(${p.site}) top center/cover no-repeat, ${p.grad}` : p.grad, siteBg: p.site ? `url(${p.site})` : 'none', shotPos: s.hov === p.id ? '50% 100%' : '50% 0%', enter: () => this.setState({ hov: p.id }), leave: () => this.setState({ hov: null }), num: pad(P.indexOf(p) + 1), rot: `rotate(${p.br})`, aria: `${p.title}, ${p.category}. Open case study`,
+      snippet: p.desc.split('. ')[0].replace(/\.$/, '') + '.',
       open: e => { e && e.preventDefault && e.preventDefault(); this.openCase(p.id); },
       key: e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.openCase(p.id); } }
     }));
