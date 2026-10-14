@@ -3,6 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nash Alino designs brands, websites and the automation and AI systems behind them. Based in the Philippines, working with clients worldwide.">
+<link rel="canonical" href="https://nashalino.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nashalino.netlify.app/">
+<meta property="og:title" content="Nash Alino — Brand, Web &amp; AI Systems">
+<meta property="og:description" content="Brand, website and the automation and AI systems behind them, from first draft to launch.">
+<meta property="og:image" content="https://nashalino.netlify.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nash Alino — Brand, Web &amp; AI Systems, with a pencil and a film camera">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nash Alino — Brand, Web &amp; AI Systems">
+<meta name="twitter:description" content="Brand, website and the automation and AI systems behind them, from first draft to launch.">
+<meta name="twitter:image" content="https://nashalino.netlify.app/assets/og-image.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nash Alino","url":"https://nashalino.netlify.app/","image":"https://nashalino.netlify.app/assets/og-image.jpg","email":"mailto:alain.nash@gmail.com","areaServed":"Worldwide","address":{"@type":"PostalAddress","addressCountry":"PH"},"founder":{"@type":"Person","name":"Alain Nash Aliño","jobTitle":"Designer and AI engineer","sameAs":["https://www.linkedin.com/in/alain-nash-ali%C3%B1o-b02832152/"]},"knowsAbout":["Brand Identity","Web Design","Social Media Management","GoHighLevel Automations","AI Engineering","Books and Publishing"]}
+</script>
 <script src="./support.js"></script>
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#18181A"/><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="34" fill="#D6C7A8">n.</text></svg></template>
 </head>
@@ -28,6 +45,19 @@ a:hover{color:var(--accent)}
 [data-cursor-on],[data-cursor-on] *{cursor:none!important}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:22px 0;cursor:pointer;list-style:none;font-family:var(--display);font-size:clamp(19px,1.7vw,24px);font-weight:500;letter-spacing:-.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover .faq-plus{color:var(--accent)}
+.faq-plus{flex:none;font-family:var(--mono);font-size:20px;color:var(--muted);transition:transform .35s cubic-bezier(.2,.7,.2,1),color .3s}
+.faq[open] .faq-plus{transform:rotate(45deg)}
+.faq p{margin:-6px 0 0;padding:0 0 24px;max-width:60ch;font-size:15px;line-height:1.6;color:var(--muted)}
+.book-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+@media (min-width:900px){.book-grid{grid-template-columns:repeat(10,1fr)}}
+.book-day{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:clamp(92px,9vw,132px);padding:clamp(8px,1vw,14px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--text);transition:background .35s,color .35s}
+.book-day:hover,.book-day:focus-visible{background:var(--text);color:var(--bg)}
+.book-day:hover .book-n,.book-day:focus-visible .book-n{transform:translateY(-4px)}
+.book-n{font-family:var(--display);font-weight:500;font-size:clamp(30px,4vw,64px);line-height:.85;letter-spacing:-.05em;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
 </style>
 </helmet>
 <div data-folio="" style="--bg:#18181A;--surface:#222225;--surface-2:#2C2C30;--line:#36363A;--text:#EDEDEA;--muted:#9C9CA1;--accent:#D6C7A8;--on-accent:#18181A;--display:'Bricolage Grotesque',sans-serif;--body:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,monospace;--pad:clamp(20px,4vw,48px);position:relative;min-height:100vh;background:var(--bg);color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip">
@@ -75,8 +105,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
             <div data-pop="" data-lift="" style="position:relative;transform-style:preserve-3d">
               <span data-shadow="" aria-hidden="true" style="position:absolute;left:4%;right:2%;top:78%;height:26px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);filter:blur(6px);transform:translateY(10px)"></span>
               <div data-obj="" style="position:relative;width:clamp(230px,24vw,360px);transform-style:preserve-3d">
-                <img src="assets/pencil.png" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
-                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:soft-light;-webkit-mask:url(assets/pencil.png) center/100% 100%;mask:url(assets/pencil.png) center/100% 100%;pointer-events:none"></span>
+                <img src="assets/pencil.webp" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
+                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:soft-light;-webkit-mask:url(assets/pencil.webp) center/100% 100%;mask:url(assets/pencil.webp) center/100% 100%;pointer-events:none"></span>
               </div>
             </div>
           </div>
@@ -89,9 +119,9 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
             <div data-pop="" data-lift="" style="position:relative;transform-style:preserve-3d">
               <span data-shadow="" aria-hidden="true" style="position:absolute;left:6%;right:6%;top:86%;height:34px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.6),transparent);filter:blur(7px);transform:translateY(10px)"></span>
               <div data-obj="" data-camera="" style="position:relative;width:clamp(180px,17vw,260px);transform-style:preserve-3d">
-                <img src="assets/camera.png" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
-                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:screen;-webkit-mask:url(assets/camera.png) center/100% 100%;mask:url(assets/camera.png) center/100% 100%;pointer-events:none"></span>
-                <span data-flash="" aria-hidden="true" style="position:absolute;inset:0;background:#fff;opacity:0;-webkit-mask:url(assets/camera.png) center/100% 100%;mask:url(assets/camera.png) center/100% 100%;pointer-events:none"></span>
+                <img src="assets/camera.webp" alt="" draggable="false" style="display:block;width:100%;height:auto;pointer-events:none">
+                <span data-sheen="" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 62%);background-size:250% 100%;background-position:100% 0;mix-blend-mode:screen;-webkit-mask:url(assets/camera.webp) center/100% 100%;mask:url(assets/camera.webp) center/100% 100%;pointer-events:none"></span>
+                <span data-flash="" aria-hidden="true" style="position:absolute;inset:0;background:#fff;opacity:0;-webkit-mask:url(assets/camera.webp) center/100% 100%;mask:url(assets/camera.webp) center/100% 100%;pointer-events:none"></span>
                 <span data-flash-label="" style="position:absolute;right:-8px;top:-14px;padding:3px 9px;border-radius:999px;background:#D6C7A8;color:#18181A;font-family:var(--mono);font-size:11px;opacity:0;transform:translateZ(30px)">click!</span>
               </div>
             </div>
@@ -115,12 +145,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
       <div data-hero-fade="" style="display:flex;flex-direction:column;gap:28px">
         <p style="margin:0;max-width:440px;font-size:clamp(17px,1.6vw,21px);line-height:1.45;color:var(--muted);text-wrap:pretty">Designer and AI engineer. I build the brand, the website and the systems that run behind it, from first draft to <span style="position:relative;display:inline-block;color:var(--text)">launch<svg viewBox="0 0 120 50" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:-14%;top:-30%;width:128%;height:160%;overflow:visible;pointer-events:none"><path data-draw="" d="M88 6 C 60 0, 14 4, 6 22 C 0 40, 50 48, 90 42 C 118 37, 122 16, 98 8 C 86 4, 70 5, 62 7" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span>.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px">
-          <a href="#works" data-go="works" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-weight:500;font-size:15px" style-hover="color:var(--on-accent)">See the work ↓</a>
-          <a href="#contact" data-go="contact" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;border:1px solid var(--line);color:var(--text);font-weight:500;font-size:15px" style-hover="border-color:var(--text);color:var(--text)">Get in touch</a>
+          <a href="https://calendly.com/alain-nash/30min" target="_blank" rel="noopener" onClick="{{ bookCall }}" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-weight:500;font-size:15px" style-hover="color:var(--on-accent)">Book a 30-min call</a>
+          <a href="#works" data-go="works" data-magnetic="" style="display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;border:1px solid var(--line);color:var(--text);font-weight:500;font-size:15px" style-hover="border-color:var(--text);color:var(--text)">See the work ↓</a>
         </div>
       </div>
       <div data-hero-fade="" style="display:flex;flex-direction:column;gap:6px;justify-self:end;text-align:right;font-family:var(--mono);font-size:12px;color:var(--muted)">
-        <span>Philippines — Available [Month Year]</span>
+        <span>Philippines — Taking projects from November</span>
         <span>Local time <span data-clock="" style="color:var(--text)">--:--:--</span> GMT+8</span>
       </div>
     </div>
@@ -173,7 +203,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
     <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(48px,7vw,96px)">
       <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter I</span>
       <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Introduction</h2>
-      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(01/04)</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(01/05)</span>
     </div>
     <blockquote style="margin:0 auto;max-width:1100px;font-family:var(--display);font-weight:400;font-size:clamp(36px,5.6vw,88px);line-height:1.02;letter-spacing:-.035em;text-align:center;text-wrap:balance">
       <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-line="" style="display:block">“Good design is <span style="position:relative;display:inline-block;font-style:italic">quiet<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:-2%;bottom:-.1em;width:104%;height:.28em;overflow:visible"><path data-draw="" d="M3 13 C 40 5, 90 3, 122 9 S 180 16, 197 6" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span> until you</span></span>
@@ -182,7 +212,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
     <div style="margin-top:clamp(64px,9vw,128px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,6vw,96px);align-items:end">
       <div data-img="" data-tilt="" data-cursor="img" style="position:relative;aspect-ratio:4/5;max-width:440px;border-radius:10px;overflow:hidden;background:#E4E3EA">
         <div data-img-in="" data-tilt-in="" style="position:absolute;inset:0">
-          <img src="assets/portrait.png" alt="Portrait of Nash Alino" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+          <img src="assets/portrait.webp" alt="Portrait of Nash Alino" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
         </div>
         <span style="position:absolute;right:16px;top:14px;perspective:300px"><span data-logo3d="" data-layers="6" aria-hidden="true" style="position:relative;display:inline-block;width:28px;aspect-ratio:689/900;transform-style:preserve-3d;color:#18181A"></span></span>
       </div>
@@ -201,7 +231,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
     <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(32px,5vw,64px)">
       <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter II</span>
       <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Selected work</h2>
-      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(02/04)</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(02/05)</span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(24px,4vw,64px);align-items:end">
       <h3 data-texture="" aria-label="The Work" style="margin:0;font-family:var(--display);font-weight:700;font-size:clamp(84px,14vw,220px);line-height:.84;letter-spacing:-.06em;color:transparent;background-image:radial-gradient(40% 70% at 20% 30%,#EDEDEA,transparent 70%),radial-gradient(45% 80% at 80% 70%,#D6C7A8,transparent 70%),linear-gradient(110deg,#8C7448,#D6C7A8 30%,#6E6A62 55%,#EDEDEA 75%,#8C7448);background-size:220% 220%;background-position:0% 50%;-webkit-background-clip:text;background-clip:text">The<br>Work</h3>
@@ -258,6 +288,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
                 <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">{{ p.year }}</span>
               </div>
               <span style="margin-top:-8px;font-size:14px;color:var(--muted)">{{ p.category }}</span>
+              <sc-if value="{{ p.result }}" hint-placeholder-val="{{ false }}"><span style="margin-top:-6px;font-family:var(--mono);font-size:12px;color:var(--accent)">{{ p.result }}</span></sc-if>
             </a>
           </sc-for>
         </div>
@@ -301,7 +332,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
       <div style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(24px,3vw,44px)">
         <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter III</span>
         <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">What I do</h2>
-        <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(03/04)</span>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(03/05)</span>
       </div>
       <div style="flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,6vw,96px);align-items:center">
         <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
@@ -323,28 +354,31 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
         </sc-if>
         <div style="display:grid;gap:clamp(32px,4vw,56px)">
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
-            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#111"><div style="background:url(assets/regen-logo-1.png) center/50% no-repeat, #1B3242"></div><div style="background:url(assets/loadboard-logo-1.png) center/82% no-repeat, #2B3C99"></div><div style="background:url(assets/mags-logo-2.png) center/70% no-repeat, #F4ECDD"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">01</span></div>
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:#111"><div style="background:url(assets/regen-logo-1.webp) center/50% no-repeat, #1B3242"></div><div style="background:url(assets/loadboard-logo-1.webp) center/82% no-repeat, #2B3C99"></div><div style="background:url(assets/mags-logo-2.webp) center/70% no-repeat, #F4ECDD"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">01</span></div>
             <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Brand Identity</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Be recognised</span></div>
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">A clear mark and a consistent look, so every touchpoint reads as the same business.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Logo &amp; brand marks</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Colour &amp; typography</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Brand guidelines</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Print &amp; social templates</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
-            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#6FB6C2"><div style="position:absolute;left:10%;right:10%;top:12%;bottom:-1px;border-radius:8px 8px 0 0;overflow:hidden;background:url(assets/meta-full.jpg) top center/100% auto no-repeat, #fff;border-top:18px solid #ECECEF;box-shadow:0 20px 50px rgba(0,0,0,.35)"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">02</span></div>
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#6FB6C2"><div style="position:absolute;left:10%;right:10%;top:12%;bottom:-1px;border-radius:8px 8px 0 0;overflow:hidden;background:url(assets/meta-full.webp) top center/100% auto no-repeat, #fff;border-top:18px solid #ECECEF;box-shadow:0 20px 50px rgba(0,0,0,.35)"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">02</span></div>
             <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Web Design</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Be found</span></div>
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Websites designed around the brand and built to turn visitors into enquiries.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">UX &amp; wireframes</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">WordPress builds</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Landing pages &amp; funnels</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">E-commerce</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
-            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#24252A;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-content:center;gap:8px;padding:0 clamp(14px,2vw,28px);box-sizing:border-box"><div style="aspect-ratio:1;border-radius:6px;background:url(assets/dough-cover.jpg) center/cover, #1F4A4F"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/mags-logo-2.png) center/70% no-repeat, #A81010"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/air-5.jpg) center/cover, #333"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/regen-logo-1.png) center/55% no-repeat, #1B3242"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">03</span></div>
+            <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#24252A;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-content:center;gap:8px;padding:0 clamp(14px,2vw,28px);box-sizing:border-box"><div style="aspect-ratio:1;border-radius:6px;background:url(assets/dough-cover.webp) center/cover, #1F4A4F"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/mags-logo-2.webp) center/70% no-repeat, #A81010"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/air-5.webp) center/cover, #333"></div><div style="aspect-ratio:1;border-radius:6px;background:url(assets/regen-logo-1.webp) center/55% no-repeat, #1B3242"></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">03</span></div>
             <div style="display:flex;flex-direction:column;gap:8px;padding:0 4px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font-family:var(--display);font-size:clamp(26px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.05">Social Media Management</h3><span style="font-family:var(--mono);font-size:11px;color:var(--accent)">Stay visible</span></div>
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Posts that look like the brand and go out on schedule, so your channels stay active without taking over your week.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Content calendars</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Post &amp; story design</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Captions &amp; scheduling</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Monthly reporting</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
             <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:#1F2024;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:44px 14px 14px;box-sizing:border-box;font-family:var(--mono);font-size:10px;color:#BDBDC2"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">New lead</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Followed up</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Booked</span><span style="height:18px;border-radius:5px;background:#2E2F35"></span><span style="height:18px;border-radius:5px;background:#2E2F35"></span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Invoiced</span><span style="height:18px;border-radius:5px;background:var(--accent)"></span></div><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">04</span></div>
@@ -353,6 +387,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Your CRM set up properly, so every lead is captured, followed up and booked without anyone chasing it.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">CRM &amp; pipelines</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Workflows &amp; triggers</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">SMS &amp; email sequences</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Xero invoicing sync</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
             <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:radial-gradient(90% 120% at 80% 0%, #3A3530, #1D1D1F 70%);display:flex;flex-direction:column;justify-content:center;gap:8px;padding:0 clamp(16px,3vw,40px);font-size:13px;line-height:1.35"><span style="align-self:flex-end;max-width:70%;padding:8px 12px;border-radius:12px 12px 2px 12px;background:#E9E6E0;color:#1D1D1F">Can I book in for Thursday?</span><span style="align-self:flex-start;max-width:78%;padding:8px 12px;border-radius:12px 12px 12px 2px;background:#2E2E33;color:#E9E6E0">Thursday 10am is free. You’re booked and a confirmation is on its way.</span><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">05</span></div>
@@ -361,6 +396,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Custom AI built into the way you already work: agents that answer, draft, sort and report.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Chat &amp; voice agents</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Knowledge bases</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">LLM integrations</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Internal tools</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
           <article data-svc-panel="" style="display:flex;flex-direction:column;gap:16px;padding:clamp(14px,1.4vw,20px);border:1px solid var(--line);border-radius:16px;background:rgba(127,127,127,.06)">
             <div data-cursor="img" style="position:relative;height:clamp(150px,26vh,260px);border-radius:10px;overflow:hidden;background:linear-gradient(230deg,#2F2F33,#1D1D1F)"><span style="position:absolute;left:12px;top:10px;z-index:2;padding:3px 8px;border-radius:999px;background:rgba(0,0,0,.55);font-family:var(--mono);font-size:11px;color:#fff">06</span></div>
@@ -369,17 +405,48 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
               <p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Interior layout, covers and launch management for print and ebook.</p>
             </div>
             <ul style="list-style:none;margin:0;padding:0 4px 4px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Interior &amp; covers</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Production workflow</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Launch planning</li><li style="padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.3">Author coordination</li></ul>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 4px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Pricing — message me</span><a href="#contact" data-go="contact" style="color:var(--text)" style-hover="color:var(--accent)">Ask for a quote →</a></div>
           </article>
         </div>
       </div>
     </section>
   </div>
 
-  <section data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad)">
+  <section id="process" data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad) 0">
     <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(40px,6vw,72px)">
       <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter IV</span>
+      <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">How it works</h2>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(04/05)</span>
+    </div>
+    <ol data-reveal="" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)">
+      <li style="display:flex;flex-direction:column;gap:14px;padding:clamp(20px,2vw,28px);border-right:1px solid var(--line);border-bottom:1px solid var(--line)"><span style="font-family:var(--display);font-weight:500;font-size:clamp(48px,5vw,80px);line-height:.85;letter-spacing:-.05em">01</span><h3 style="margin:0;font-family:var(--display);font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em">Free call</h3><p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">30 minutes. You tell me what’s slowing you down, and I tell you honestly whether I can help.</p></li>
+      <li style="display:flex;flex-direction:column;gap:14px;padding:clamp(20px,2vw,28px);border-right:1px solid var(--line);border-bottom:1px solid var(--line)"><span style="font-family:var(--display);font-weight:500;font-size:clamp(48px,5vw,80px);line-height:.85;letter-spacing:-.05em">02</span><h3 style="margin:0;font-family:var(--display);font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em">Plan &amp; quote</h3><p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">A written scope, timeline and price, so you know exactly what you’re getting before work starts.</p></li>
+      <li style="display:flex;flex-direction:column;gap:14px;padding:clamp(20px,2vw,28px);border-right:1px solid var(--line);border-bottom:1px solid var(--line)"><span style="font-family:var(--display);font-weight:500;font-size:clamp(48px,5vw,80px);line-height:.85;letter-spacing:-.05em">03</span><h3 style="margin:0;font-family:var(--display);font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em">Build</h3><p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">Brand, website and automations, with check-ins at set points so nothing comes as a surprise.</p></li>
+      <li style="display:flex;flex-direction:column;gap:14px;padding:clamp(20px,2vw,28px);border-right:1px solid var(--line);border-bottom:1px solid var(--line)"><span style="font-family:var(--display);font-weight:500;font-size:clamp(48px,5vw,80px);line-height:.85;letter-spacing:-.05em">04</span><h3 style="margin:0;font-family:var(--display);font-size:clamp(22px,2vw,28px);font-weight:500;letter-spacing:-.02em">Launch &amp; support</h3><p style="margin:0;font-size:15px;line-height:1.5;color:var(--muted);text-wrap:pretty">A proper handover and walkthrough, then optional monthly support if you want me on call.</p></li>
+    </ol>
+    <div style="margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,5vw,80px);align-items:start">
+      <div data-reveal="" style="display:flex;flex-direction:column;gap:20px">
+        <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">Questions</span>
+        <p style="margin:0;max-width:22ch;font-family:var(--display);font-size:clamp(30px,3.4vw,48px);font-weight:500;line-height:1;letter-spacing:-.03em">What people ask before we start.</p>
+        <a href="https://calendly.com/alain-nash/30min" target="_blank" rel="noopener" onClick="{{ bookCall }}" data-magnetic="" style="align-self:flex-start;display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid var(--line);color:var(--text);font-weight:500;font-size:15px" style-hover="border-color:var(--text);color:var(--text)">Still unsure? Book a call</a>
+      </div>
+      <div data-reveal="" style="border-top:1px solid var(--line)">
+        <details class="faq"><summary><span>How much does it cost?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>Every project is quoted after a free call, because a logo and a full CRM setup are very different jobs. Message me with what you need and you’ll get a clear price before anything starts.</p></details>
+        <details class="faq"><summary><span>How long does a project take?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>It depends on the scope, and you’ll get a timeline with your quote. Three years of managing publishing launches taught me to plan around deadlines and hand over on time.</p></details>
+        <details class="faq"><summary><span>Do I need GoHighLevel?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>No. I build in GoHighLevel, and also work with Xero, WordPress, Klaviyo and Mailchimp. If you already use other tools, we’ll go through what can connect on the call.</p></details>
+        <details class="faq"><summary><span>What do I need to provide?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>Any logo files and brand assets you already have, access to the tools involved, and someone who can answer questions during the build. Starting from scratch is fine too.</p></details>
+        <details class="faq"><summary><span>What happens after launch?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>You get a handover and a walkthrough so your team can run it. If something breaks or you want changes later, monthly support is available.</p></details>
+        <details class="faq"><summary><span>Do you work with clients outside the Philippines?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>Yes. I’ve worked with businesses in Australia and the Philippines. I’m on GMT+8, which overlaps well with Australia and Asia, and I work async with other time zones.</p></details>
+        <details class="faq"><summary><span>Who owns the files at the end?</span><span class="faq-plus" aria-hidden="true">+</span></summary><p>You do. Once the project is paid, the brand files, website and automations are yours.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section data-tone="base" style="max-width:1440px;margin:0 auto;padding:clamp(80px,11vw,160px) var(--pad)">
+    <div data-reveal="" style="display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(40px,6vw,72px)">
+      <span style="font-family:var(--mono);font-size:12px;color:var(--accent)">Chapter V</span>
       <h2 style="margin:0;font-size:14px;font-weight:500;color:var(--muted)">Experience</h2>
-      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(04/04)</span>
+      <span style="margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--muted)">(05/05)</span>
     </div>
     <div style="display:flex;flex-direction:column">
       <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline"><span style="font-family:var(--display);font-size:clamp(22px,2.4vw,32px);font-weight:500;letter-spacing:-.02em">Dean Publishing</span><span style="font-size:15px;color:var(--muted)">Graphic Designer</span><span style="font-family:var(--mono);font-size:12px;color:var(--muted);justify-self:end">2026</span></div>
@@ -387,7 +454,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
       <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline"><span style="font-family:var(--display);font-size:clamp(22px,2.4vw,32px);font-weight:500;letter-spacing:-.02em">NFT Inc.</span><span style="font-size:15px;color:var(--muted)">Graphic Designer</span><span style="font-family:var(--mono);font-size:12px;color:var(--muted);justify-self:end">2021</span></div>
     </div>
     <div style="margin-top:clamp(56px,7vw,96px)">
-      <span data-reveal="" style="display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:18px">Selected experiences</span>
+      <span data-reveal="" style="display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:18px">Worked with</span>
       <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)">
         <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.03em;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">Dean Publishing</div>
         <div style="display:grid;place-items:center;min-height:120px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:22px;font-weight:400;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);transition:color .3s" style-hover="color:var(--text)">BLVNP Inc.</div>
@@ -406,17 +473,30 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
           <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.04em"><span data-line="" style="display:flex"><span data-prox="" style="display:inline-block">L</span><span data-prox="" style="display:inline-block">e</span><span data-prox="" style="display:inline-block">t</span><span data-prox="" style="display:inline-block">’</span><span data-prox="" style="display:inline-block">s</span></span></span>
           <span aria-hidden="true" style="display:flex;overflow:hidden;padding-bottom:.04em;padding-left:clamp(0px,10vw,180px)"><span data-line="" style="display:flex"><span data-prox="" style="display:inline-block">b</span><span data-prox="" style="display:inline-block">u</span><span data-prox="" style="display:inline-block">i</span><span data-prox="" style="display:inline-block">l</span><span data-prox="" style="display:inline-block">d</span><span data-prox="" style="display:inline-block">.</span></span></span>
         </h2>
+        <div data-reveal="" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;font-family:var(--mono);font-size:12px;color:var(--muted)"><span>Book a 30-minute call — pick a day, then a time</span><span>Times shown in your time zone</span></div>
+          <div class="book-grid">
+            <sc-for list="{{ bookDays }}" as="d" hint-placeholder-count="10">
+              <a class="book-day" href="{{ d.url }}" target="_blank" rel="noopener" onClick="{{ d.pick }}" aria-label="{{ d.aria }}">
+                <span style="font-family:var(--mono);font-size:11px;opacity:.7">{{ d.wd }}</span>
+                <span class="book-n">{{ d.n }}</span>
+                <span style="font-family:var(--mono);font-size:11px;opacity:.7">{{ d.mon }}</span>
+              </a>
+            </sc-for>
+          </div>
+        </div>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px">
           <button data-magnetic="" onClick="{{ copyEmail }}" aria-label="Copy email address to clipboard" style="display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 26px;border:0;border-radius:999px;background:var(--text);color:var(--bg);font:500 clamp(14px,1.4vw,17px) var(--body);cursor:pointer;word-break:break-all;text-align:left">alain.nash@gmail.com<span style="font-family:var(--mono);font-size:11px;opacity:.6">copy</span></button>
           <div style="display:flex;flex-wrap:wrap;gap:22px;font-size:15px">
             <a href="https://www.linkedin.com/in/alain-nash-ali%C3%B1o-b02832152/" target="_blank" rel="noopener" data-roll="" data-magnetic="" style="display:inline-block;overflow:hidden;height:1.25em;line-height:1.25em;color:var(--text)"><span data-roll-in="" style="display:flex;flex-direction:column"><span>LinkedIn ↗</span><span aria-hidden="true">LinkedIn ↗</span></span></a>
+            <a href="https://calendly.com/alain-nash/30min" target="_blank" rel="noopener" onClick="{{ bookCall }}" data-roll="" data-magnetic="" style="display:inline-block;overflow:hidden;height:1.25em;line-height:1.25em;color:var(--text)"><span data-roll-in="" style="display:flex;flex-direction:column"><span>Full calendar ↗</span><span aria-hidden="true">Full calendar ↗</span></span></a>
           </div>
         </div>
       </div>
       <footer style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 24px;border-top:1px solid var(--line);padding-top:22px;font-family:var(--mono);font-size:12px;color:var(--muted)">
         <span style="display:inline-flex;align-items:center;gap:10px;perspective:300px"><span data-logo3d="" data-layers="5" aria-hidden="true" style="position:relative;display:inline-block;width:16px;aspect-ratio:689/900;transform-style:preserve-3d;color:var(--text)"></span>© 2026 Nash Alino</span>
         <span>Folio / Edition © 2026</span>
-        <span>Philippines — <span data-clock="">--:--:--</span> GMT+8</span>
+        <span>Philippines — GMT+8</span>
         <span>Press <span style="color:var(--text)">/</span> for commands</span>
         <a href="#home" data-go="home" style="color:var(--muted)" style-hover="color:var(--text)">Back to top ↑</a>
       </footer>
@@ -441,7 +521,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
   </div>
 </div>
 
-<span data-logo-src="" aria-hidden="true" style="display:none;background-image:url(assets/logo.png)"></span>
+<span data-logo-src="" aria-hidden="true" style="display:none;background-image:url(assets/logo.webp)"></span>
 
 <div data-screen-flash="" aria-hidden="true" style="position:fixed;inset:0;z-index:158;pointer-events:none;display:none;opacity:0;background:#fff"></div>
 
@@ -614,6 +694,7 @@ class Component extends DCLogic {
   };
 
   EMAIL = 'alain.nash@gmail.com';
+  CAL = 'https://calendly.com/alain-nash/30min';
 
   PAL = {
     dark: { '--bg': '#18181A', '--surface': '#222225', '--surface-2': '#2C2C30', '--line': '#36363A', '--text': '#EDEDEA', '--muted': '#9C9CA1', '--accent': '#D6C7A8', '--on-accent': '#18181A' },
@@ -621,20 +702,20 @@ class Component extends DCLogic {
     accent: { '--bg': '#D6C7A8', '--surface': '#CDBD9B', '--surface-2': '#C3B28F', '--line': '#B4A27F', '--text': '#18181A', '--muted': '#4A4336', '--accent': '#18181A', '--on-accent': '#D6C7A8' }
   };
 
-  AR = {"assets/dash-overview.jpg":"1.7586","assets/dash-onboarding.jpg":"1.7520","assets/dash-onboard-2.jpg":"2.0155","assets/dash-kpis.jpg":"1.9561","assets/dash-revenue.jpg":"3.0788","assets/dash-payments.jpg":"2.8170","assets/dash-forecast.jpg":"2.6751","assets/dash-october.jpg":"2.3421","assets/dash-members.jpg":"2.8668","assets/meta-g4.jpg":"7.2000","assets/maximus-g3.jpg":"5.1429","assets/air-g2.jpg":"1.5759","assets/maximus-g4.jpg":"1.6941","assets/meta-g3.jpg":"2.6667","assets/air-g1.jpg":"2.6699","assets/meta-full.jpg":"0.4403","assets/maximus-g1.jpg":"2.5714","assets/air-g3.jpg":"1.4031","assets/maximus-g2.jpg":"0.9632","assets/dough-dessert.jpg":"0.7250","assets/dough-g1.jpg":"1.3483","assets/maximus-full.jpg":"0.2166","assets/air-full.jpg":"0.3427","assets/meta-g1.jpg":"2.8346","assets/dough-g2.jpg":"1.3483","assets/meta-g2.jpg":"2.5760"};
+  AR = {"assets/dash-overview.webp":"1.7586","assets/dash-onboarding.webp":"1.7520","assets/dash-onboard-2.webp":"2.0155","assets/dash-kpis.webp":"1.9561","assets/dash-revenue.webp":"3.0788","assets/dash-payments.webp":"2.8170","assets/dash-forecast.webp":"2.6751","assets/dash-october.webp":"2.3421","assets/dash-members.webp":"2.8668","assets/meta-g4.webp":"7.2000","assets/maximus-g3.webp":"5.1429","assets/air-g2.webp":"1.5759","assets/maximus-g4.webp":"1.6941","assets/meta-g3.webp":"2.6667","assets/air-g1.webp":"2.6699","assets/meta-full.webp":"0.4403","assets/maximus-g1.webp":"2.5714","assets/air-g3.webp":"1.4031","assets/maximus-g2.webp":"0.9632","assets/dough-dessert.webp":"0.7250","assets/dough-g1.webp":"1.3483","assets/maximus-full.webp":"0.2166","assets/air-full.webp":"0.3427","assets/meta-g1.webp":"2.8346","assets/dough-g2.webp":"1.3483","assets/meta-g2.webp":"2.5760"};
   PROJECTS = [
-    { id: 'maximus', title: 'Maximus', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Maximus Industrial Franchise', stack: ['Website', 'Franchise', 'Australia'], desc: 'A website for Maximus Industrial Franchise, an Australian franchise selling hoses, valves, pumps and fittings. The site walks prospective franchisees through the opportunity across Home, Let’s Talk About Us, Let’s Talk About You, Ask Us Anything and Hit Go!, in the brand’s black and orange.', grad: '#E8510E', site: 'assets/maximus-full.jpg', gallery: ['assets/maximus-g1.jpg','assets/maximus-g2.jpg','assets/maximus-g3.jpg','assets/maximus-g4.jpg'], hero: 'url(assets/maximus-hero.jpg) top center/cover no-repeat, #1A1A1A', d1: 'url(assets/maximus-d1.jpg) center/cover no-repeat, #1A1A1A', d2: 'url(assets/maximus-d2.jpg) right center/cover no-repeat, #1A1A1A', bx: '52%', by: '6%', br: '-2deg' },
-    { id: 'regen', title: 'Regen', category: 'Branding & Web Design', tag: 'Branding', year: '2023', role: 'Identity & website', client: 'ReGen', stack: ['Logo', 'Guidelines', 'Web'], desc: 'Branding and web design for an NFT platform. A fluid, organic mark built from the letters R and G. The mark joins an R and a G into one fluid, node-like form that suggests technology without the usual hard-edged crypto clichés. A heavy geometric wordmark in navy, finished with a teal full stop, keeps it grounded.', grad: 'url(assets/regen-logo-1.png) center/46% no-repeat, #1B3242', hero: 'url(assets/regen-logo-2.png) center/56% no-repeat, #1B3242', d1: 'url(assets/regen-logo-3.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/regen-logo-1.png) center/50% no-repeat, #F3F4F2', bx: '70%', by: '34%', br: '6deg' },
-    { id: 'meta-furnitures', title: 'Meta Furnitures', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Meta Furnitures', stack: ['E-commerce', 'Figma', 'UX'], desc: 'An online storefront for a furniture brand, focused on product photography and a short path to checkout. A full-width room scene with shoppable hotspots leads into featured pieces, a sale spotlight and a Best Sellers carousel, with delivery, finance, assembly and returns answered before the footer.', grad: '#6FB6C2', site: 'assets/meta-full.jpg', hero: 'url(assets/meta-hero.jpg) center/cover no-repeat, #E3E3E3', d1: 'url(assets/meta-d1.jpg) center/cover no-repeat, #E3E3E3', d2: 'url(assets/meta-d2.jpg) center/cover no-repeat, #E3E3E3', gallery: ['assets/meta-g1.jpg','assets/meta-g2.jpg','assets/meta-g3.jpg','assets/meta-g4.jpg'], bx: '8%', by: '58%', br: '4deg' },
-    { id: 'loadboard', title: 'Loadboard', category: 'Branding', tag: 'Branding', year: '2021', role: 'Brand identity', client: 'Loadboard Transport Services', stack: ['Logo', 'Guidelines', 'Australia'], desc: 'A single-colour identity for an Australian carrier. The wordmark rides inside the truck, so the name and the service are read in one glance. Speed lines run through the wordmark into a prime-mover silhouette. One blue, condensed italic type and no gradients mean the logo reproduces the same on a trailer, a fuel card or a phone screen.', grad: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', hero: 'url(assets/loadboard-logo-1.png) center/60% no-repeat, #2B3C99', d1: 'url(assets/loadboard-logo-2.png) center/80% no-repeat, #F3F4F2', d2: 'url(assets/loadboard-logo-1.png) center/80% no-repeat, #2B3C99', bx: '52%', by: '60%', br: '-4deg' },
-    { id: 'mags', title: 'Mag’s Lechon Belly', category: 'Logo Design', tag: 'Branding', year: '2025', role: 'Logo & guidelines', client: 'Mag’s Lechon Belly, Dumaguete', stack: ['Logo', 'Guidelines', 'Print'], desc: 'A hand-drawn pig mark for a lechon belly stall in Dumaguete. Built to read from across the street and to sit happily on a grease-stained takeaway box. The answer is a winking, grinning pig inside a classic round badge. Thick black outlines and a single saturated red keep it cheap to print in one or two colours, and the curved Cooper-style lettering gives it the feel of an old roadside eatery.', grad: 'url(assets/mags-logo-2.png) center/72% no-repeat, #F4ECDD', hero: 'url(assets/mags-logo-2.png) center/auto 72% no-repeat, #F4ECDD', d1: 'url(assets/mags-logo-3.png) center/72% no-repeat, #A81010', d2: 'url(assets/mags-logo-2.png) center/72% no-repeat, #1C1816', bx: '28%', by: '4%', br: '-3deg' },
-    { id: 'air-scooter', title: 'Air Scooter', category: 'Web Design', tag: 'Web', year: '2025', role: 'Web design', client: 'Air Electric Scooter', stack: ['Product page', 'E-commerce', 'Figma'], desc: 'A product landing page for the Air Electric Scooter. The page leads with price, instalments and free next-day shipping, then sells the ride through lifestyle photography and close-up product detail before a single Buy Now action.', grad: '#EE7433', site: 'assets/air-full.jpg', gallery: ['assets/air-g1.jpg','assets/air-g2.jpg','assets/air-g3.jpg'], hero: 'url(assets/air-hero.jpg) top center/cover no-repeat, #FFFFFF', d1: 'url(assets/air-2.jpg) center/cover no-repeat, #2A2A2A', d2: 'url(assets/air-3.jpg) center/cover no-repeat, #2A2A2A', bx: '74%', by: '66%', br: '3deg' },
-    { id: 'doughballs', title: 'Doughballs', category: 'Menu Design', tag: 'Print', year: '2026', role: 'Menu design', client: 'Doughballs, The Pizza Place', stack: ['Menu', 'Print', 'Hospitality'], desc: 'A one-fold menu for Doughballs, a South Australian pizza place. The swirling D on the cover carries through deep teal panels and hand-lettered headings across drinks, starters, pizzas and a separate dessert insert, with prices set in clean columns and dietary icons on every dish.', grad: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', hero: 'url(assets/dough-flatlay.jpg) center/cover no-repeat, #163A3E', d1: 'url(assets/dough-cover.jpg) center/cover no-repeat, #1F4A4F', d2: 'url(assets/dough-3.jpg) top center/cover no-repeat, #1F4A4F', gallery: [{ src: 'assets/dough-g1.jpg', cap: 'Outside — drinks, cocktails and the cover' }, { src: 'assets/dough-g2.jpg', cap: 'Inside — to start, not pizza and the pizza list' }, { src: 'assets/dough-dessert.jpg', cap: 'Dessert insert — front and back' }], sections: [{ h: 'Brief', p: 'One folded sheet that holds the full food and drinks offer, reads quickly at the table and feels unmistakably Doughballs.' }, { h: 'Approach', p: 'The swirling D on the cover sets the pattern. Deep teal panels group each section, script headings mark the signature items, and every pizza runs in three sizes so prices sit in aligned columns.' }, { h: 'Details', p: 'Dietary icons on every dish, a dipping-sauce panel, a Special House badge, a happy hour block and a panel supporting local South Australian businesses. A slim insert carries the dessert list.' }, { h: 'Format', p: 'A3 one-fold menu, printed both sides, with a 99 × 297 mm dessert insert.' }], bx: '8%', by: '30%', br: '-4deg' },
-    { id: 'asset-dashboard', title: 'Gym Dashboard', category: 'CRM Dashboard & AI', tag: 'Systems', year: '2026', role: 'Design, build & automation', client: 'ASSET Health and Performance', stack: ['GHL', 'ClubFit API', 'Claude', 'ChatGPT', 'GitHub'], desc: 'One dashboard for a gym owner who was running the business across three CRMs. It pulls the numbers from each system into one place, so revenue, attendance, joins, cancellations and failed payments can be checked on a single screen. A member health score flags who needs attention, so staff can step in before someone cancels. Member names and dollar figures are blurred to protect the business.', grad: 'url(assets/dash-cover.jpg) center/cover no-repeat, #0C0D0D', hero: 'url(assets/dash-cover.jpg) center/cover no-repeat, #0C0D0D',
+    { id: 'asset-dashboard', title: 'Gym Dashboard', category: 'CRM Dashboard & AI', result: '3 CRMs → 1 dashboard', tag: 'Systems', year: '2026', role: 'Design, build & automation', client: 'ASSET Health and Performance', stack: ['GHL', 'ClubFit API', 'Claude', 'ChatGPT', 'GitHub'], desc: 'One dashboard for a gym owner who was running the business across three CRMs. It pulls the numbers from each system into one place, so revenue, attendance, joins, cancellations and failed payments can be checked on a single screen. A member health score flags who needs attention, so staff can step in before someone cancels. Member names and dollar figures are blurred to protect the business.', grad: 'url(assets/dash-cover.webp) center/cover no-repeat, #0C0D0D', hero: 'url(assets/dash-cover.webp) center/cover no-repeat, #0C0D0D',
       stats: [{ n: '3 → 1', l: 'CRMs brought into one dashboard' }, { n: '6', l: 'Views: overview, members, onboarding, retention, financial, pipeline' }, { n: '28', l: 'Day onboarding board with a weekly checklist' }, { n: '204', l: 'Members scored for cancellation risk' }],
       sections: [{ h: 'The problem', p: 'The owner had three CRMs to work with, so seeing how the gym was performing meant logging into each one and piecing the numbers together by hand.' }, { h: 'What I built', p: 'A single dashboard connected to the ClubFit API and the other systems, plus code that scores how each member is tracking based on their visits and payments.' }, { h: 'The result', p: 'The owner checks every number in one place and can see which members need more attention, so staff can reach out before they cancel.' }, { h: 'Built with', p: 'GoHighLevel, ClubFit API, Claude, ChatGPT and GitHub.' }],
-      features: [{ src: 'assets/dash-overview.jpg', url: 'overview', h: 'The whole club at a glance', p: 'Revenue and attendance for the last 30 days, each compared with the period before and the same time last year.' }, { src: 'assets/dash-kpis.jpg', url: 'overview', h: 'Every number that matters', p: 'Pipeline, payment issues, debt collection, suspensions, cancellations and pack sales sit in one row, with new joins and cancellations charted day by day.' }, { src: 'assets/dash-onboarding.jpg', url: 'onboarding', h: 'A 28-day onboarding board', p: 'New members move week by week through a checklist of calls, texts and sessions. Staff tick each task off, and the board records who did it.' }, { src: 'assets/dash-members.jpg', url: 'retention', h: 'Spotting who might leave', p: 'Each active member gets a risk score from their visit pattern. Ghosts, sharp drops and gradual slides are flagged so the team knows who to contact first.' }, { src: 'assets/dash-revenue.jpg', url: 'financial', h: 'Where the money comes from', p: 'Twelve months of revenue against the year before, broken down by category for any month.' }, { src: 'assets/dash-forecast.jpg', url: 'financial', h: 'Forecast and what to act on', p: 'The next three months are forecast from the current run rate and last year’s season. The dashboard then lists the actions worth taking, worked out from the numbers each time it loads.' }],
+      features: [{ src: 'assets/dash-overview.webp', url: 'overview', h: 'The whole club at a glance', p: 'Revenue and attendance for the last 30 days, each compared with the period before and the same time last year.' }, { src: 'assets/dash-kpis.webp', url: 'overview', h: 'Every number that matters', p: 'Pipeline, payment issues, debt collection, suspensions, cancellations and pack sales sit in one row, with new joins and cancellations charted day by day.' }, { src: 'assets/dash-onboarding.webp', url: 'onboarding', h: 'A 28-day onboarding board', p: 'New members move week by week through a checklist of calls, texts and sessions. Staff tick each task off, and the board records who did it.' }, { src: 'assets/dash-members.webp', url: 'retention', h: 'Spotting who might leave', p: 'Each active member gets a risk score from their visit pattern. Ghosts, sharp drops and gradual slides are flagged so the team knows who to contact first.' }, { src: 'assets/dash-revenue.webp', url: 'financial', h: 'Where the money comes from', p: 'Twelve months of revenue against the year before, broken down by category for any month.' }, { src: 'assets/dash-forecast.webp', url: 'financial', h: 'Forecast and what to act on', p: 'The next three months are forecast from the current run rate and last year’s season. The dashboard then lists the actions worth taking, worked out from the numbers each time it loads.' }],
       bx: '60%', by: '20%', br: '3deg' },
+    { id: 'maximus', title: 'Maximus', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Maximus Industrial Franchise', stack: ['Website', 'Franchise', 'Australia'], desc: 'A website for Maximus Industrial Franchise, an Australian franchise selling hoses, valves, pumps and fittings. The site walks prospective franchisees through the opportunity across Home, Let’s Talk About Us, Let’s Talk About You, Ask Us Anything and Hit Go!, in the brand’s black and orange.', grad: '#E8510E', site: 'assets/maximus-full.webp', gallery: ['assets/maximus-g1.webp','assets/maximus-g2.webp','assets/maximus-g3.webp','assets/maximus-g4.webp'], hero: 'url(assets/maximus-hero.webp) top center/cover no-repeat, #1A1A1A', d1: 'url(assets/maximus-d1.webp) center/cover no-repeat, #1A1A1A', d2: 'url(assets/maximus-d2.webp) right center/cover no-repeat, #1A1A1A', bx: '52%', by: '6%', br: '-2deg' },
+    { id: 'regen', title: 'Regen', category: 'Branding & Web Design', tag: 'Branding', year: '2023', role: 'Identity & website', client: 'ReGen', stack: ['Logo', 'Guidelines', 'Web'], desc: 'Branding and web design for an NFT platform. A fluid, organic mark built from the letters R and G. The mark joins an R and a G into one fluid, node-like form that suggests technology without the usual hard-edged crypto clichés. A heavy geometric wordmark in navy, finished with a teal full stop, keeps it grounded.', grad: 'url(assets/regen-logo-1.webp) center/46% no-repeat, #1B3242', hero: 'url(assets/regen-logo-2.webp) center/56% no-repeat, #1B3242', d1: 'url(assets/regen-logo-3.webp) center/80% no-repeat, #F3F4F2', d2: 'url(assets/regen-logo-1.webp) center/50% no-repeat, #F3F4F2', bx: '70%', by: '34%', br: '6deg' },
+    { id: 'meta-furnitures', title: 'Meta Furnitures', category: 'Web Design', tag: 'Web', year: '2022', role: 'Web design', client: 'Meta Furnitures', stack: ['E-commerce', 'Figma', 'UX'], desc: 'An online storefront for a furniture brand, focused on product photography and a short path to checkout. A full-width room scene with shoppable hotspots leads into featured pieces, a sale spotlight and a Best Sellers carousel, with delivery, finance, assembly and returns answered before the footer.', grad: '#6FB6C2', site: 'assets/meta-full.webp', hero: 'url(assets/meta-hero.webp) center/cover no-repeat, #E3E3E3', d1: 'url(assets/meta-d1.webp) center/cover no-repeat, #E3E3E3', d2: 'url(assets/meta-d2.webp) center/cover no-repeat, #E3E3E3', gallery: ['assets/meta-g1.webp','assets/meta-g2.webp','assets/meta-g3.webp','assets/meta-g4.webp'], bx: '8%', by: '58%', br: '4deg' },
+    { id: 'loadboard', title: 'Loadboard', category: 'Branding', tag: 'Branding', year: '2021', role: 'Brand identity', client: 'Loadboard Transport Services', stack: ['Logo', 'Guidelines', 'Australia'], desc: 'A single-colour identity for an Australian carrier. The wordmark rides inside the truck, so the name and the service are read in one glance. Speed lines run through the wordmark into a prime-mover silhouette. One blue, condensed italic type and no gradients mean the logo reproduces the same on a trailer, a fuel card or a phone screen.', grad: 'url(assets/loadboard-logo-1.webp) center/80% no-repeat, #2B3C99', hero: 'url(assets/loadboard-logo-1.webp) center/60% no-repeat, #2B3C99', d1: 'url(assets/loadboard-logo-2.webp) center/80% no-repeat, #F3F4F2', d2: 'url(assets/loadboard-logo-1.webp) center/80% no-repeat, #2B3C99', bx: '52%', by: '60%', br: '-4deg' },
+    { id: 'mags', title: 'Mag’s Lechon Belly', category: 'Logo Design', tag: 'Branding', year: '2025', role: 'Logo & guidelines', client: 'Mag’s Lechon Belly, Dumaguete', stack: ['Logo', 'Guidelines', 'Print'], desc: 'A hand-drawn pig mark for a lechon belly stall in Dumaguete. Built to read from across the street and to sit happily on a grease-stained takeaway box. The answer is a winking, grinning pig inside a classic round badge. Thick black outlines and a single saturated red keep it cheap to print in one or two colours, and the curved Cooper-style lettering gives it the feel of an old roadside eatery.', grad: 'url(assets/mags-logo-2.webp) center/72% no-repeat, #F4ECDD', hero: 'url(assets/mags-logo-2.webp) center/auto 72% no-repeat, #F4ECDD', d1: 'url(assets/mags-logo-3.webp) center/72% no-repeat, #A81010', d2: 'url(assets/mags-logo-2.webp) center/72% no-repeat, #1C1816', bx: '28%', by: '4%', br: '-3deg' },
+    { id: 'air-scooter', title: 'Air Scooter', category: 'Web Design', tag: 'Web', year: '2025', role: 'Web design', client: 'Air Electric Scooter', stack: ['Product page', 'E-commerce', 'Figma'], desc: 'A product landing page for the Air Electric Scooter. The page leads with price, instalments and free next-day shipping, then sells the ride through lifestyle photography and close-up product detail before a single Buy Now action.', grad: '#EE7433', site: 'assets/air-full.webp', gallery: ['assets/air-g1.webp','assets/air-g2.webp','assets/air-g3.webp'], hero: 'url(assets/air-hero.webp) top center/cover no-repeat, #FFFFFF', d1: 'url(assets/air-2.webp) center/cover no-repeat, #2A2A2A', d2: 'url(assets/air-3.webp) center/cover no-repeat, #2A2A2A', bx: '74%', by: '66%', br: '3deg' },
+    { id: 'doughballs', title: 'Doughballs', category: 'Menu Design', tag: 'Print', year: '2026', role: 'Menu design', client: 'Doughballs, The Pizza Place', stack: ['Menu', 'Print', 'Hospitality'], desc: 'A one-fold menu for Doughballs, a South Australian pizza place. The swirling D on the cover carries through deep teal panels and hand-lettered headings across drinks, starters, pizzas and a separate dessert insert, with prices set in clean columns and dietary icons on every dish.', grad: 'url(assets/dough-cover.webp) center/cover no-repeat, #1F4A4F', hero: 'url(assets/dough-flatlay.webp) center/cover no-repeat, #163A3E', d1: 'url(assets/dough-cover.webp) center/cover no-repeat, #1F4A4F', d2: 'url(assets/dough-3.webp) top center/cover no-repeat, #1F4A4F', gallery: [{ src: 'assets/dough-g1.webp', cap: 'Outside — drinks, cocktails and the cover' }, { src: 'assets/dough-g2.webp', cap: 'Inside — to start, not pizza and the pizza list' }, { src: 'assets/dough-dessert.webp', cap: 'Dessert insert — front and back' }], sections: [{ h: 'Brief', p: 'One folded sheet that holds the full food and drinks offer, reads quickly at the table and feels unmistakably Doughballs.' }, { h: 'Approach', p: 'The swirling D on the cover sets the pattern. Deep teal panels group each section, script headings mark the signature items, and every pizza runs in three sizes so prices sit in aligned columns.' }, { h: 'Details', p: 'Dietary icons on every dish, a dipping-sauce panel, a Special House badge, a happy hour block and a panel supporting local South Australian businesses. A slim insert carries the dessert list.' }, { h: 'Format', p: 'A3 one-fold menu, printed both sides, with a 99 × 297 mm dessert insert.' }], bx: '8%', by: '30%', br: '-4deg' },
   ];
 
   state = { view: 'cards', filter: 'All', caseId: null, palette: false, q: '', sel: 0, toast: '', narrow: typeof window !== 'undefined' && window.innerWidth < 900, theme: 'dark' };
@@ -645,6 +726,7 @@ class Component extends DCLogic {
     this.root = document.querySelector('[data-folio]');
     this.on(window, 'resize', () => { const n = innerWidth < 900; if (n !== this.state.narrow) this.setState({ narrow: n }); this._mqW = 0; });
     this.on(document, 'keydown', e => this.onKey(e));
+    this.on(document, 'toggle', e => { if (e.target.matches && e.target.matches('.faq') && window.ScrollTrigger) requestAnimationFrame(() => ScrollTrigger.refresh()); }, true);
     this.on(document, 'click', e => { const a = e.target.closest && e.target.closest('[data-go]'); if (a) { e.preventDefault(); this.go(a.dataset.go); } });
     this.initClock();
     let tries = 0;
@@ -713,7 +795,7 @@ class Component extends DCLogic {
   // ---------- 3D logo: stacked masked layers = extrusion; follows cursor ----------
   initLogos() {
     const srcEl = this.root.querySelector('[data-logo-src]');
-    const url = (srcEl && getComputedStyle(srcEl).backgroundImage !== 'none') ? getComputedStyle(srcEl).backgroundImage : 'url(assets/logo.png)';
+    const url = (srcEl && getComputedStyle(srcEl).backgroundImage !== 'none') ? getComputedStyle(srcEl).backgroundImage : 'url(assets/logo.webp)';
     this._logos = [...this.root.querySelectorAll('[data-logo3d]')].map(el => {
       const n = +el.dataset.layers || 6;
       if (!el.childElementCount) for (let i = 0; i < n; i++) {
@@ -1150,6 +1232,34 @@ class Component extends DCLogic {
     this._tt = setTimeout(() => this.setState({ toast: '' }), 2000);
   }
 
+  // ---------- Booking: next 10 weekdays (Manila), each opens Calendly on that date ----------
+  bookDays() {
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Manila' }).format(new Date());
+    if (this._bd && this._bdKey === today) return this._bd;
+    const d = new Date(today + 'T00:00:00Z'), out = [];
+    while (out.length < 10) {
+      d.setUTCDate(d.getUTCDate() + 1);
+      const wd = d.getUTCDay(); if (wd === 0 || wd === 6) continue;
+      const iso = d.toISOString().slice(0, 10), f = o => d.toLocaleDateString('en-GB', { timeZone: 'UTC', ...o });
+      const url = `${this.CAL}?month=${iso.slice(0, 7)}&date=${iso}`;
+      out.push({ iso, url, n: String(d.getUTCDate()).padStart(2, '0'), wd: f({ weekday: 'short' }), mon: f({ month: 'short' }), aria: 'Book a call on ' + f({ weekday: 'long', day: 'numeric', month: 'long' }), pick: e => this.openCal(e, url) });
+    }
+    this._bdKey = today;
+    return (this._bd = out);
+  }
+  openCal(e, url = this.CAL) {
+    if (e && e.metaKey || e && e.ctrlKey) return; // let new-tab clicks through
+    e && e.preventDefault && e.preventDefault();
+    const sep = url.includes('?') ? '&' : '?', full = url + sep + 'hide_gdpr_banner=1';
+    const show = () => window.Calendly ? Calendly.initPopupWidget({ url: full }) : window.open(url, '_blank', 'noopener');
+    if (window.Calendly) return show();
+    if (!document.querySelector('link[href*="calendly.com/assets/external/widget.css"]')) {
+      const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://assets.calendly.com/assets/external/widget.css'; document.head.appendChild(l);
+    }
+    const sc = document.createElement('script'); sc.src = 'https://assets.calendly.com/assets/external/widget.js'; sc.async = true;
+    sc.onload = show; sc.onerror = show; document.head.appendChild(sc);
+  }
+
   // ---------- Theme ----------
   toggleTheme() {
     this._theme = this._theme === 'dark' ? 'light' : 'dark';
@@ -1191,8 +1301,10 @@ class Component extends DCLogic {
       { label: 'cd ~/about', hint: '02', run: () => this.go('about') },
       { label: 'cd ~/works', hint: '03', run: () => this.go('works') },
       { label: 'cd ~/services', hint: 'III', run: () => this.go('services') },
+      { label: 'cd ~/process', hint: 'IV', run: () => this.go('process') },
       { label: 'cd ~/contact', hint: '04', run: () => this.go('contact') },
       { label: 'theme --toggle', hint: 'dark/light', run: () => { this.closePalette(); this.toggleTheme(); } },
+      { label: 'book a call', hint: 'calendly', run: () => { this.closePalette(); this.openCal(); } },
       { label: 'copy email', hint: '@', run: () => { this.closePalette(); this.copyEmail(); } },
       { label: 'ls --view list', hint: 'works', run: () => { this.go('works'); this.setView('list'); } },
       { label: 'ls --view board', hint: 'works', run: () => { this.go('works'); this.setView('board'); } },
@@ -1385,6 +1497,7 @@ class Component extends DCLogic {
       onQ: e => this.setState({ q: e.target.value, sel: 0 }),
       openPalette: () => this.openPalette(), closePalette: () => this.closePalette(), stop: e => e.stopPropagation(),
       toggleTheme: () => this.toggleTheme(), copyEmail: () => this.copyEmail(),
+      bookDays: this.bookDays(), bookCall: e => this.openCal(e),
       toast: s.toast, hasToast: !!s.toast
     };
   }
