@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nashalino.netlify.app/sitemap.xml
+Sitemap: https://portfolio.alain-nash.workers.dev/sitemap.xml
